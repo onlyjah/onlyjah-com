@@ -1,6 +1,6 @@
 import type { UserConfig } from 'vite'
-import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import { nitro } from 'nitro/vite'
+import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import react, { reactCompilerPreset } from '@vitejs/plugin-react'
 
 import babel from '@rolldown/plugin-babel'
@@ -12,9 +12,9 @@ export default {
     tsconfigPaths: true,
   },
   plugins: [
+    nitro(),
     tanstackStart(),
     react(),
-    nitro(),
     babel({ presets: [reactCompilerPreset()] })
   ],
   base: '/', // default -> placing for explicity
