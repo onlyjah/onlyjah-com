@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           # Upload output folder
-          path: './output/public'
+          path: './.output/public'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
