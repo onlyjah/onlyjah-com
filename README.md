@@ -11,21 +11,21 @@ Project Scope:
 - Commerce engine
 - Member Organizer
 
-## Initialized With React + TypeScript + Vite
-
-Initialized with `npm create-vite@latest`
+## Initialized with `npm create-vite@latest`
 
 - Using Vite's init scaffolding: `Typescript + React Compiler`
 - Typechecked Linting: `tseslint.configs.stylisticTypeChecked`
 
-## Added Resources
+### Dev Log
 
-Static site deploy via gh-pages. See [vite docs](https://vite.dev/guide/static-deploy) fore more details.
+Static site deploy via gh-pages - [vite docs](https://vite.dev/guide/static-deploy)
+
+Tanstack Start added - [tanstack docs](https://tanstack.com/start/latest/docs/framework/react/build-from-scratch)
+
+Nitro added as server runtime - [tanstack docs](https://tanstack.com/start/latest/docs/framework/react/guide/hosting#nitro) / [nitro docs](https://nitro.build/)
 
 ## todo
 
-- Stack Pivot: tanstack, react, golang services, auth, DBs, blockstore, SDKs & UI toolkits, commerce engine, userstate sync, embeddable apps
-
-- Honestly, we may delete this whole site and start from square one :P
-
-- Work on UI first...
+- golang services, auth, DBs, blockstore, SDKs & UI toolkits, commerce engine, userstate sync, embeddable apps
+- we may delete this whole site and start from square one :P
+- decent UI...
