@@ -1,13 +1,13 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/')({
+export const Route = createFileRoute('/forge')({
   component: RouteComponent,
 })
 
 function RouteComponent() {
   return <div>
-    <h1>Welcome to OnlyJah!</h1>
+    <h1>OnlyJah Forge!</h1>
     <br />
-    <p>The coolest website on earth!</p>
+    <p>Source Forge, build cool stuff...</p>
   </div>
 }

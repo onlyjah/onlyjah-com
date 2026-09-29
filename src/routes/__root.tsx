@@ -10,16 +10,10 @@ import {
 export const Route = createRootRoute({
   head: () => ({
     meta: [
-      {
-        charSet: 'utf-8',
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1',
-      },
-      {
-        title: 'OnlyJah',
-      },
+      { charSet: 'utf-8' },
+      { name: 'viewport', 
+        content: 'width=device-width, initial-scale=1' },
+      { title: 'OnlyJah' },
     ],
   }),
   component: RootComponent,
@@ -40,6 +34,14 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
         <HeadContent />
       </head>
       <body>
+        <nav>
+          <a href="/">OnlyJah.com</a>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/forge">Forge</a></li>
+            <li><a href="/explore">Explore</a></li>
+          </ul>
+        </nav>
         {children}
         <Scripts />
       </body>
