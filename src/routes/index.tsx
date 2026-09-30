@@ -6,8 +6,18 @@ export const Route = createFileRoute('/')({
 
 function RouteComponent() {
   return <div>
-    <h1>Welcome to OnlyJah!</h1>
+    {/* Page Name: HOME/ROOT/INDEX */}
+    <h1>OnlyJah.com</h1>
+    <p>Cloud Faring Vessel _ Universe in the Sky</p>
+    <img src="hero_home.wjpg" alt="Home Hero Image: Dragonfly" />
     <br />
-    <p>The coolest website on earth!</p>
+
+    {/* SECTION: CARDS */}
+    <div> {/* CARD 1 */}
+      <a href="/forge">Forge</a>/
+      <a href="/guild">Guild</a>/
+      <a href="/realm">Realm</a>
+    </div>
+
   </div>
 }

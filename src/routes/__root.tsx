@@ -5,6 +5,7 @@ import {
   createRootRoute,
   HeadContent,
   Scripts,
+  notFound,
 } from '@tanstack/react-router'
 
 export const Route = createRootRoute({
@@ -36,13 +37,27 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       <body>
         <nav>
           <a href="/">OnlyJah.com</a>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/forge">Forge</a></li>
-            <li><a href="/explore">Explore</a></li>
-          </ul>
+          <span />
+           ------------- 
+          <span />
+          <a href="/">Home</a> = 
+          <a href="/forge">Forge</a> = 
+          <a href="/explore">Explore</a>
+          <span />
+           ------------- 
+          <span />
+          <a href="/login">Log In</a>/
+          <a href="/signup">Sign Up</a>
         </nav>
         {children}
+        <footer>
+          <a href="/">OnlyJah.com</a>
+          <p>Copyright 2026 OnlyJah</p>
+          <ul>
+            <li><a href="/policy">Policy</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </footer>
         <Scripts />
       </body>
     </html>
