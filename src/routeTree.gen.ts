@@ -22,7 +22,6 @@ import { Route as RealmRouteImport } from './routes/realm'
 import { Route as ShopRouteImport } from './routes/shop'
 import { Route as SignupRouteImport } from './routes/signup'
 import { Route as BlocksIndexRouteImport } from './routes/blocks/index'
-import { Route as BlocksIdRouteImport } from './routes/blocks/$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -89,11 +88,6 @@ const BlocksIndexRoute = BlocksIndexRouteImport.update({
   path: '/blocks/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlocksIdRoute = BlocksIdRouteImport.update({
-  id: '/blocks/$id',
-  path: '/blocks/$id',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -108,7 +102,6 @@ export interface FileRoutesByFullPath {
   '/realm': typeof RealmRoute
   '/shop': typeof ShopRoute
   '/signup': typeof SignupRoute
-  '/blocks/$id': typeof BlocksIdRoute
   '/blocks/': typeof BlocksIndexRoute
 }
 export interface FileRoutesByTo {
@@ -124,7 +117,6 @@ export interface FileRoutesByTo {
   '/realm': typeof RealmRoute
   '/shop': typeof ShopRoute
   '/signup': typeof SignupRoute
-  '/blocks/$id': typeof BlocksIdRoute
   '/blocks': typeof BlocksIndexRoute
 }
 export interface FileRoutesById {
@@ -141,7 +133,6 @@ export interface FileRoutesById {
   '/realm': typeof RealmRoute
   '/shop': typeof ShopRoute
   '/signup': typeof SignupRoute
-  '/blocks/$id': typeof BlocksIdRoute
   '/blocks/': typeof BlocksIndexRoute
 }
 export interface FileRouteTypes {
@@ -159,7 +150,6 @@ export interface FileRouteTypes {
     | '/realm'
     | '/shop'
     | '/signup'
-    | '/blocks/$id'
     | '/blocks/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -175,7 +165,6 @@ export interface FileRouteTypes {
     | '/realm'
     | '/shop'
     | '/signup'
-    | '/blocks/$id'
     | '/blocks'
   id:
     | '__root__'
@@ -191,7 +180,6 @@ export interface FileRouteTypes {
     | '/realm'
     | '/shop'
     | '/signup'
-    | '/blocks/$id'
     | '/blocks/'
   fileRoutesById: FileRoutesById
 }
@@ -208,7 +196,6 @@ export interface RootRouteChildren {
   RealmRoute: typeof RealmRoute
   ShopRoute: typeof ShopRoute
   SignupRoute: typeof SignupRoute
-  BlocksIdRoute: typeof BlocksIdRoute
   BlocksIndexRoute: typeof BlocksIndexRoute
 }
 
@@ -305,13 +292,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlocksIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blocks/$id': {
-      id: '/blocks/$id'
-      path: '/blocks/$id'
-      fullPath: '/blocks/$id'
-      preLoaderRoute: typeof BlocksIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -328,7 +308,6 @@ const rootRouteChildren: RootRouteChildren = {
   RealmRoute: RealmRoute,
   ShopRoute: ShopRoute,
   SignupRoute: SignupRoute,
-  BlocksIdRoute: BlocksIdRoute,
   BlocksIndexRoute: BlocksIndexRoute,
 }
 export const routeTree = rootRouteImport
