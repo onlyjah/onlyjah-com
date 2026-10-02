@@ -1,31 +1,19 @@
-# OnlyJah.com Web Site
+# OnlyJah / Ark frontend
 
-This is the official OnlyJah website!
+Portable public frontend and member workspaces. Current stack: TanStack Start, React, shadcn/Base UI, Tailwind, Clerk and Neon, with Railway testing hosting behind Cloudflare. Backend software belongs in a separate repository.
 
-It is an itterative work.
+```bash
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm dev
+pnpm copy:refresh
+pnpm check
+pnpm preview
+```
 
-Project Scope:
+Use Node 22.12+ and pinned pnpm 12.5.1. `.output/public` is the deployable static artifact. `pnpm start` serves it on the host/port required by Railway. Development uses only public frontend settings from `.env.example`; provider secrets never enter browser configuration.
 
-- Multimedia outlet
-- Project playground
-- Commerce engine
-- Member Organizer
+[Current documentation](docs/README.md) is the active index. [Stack](docs/STACK.md) explains each component using Jah's exact quoted preferences and separately labeled engineering rationale. [Content review](docs/content-review/REVIEW-REPORT.md) maps wording to its source and placement. [Testing readiness](docs/testing/STAGING-READINESS.md) records what is actually verified.
 
-## Initialized with `npm create-vite@latest`
+The canonical quote master is `docs/content-review/content/master-quotes.json`. `src/content/quotes.json`, `terms.json` and `copy-slots.json` are generated projections. `docs/sources` preserves original references. Historical plans and snapshots remain indexed outside active public imports.
 
-- Using Vite's init scaffolding: `Typescript + React Compiler`
-- Typechecked Linting: `tseslint.configs.stylisticTypeChecked`
-
-### Dev Log
-
-Static site deploy via gh-pages - [vite docs](https://vite.dev/guide/static-deploy)
-
-Tanstack Start added - [tanstack docs](https://tanstack.com/start/latest/docs/framework/react/build-from-scratch)
-
-Nitro added as server runtime - [tanstack docs](https://tanstack.com/start/latest/docs/framework/react/guide/hosting#nitro) / [nitro docs](https://nitro.build/)
-
-## todo
-
-- golang services, auth, DBs, blockstore, SDKs & UI toolkits, commerce engine, userstate sync, embeddable apps
-- we may delete this whole site and start from square one :P
-- decent UI...
+`pnpm build:testing` permits excerpts awaiting Jah's review and visibly labels the testing site. A normal `pnpm build` requires current wording and placement approvals. Clerk billing, uploads, privileged organization actions and seller payouts have separate activation requirements; signup grants none of them.

@@ -21,12 +21,15 @@ out/
 .netlify/
 .output/
 
-# React specific
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Local configuration (public examples are tracked; real keys are not)
+.env*
+!.env.example
+.neon
+# Local handoff exports are snapshots, not application source or remote uploads.
+exports/
+OnlyJah-Codex-Handoff/
+__pycache__/
+*.pyc
 
 # Testing
 coverage/
@@ -130,3 +133,9 @@ yarn.lock
 *.swp
 *.swo
 *~
+
+# Local private editorial material; only the selected public manifest is committed.
+docs/content-review/
+docs/sources/
+docs/handoff/
+docs/history/2026-10-02-before-testing-cleanup/

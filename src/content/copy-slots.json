@@ -1,0 +1,74 @@
+[
+  {
+    "id": "home.hero",
+    "route": "/",
+    "region": "hero",
+    "quote_id": "jah-14",
+    "author_approval": "pending",
+    "stage": "testing_review"
+  },
+  {
+    "id": "home.purpose",
+    "route": "/",
+    "region": "intro",
+    "quote_id": "snippet-purpose",
+    "author_approval": "pending",
+    "stage": "testing_review"
+  },
+  {
+    "id": "about.purpose",
+    "route": "/about",
+    "region": "intro",
+    "quote_id": "snippet-purpose",
+    "author_approval": "pending",
+    "stage": "testing_review"
+  },
+  {
+    "id": "ark.definition",
+    "route": "/p/ark",
+    "region": "body",
+    "quote_id": "testing-incubation",
+    "author_approval": "pending",
+    "stage": "testing_review"
+  },
+  {
+    "id": "forge.definition",
+    "route": "/forge",
+    "region": "description",
+    "quote_id": "snippet-forge-label",
+    "author_approval": "pending",
+    "stage": "testing_review"
+  },
+  {
+    "id": "media.definition",
+    "route": "/media",
+    "region": "description",
+    "quote_id": "snippet-media-label",
+    "author_approval": "pending",
+    "stage": "testing_review"
+  },
+  {
+    "id": "realm.definition",
+    "route": "/realm",
+    "region": "description",
+    "quote_id": "snippet-realm-label",
+    "author_approval": "pending",
+    "stage": "testing_review"
+  },
+  {
+    "id": "about.unity",
+    "route": "/about",
+    "region": "body",
+    "quote_id": "testing-unity",
+    "author_approval": "pending",
+    "stage": "testing_review"
+  },
+  {
+    "id": "docs.waypoint",
+    "route": "/docs/launch",
+    "region": "heading",
+    "quote_id": "snippet-waypoint-name",
+    "author_approval": "pending",
+    "stage": "testing_review"
+  }
+]

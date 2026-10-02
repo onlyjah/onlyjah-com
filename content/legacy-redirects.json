@@ -1,0 +1,10 @@
+{
+  "/login": "/sign-in",
+  "/signup": "/sign-up",
+  "/shop": "/market",
+  "/jobs": "/market",
+  "/guild": "/realm",
+  "/explore": "/media",
+  "/blocks": "/design-preview",
+  "/contact": "/pre-alpha"
+}

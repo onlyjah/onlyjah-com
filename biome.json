@@ -1,0 +1,51 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+  "files": {
+    "includes": [
+      "src/**",
+      "scripts/**",
+      "tests/**",
+      "*.json",
+      "vite.config.ts",
+      "!src/routeTree.gen.ts",
+      "!!OnlyJah-Codex-Handoff",
+      "!!node_modules",
+      "!!.output",
+      "!!docs/handoff/editorial-baseline"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended"
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "src/content/quotes.json",
+        "src/content/terms.json",
+        "src/content/copy-slots.json"
+      ],
+      "formatter": {
+        "enabled": false
+      }
+    }
+  ]
+}

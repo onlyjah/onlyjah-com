@@ -10,33 +10,375 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AccountRouteImport } from './routes/account'
+import { Route as ArtistRouteImport } from './routes/artist'
+import { Route as DesignPreviewRouteImport } from './routes/design-preview'
+import { Route as ForgeRouteImport } from './routes/forge'
+import { Route as MarketRouteImport } from './routes/market'
+import { Route as PreAlphaRouteImport } from './routes/pre-alpha'
+import { Route as RealmRouteImport } from './routes/realm'
+import { Route as SignInRouteImport } from './routes/sign-in'
+import { Route as SignUpRouteImport } from './routes/sign-up'
+import { Route as DocsIndexRouteImport } from './routes/docs/index'
+import { Route as DocsSlugRouteImport } from './routes/docs/$slug'
+import { Route as DocsAuthoringRouteImport } from './routes/docs/authoring'
+import { Route as DocsWordsRouteImport } from './routes/docs/words'
+import { Route as MediaIndexRouteImport } from './routes/media/index'
+import { Route as MediaArtRouteImport } from './routes/media/art'
+import { Route as MediaDocsRouteImport } from './routes/media/docs'
+import { Route as MediaMusicRouteImport } from './routes/media/music'
+import { Route as MediaNewsRouteImport } from './routes/media/news'
+import { Route as MediaPostRouteImport } from './routes/media/post'
+import { Route as MediaVideosRouteImport } from './routes/media/videos'
+import { Route as PArkRouteImport } from './routes/p/ark'
+import { Route as RealmCommunityRouteImport } from './routes/realm_.community'
+import { Route as DocsTermsIndexRouteImport } from './routes/docs/terms/index'
+import { Route as DocsTermsTermRouteImport } from './routes/docs/terms/$term'
+import { Route as MediaNewsArkNotes001RouteImport } from './routes/media.news_.ark-notes-001'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AccountRoute = AccountRouteImport.update({
+  id: '/account',
+  path: '/account',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArtistRoute = ArtistRouteImport.update({
+  id: '/artist',
+  path: '/artist',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DesignPreviewRoute = DesignPreviewRouteImport.update({
+  id: '/design-preview',
+  path: '/design-preview',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForgeRoute = ForgeRouteImport.update({
+  id: '/forge',
+  path: '/forge',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MarketRoute = MarketRouteImport.update({
+  id: '/market',
+  path: '/market',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreAlphaRoute = PreAlphaRouteImport.update({
+  id: '/pre-alpha',
+  path: '/pre-alpha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RealmRoute = RealmRouteImport.update({
+  id: '/realm',
+  path: '/realm',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SignInRoute = SignInRouteImport.update({
+  id: '/sign-in',
+  path: '/sign-in',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SignUpRoute = SignUpRouteImport.update({
+  id: '/sign-up',
+  path: '/sign-up',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsIndexRoute = DocsIndexRouteImport.update({
+  id: '/docs/',
+  path: '/docs/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsSlugRoute = DocsSlugRouteImport.update({
+  id: '/docs/$slug',
+  path: '/docs/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsAuthoringRoute = DocsAuthoringRouteImport.update({
+  id: '/docs/authoring',
+  path: '/docs/authoring',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsWordsRoute = DocsWordsRouteImport.update({
+  id: '/docs/words',
+  path: '/docs/words',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaIndexRoute = MediaIndexRouteImport.update({
+  id: '/media/',
+  path: '/media/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaArtRoute = MediaArtRouteImport.update({
+  id: '/media/art',
+  path: '/media/art',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaDocsRoute = MediaDocsRouteImport.update({
+  id: '/media/docs',
+  path: '/media/docs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaMusicRoute = MediaMusicRouteImport.update({
+  id: '/media/music',
+  path: '/media/music',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaNewsRoute = MediaNewsRouteImport.update({
+  id: '/media/news',
+  path: '/media/news',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaPostRoute = MediaPostRouteImport.update({
+  id: '/media/post',
+  path: '/media/post',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaVideosRoute = MediaVideosRouteImport.update({
+  id: '/media/videos',
+  path: '/media/videos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PArkRoute = PArkRouteImport.update({
+  id: '/p/ark',
+  path: '/p/ark',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RealmCommunityRoute = RealmCommunityRouteImport.update({
+  id: '/realm_/community',
+  path: '/realm/community',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsTermsIndexRoute = DocsTermsIndexRouteImport.update({
+  id: '/docs/terms/',
+  path: '/docs/terms/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsTermsTermRoute = DocsTermsTermRouteImport.update({
+  id: '/docs/terms/$term',
+  path: '/docs/terms/$term',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaNewsArkNotes001Route = MediaNewsArkNotes001RouteImport.update({
+  id: '/media/news_/ark-notes-001',
+  path: '/media/news/ark-notes-001',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/account': typeof AccountRoute
+  '/artist': typeof ArtistRoute
+  '/design-preview': typeof DesignPreviewRoute
+  '/forge': typeof ForgeRoute
+  '/market': typeof MarketRoute
+  '/pre-alpha': typeof PreAlphaRoute
+  '/realm': typeof RealmRoute
+  '/sign-in': typeof SignInRoute
+  '/sign-up': typeof SignUpRoute
+  '/docs/$slug': typeof DocsSlugRoute
+  '/docs/authoring': typeof DocsAuthoringRoute
+  '/docs/words': typeof DocsWordsRoute
+  '/media/art': typeof MediaArtRoute
+  '/media/docs': typeof MediaDocsRoute
+  '/media/music': typeof MediaMusicRoute
+  '/media/news': typeof MediaNewsRoute
+  '/media/post': typeof MediaPostRoute
+  '/media/videos': typeof MediaVideosRoute
+  '/p/ark': typeof PArkRoute
+  '/realm/community': typeof RealmCommunityRoute
+  '/docs/': typeof DocsIndexRoute
+  '/media/': typeof MediaIndexRoute
+  '/docs/terms/$term': typeof DocsTermsTermRoute
+  '/media/news/ark-notes-001': typeof MediaNewsArkNotes001Route
+  '/docs/terms/': typeof DocsTermsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/account': typeof AccountRoute
+  '/artist': typeof ArtistRoute
+  '/design-preview': typeof DesignPreviewRoute
+  '/forge': typeof ForgeRoute
+  '/market': typeof MarketRoute
+  '/pre-alpha': typeof PreAlphaRoute
+  '/realm': typeof RealmRoute
+  '/sign-in': typeof SignInRoute
+  '/sign-up': typeof SignUpRoute
+  '/docs/$slug': typeof DocsSlugRoute
+  '/docs/authoring': typeof DocsAuthoringRoute
+  '/docs/words': typeof DocsWordsRoute
+  '/media/art': typeof MediaArtRoute
+  '/media/docs': typeof MediaDocsRoute
+  '/media/music': typeof MediaMusicRoute
+  '/media/news': typeof MediaNewsRoute
+  '/media/post': typeof MediaPostRoute
+  '/media/videos': typeof MediaVideosRoute
+  '/p/ark': typeof PArkRoute
+  '/realm/community': typeof RealmCommunityRoute
+  '/docs': typeof DocsIndexRoute
+  '/media': typeof MediaIndexRoute
+  '/docs/terms/$term': typeof DocsTermsTermRoute
+  '/media/news/ark-notes-001': typeof MediaNewsArkNotes001Route
+  '/docs/terms': typeof DocsTermsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/account': typeof AccountRoute
+  '/artist': typeof ArtistRoute
+  '/design-preview': typeof DesignPreviewRoute
+  '/forge': typeof ForgeRoute
+  '/market': typeof MarketRoute
+  '/pre-alpha': typeof PreAlphaRoute
+  '/realm': typeof RealmRoute
+  '/sign-in': typeof SignInRoute
+  '/sign-up': typeof SignUpRoute
+  '/docs/$slug': typeof DocsSlugRoute
+  '/docs/authoring': typeof DocsAuthoringRoute
+  '/docs/words': typeof DocsWordsRoute
+  '/media/art': typeof MediaArtRoute
+  '/media/docs': typeof MediaDocsRoute
+  '/media/music': typeof MediaMusicRoute
+  '/media/news': typeof MediaNewsRoute
+  '/media/post': typeof MediaPostRoute
+  '/media/videos': typeof MediaVideosRoute
+  '/p/ark': typeof PArkRoute
+  '/realm_/community': typeof RealmCommunityRoute
+  '/docs/': typeof DocsIndexRoute
+  '/media/': typeof MediaIndexRoute
+  '/docs/terms/$term': typeof DocsTermsTermRoute
+  '/media/news_/ark-notes-001': typeof MediaNewsArkNotes001Route
+  '/docs/terms/': typeof DocsTermsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/account'
+    | '/artist'
+    | '/design-preview'
+    | '/forge'
+    | '/market'
+    | '/pre-alpha'
+    | '/realm'
+    | '/sign-in'
+    | '/sign-up'
+    | '/docs/$slug'
+    | '/docs/authoring'
+    | '/docs/words'
+    | '/media/art'
+    | '/media/docs'
+    | '/media/music'
+    | '/media/news'
+    | '/media/post'
+    | '/media/videos'
+    | '/p/ark'
+    | '/realm/community'
+    | '/docs/'
+    | '/media/'
+    | '/docs/terms/$term'
+    | '/media/news/ark-notes-001'
+    | '/docs/terms/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/account'
+    | '/artist'
+    | '/design-preview'
+    | '/forge'
+    | '/market'
+    | '/pre-alpha'
+    | '/realm'
+    | '/sign-in'
+    | '/sign-up'
+    | '/docs/$slug'
+    | '/docs/authoring'
+    | '/docs/words'
+    | '/media/art'
+    | '/media/docs'
+    | '/media/music'
+    | '/media/news'
+    | '/media/post'
+    | '/media/videos'
+    | '/p/ark'
+    | '/realm/community'
+    | '/docs'
+    | '/media'
+    | '/docs/terms/$term'
+    | '/media/news/ark-notes-001'
+    | '/docs/terms'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/account'
+    | '/artist'
+    | '/design-preview'
+    | '/forge'
+    | '/market'
+    | '/pre-alpha'
+    | '/realm'
+    | '/sign-in'
+    | '/sign-up'
+    | '/docs/$slug'
+    | '/docs/authoring'
+    | '/docs/words'
+    | '/media/art'
+    | '/media/docs'
+    | '/media/music'
+    | '/media/news'
+    | '/media/post'
+    | '/media/videos'
+    | '/p/ark'
+    | '/realm_/community'
+    | '/docs/'
+    | '/media/'
+    | '/docs/terms/$term'
+    | '/media/news_/ark-notes-001'
+    | '/docs/terms/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AccountRoute: typeof AccountRoute
+  ArtistRoute: typeof ArtistRoute
+  DesignPreviewRoute: typeof DesignPreviewRoute
+  ForgeRoute: typeof ForgeRoute
+  MarketRoute: typeof MarketRoute
+  PreAlphaRoute: typeof PreAlphaRoute
+  RealmRoute: typeof RealmRoute
+  SignInRoute: typeof SignInRoute
+  SignUpRoute: typeof SignUpRoute
+  DocsSlugRoute: typeof DocsSlugRoute
+  DocsAuthoringRoute: typeof DocsAuthoringRoute
+  DocsWordsRoute: typeof DocsWordsRoute
+  MediaArtRoute: typeof MediaArtRoute
+  MediaDocsRoute: typeof MediaDocsRoute
+  MediaMusicRoute: typeof MediaMusicRoute
+  MediaNewsRoute: typeof MediaNewsRoute
+  MediaPostRoute: typeof MediaPostRoute
+  MediaVideosRoute: typeof MediaVideosRoute
+  PArkRoute: typeof PArkRoute
+  RealmCommunityRoute: typeof RealmCommunityRoute
+  DocsIndexRoute: typeof DocsIndexRoute
+  MediaIndexRoute: typeof MediaIndexRoute
+  DocsTermsTermRoute: typeof DocsTermsTermRoute
+  MediaNewsArkNotes001Route: typeof MediaNewsArkNotes001Route
+  DocsTermsIndexRoute: typeof DocsTermsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +390,219 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/account': {
+      id: '/account'
+      path: '/account'
+      fullPath: '/account'
+      preLoaderRoute: typeof AccountRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/artist': {
+      id: '/artist'
+      path: '/artist'
+      fullPath: '/artist'
+      preLoaderRoute: typeof ArtistRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/design-preview': {
+      id: '/design-preview'
+      path: '/design-preview'
+      fullPath: '/design-preview'
+      preLoaderRoute: typeof DesignPreviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/forge': {
+      id: '/forge'
+      path: '/forge'
+      fullPath: '/forge'
+      preLoaderRoute: typeof ForgeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/market': {
+      id: '/market'
+      path: '/market'
+      fullPath: '/market'
+      preLoaderRoute: typeof MarketRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pre-alpha': {
+      id: '/pre-alpha'
+      path: '/pre-alpha'
+      fullPath: '/pre-alpha'
+      preLoaderRoute: typeof PreAlphaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/realm': {
+      id: '/realm'
+      path: '/realm'
+      fullPath: '/realm'
+      preLoaderRoute: typeof RealmRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sign-in': {
+      id: '/sign-in'
+      path: '/sign-in'
+      fullPath: '/sign-in'
+      preLoaderRoute: typeof SignInRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sign-up': {
+      id: '/sign-up'
+      path: '/sign-up'
+      fullPath: '/sign-up'
+      preLoaderRoute: typeof SignUpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/': {
+      id: '/docs/'
+      path: '/docs'
+      fullPath: '/docs/'
+      preLoaderRoute: typeof DocsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/$slug': {
+      id: '/docs/$slug'
+      path: '/docs/$slug'
+      fullPath: '/docs/$slug'
+      preLoaderRoute: typeof DocsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/authoring': {
+      id: '/docs/authoring'
+      path: '/docs/authoring'
+      fullPath: '/docs/authoring'
+      preLoaderRoute: typeof DocsAuthoringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/words': {
+      id: '/docs/words'
+      path: '/docs/words'
+      fullPath: '/docs/words'
+      preLoaderRoute: typeof DocsWordsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/': {
+      id: '/media/'
+      path: '/media'
+      fullPath: '/media/'
+      preLoaderRoute: typeof MediaIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/art': {
+      id: '/media/art'
+      path: '/media/art'
+      fullPath: '/media/art'
+      preLoaderRoute: typeof MediaArtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/docs': {
+      id: '/media/docs'
+      path: '/media/docs'
+      fullPath: '/media/docs'
+      preLoaderRoute: typeof MediaDocsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/music': {
+      id: '/media/music'
+      path: '/media/music'
+      fullPath: '/media/music'
+      preLoaderRoute: typeof MediaMusicRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/news': {
+      id: '/media/news'
+      path: '/media/news'
+      fullPath: '/media/news'
+      preLoaderRoute: typeof MediaNewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/post': {
+      id: '/media/post'
+      path: '/media/post'
+      fullPath: '/media/post'
+      preLoaderRoute: typeof MediaPostRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/videos': {
+      id: '/media/videos'
+      path: '/media/videos'
+      fullPath: '/media/videos'
+      preLoaderRoute: typeof MediaVideosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/p/ark': {
+      id: '/p/ark'
+      path: '/p/ark'
+      fullPath: '/p/ark'
+      preLoaderRoute: typeof PArkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/realm_/community': {
+      id: '/realm_/community'
+      path: '/realm/community'
+      fullPath: '/realm/community'
+      preLoaderRoute: typeof RealmCommunityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/terms/': {
+      id: '/docs/terms/'
+      path: '/docs/terms'
+      fullPath: '/docs/terms/'
+      preLoaderRoute: typeof DocsTermsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/terms/$term': {
+      id: '/docs/terms/$term'
+      path: '/docs/terms/$term'
+      fullPath: '/docs/terms/$term'
+      preLoaderRoute: typeof DocsTermsTermRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/news_/ark-notes-001': {
+      id: '/media/news_/ark-notes-001'
+      path: '/media/news/ark-notes-001'
+      fullPath: '/media/news/ark-notes-001'
+      preLoaderRoute: typeof MediaNewsArkNotes001RouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AccountRoute: AccountRoute,
+  ArtistRoute: ArtistRoute,
+  DesignPreviewRoute: DesignPreviewRoute,
+  ForgeRoute: ForgeRoute,
+  MarketRoute: MarketRoute,
+  PreAlphaRoute: PreAlphaRoute,
+  RealmRoute: RealmRoute,
+  SignInRoute: SignInRoute,
+  SignUpRoute: SignUpRoute,
+  DocsSlugRoute: DocsSlugRoute,
+  DocsAuthoringRoute: DocsAuthoringRoute,
+  DocsWordsRoute: DocsWordsRoute,
+  MediaArtRoute: MediaArtRoute,
+  MediaDocsRoute: MediaDocsRoute,
+  MediaMusicRoute: MediaMusicRoute,
+  MediaNewsRoute: MediaNewsRoute,
+  MediaPostRoute: MediaPostRoute,
+  MediaVideosRoute: MediaVideosRoute,
+  PArkRoute: PArkRoute,
+  RealmCommunityRoute: RealmCommunityRoute,
+  DocsIndexRoute: DocsIndexRoute,
+  MediaIndexRoute: MediaIndexRoute,
+  DocsTermsTermRoute: DocsTermsTermRoute,
+  MediaNewsArkNotes001Route: MediaNewsArkNotes001Route,
+  DocsTermsIndexRoute: DocsTermsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
