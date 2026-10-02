@@ -5,7 +5,7 @@
 | Work | Present evidence | Next step |
 | --- | --- | --- |
 | Source copy | 167 master records; selected runtime excerpts resolve by ID; 52 vocabulary entries with related terms | Jah reviews wording, blanks, sensitive variants and placement approvals |
-| Public app | Portable static route and component implementation | Complete recovered build, type, static and live test-host checks |
+| Public app | Portable static route and component implementation | All checks passed; review the live testing copy and complete signed-in acceptance |
 | Member data | One real Clerk account verified profile/draft reads; local SQL ownership checks pass | Real profile/draft save and reload, then two-account live isolation |
 | Forge items | New private/shared project, document, task, request, offering and swap UI with revision checks | 006 is installed in development; test two live editors |
 | Marketplace | Own drafts and entitlement-gated publication, public artist attribution | Confirm Contributor price and activate trusted billing sync; seller checkout remains separate |
