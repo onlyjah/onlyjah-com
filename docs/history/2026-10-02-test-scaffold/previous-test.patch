@@ -1,0 +1,893 @@
+diff --git a/package-lock.json b/package-lock.json
+index cd686f8..dcb43f6 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -721,9 +721,6 @@
+       "cpu": [
+         "arm64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -740,9 +737,6 @@
+       "cpu": [
+         "arm64"
+       ],
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -759,9 +753,6 @@
+       "cpu": [
+         "ppc64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -778,9 +769,6 @@
+       "cpu": [
+         "s390x"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -797,9 +785,6 @@
+       "cpu": [
+         "x64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -816,9 +801,6 @@
+       "cpu": [
+         "x64"
+       ],
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -3157,9 +3139,6 @@
+       "cpu": [
+         "arm64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MPL-2.0",
+       "optional": true,
+       "os": [
+@@ -3180,9 +3159,6 @@
+       "cpu": [
+         "arm64"
+       ],
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MPL-2.0",
+       "optional": true,
+       "os": [
+@@ -3203,9 +3179,6 @@
+       "cpu": [
+         "x64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MPL-2.0",
+       "optional": true,
+       "os": [
+@@ -3226,9 +3199,6 @@
+       "cpu": [
+         "x64"
+       ],
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MPL-2.0",
+       "optional": true,
+       "os": [
+diff --git a/src/routeTree.gen.ts b/src/routeTree.gen.ts
+index dceedff..23403e0 100644
+--- a/src/routeTree.gen.ts
++++ b/src/routeTree.gen.ts
+@@ -10,33 +10,193 @@
+ 
+ import { Route as rootRouteImport } from './routes/__root'
+ import { Route as IndexRouteImport } from './routes/index'
++import { Route as AboutRouteImport } from './routes/about'
++import { Route as ContactRouteImport } from './routes/contact'
++import { Route as ExploreRouteImport } from './routes/explore'
++import { Route as ForgeRouteImport } from './routes/forge'
++import { Route as GuildRouteImport } from './routes/guild'
++import { Route as JobsRouteImport } from './routes/jobs'
++import { Route as LoginRouteImport } from './routes/login'
++import { Route as PolicyRouteImport } from './routes/policy'
++import { Route as RealmRouteImport } from './routes/realm'
++import { Route as ShopRouteImport } from './routes/shop'
++import { Route as SignupRouteImport } from './routes/signup'
++import { Route as BlocksIndexRouteImport } from './routes/blocks/index'
+ 
+ const IndexRoute = IndexRouteImport.update({
+   id: '/',
+   path: '/',
+   getParentRoute: () => rootRouteImport,
+ } as any)
++const AboutRoute = AboutRouteImport.update({
++  id: '/about',
++  path: '/about',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const ContactRoute = ContactRouteImport.update({
++  id: '/contact',
++  path: '/contact',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const ExploreRoute = ExploreRouteImport.update({
++  id: '/explore',
++  path: '/explore',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const ForgeRoute = ForgeRouteImport.update({
++  id: '/forge',
++  path: '/forge',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const GuildRoute = GuildRouteImport.update({
++  id: '/guild',
++  path: '/guild',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const JobsRoute = JobsRouteImport.update({
++  id: '/jobs',
++  path: '/jobs',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const LoginRoute = LoginRouteImport.update({
++  id: '/login',
++  path: '/login',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const PolicyRoute = PolicyRouteImport.update({
++  id: '/policy',
++  path: '/policy',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const RealmRoute = RealmRouteImport.update({
++  id: '/realm',
++  path: '/realm',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const ShopRoute = ShopRouteImport.update({
++  id: '/shop',
++  path: '/shop',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const SignupRoute = SignupRouteImport.update({
++  id: '/signup',
++  path: '/signup',
++  getParentRoute: () => rootRouteImport,
++} as any)
++const BlocksIndexRoute = BlocksIndexRouteImport.update({
++  id: '/blocks/',
++  path: '/blocks/',
++  getParentRoute: () => rootRouteImport,
++} as any)
+ 
+ export interface FileRoutesByFullPath {
+   '/': typeof IndexRoute
++  '/about': typeof AboutRoute
++  '/contact': typeof ContactRoute
++  '/explore': typeof ExploreRoute
++  '/forge': typeof ForgeRoute
++  '/guild': typeof GuildRoute
++  '/jobs': typeof JobsRoute
++  '/login': typeof LoginRoute
++  '/policy': typeof PolicyRoute
++  '/realm': typeof RealmRoute
++  '/shop': typeof ShopRoute
++  '/signup': typeof SignupRoute
++  '/blocks/': typeof BlocksIndexRoute
+ }
+ export interface FileRoutesByTo {
+   '/': typeof IndexRoute
++  '/about': typeof AboutRoute
++  '/contact': typeof ContactRoute
++  '/explore': typeof ExploreRoute
++  '/forge': typeof ForgeRoute
++  '/guild': typeof GuildRoute
++  '/jobs': typeof JobsRoute
++  '/login': typeof LoginRoute
++  '/policy': typeof PolicyRoute
++  '/realm': typeof RealmRoute
++  '/shop': typeof ShopRoute
++  '/signup': typeof SignupRoute
++  '/blocks': typeof BlocksIndexRoute
+ }
+ export interface FileRoutesById {
+   __root__: typeof rootRouteImport
+   '/': typeof IndexRoute
++  '/about': typeof AboutRoute
++  '/contact': typeof ContactRoute
++  '/explore': typeof ExploreRoute
++  '/forge': typeof ForgeRoute
++  '/guild': typeof GuildRoute
++  '/jobs': typeof JobsRoute
++  '/login': typeof LoginRoute
++  '/policy': typeof PolicyRoute
++  '/realm': typeof RealmRoute
++  '/shop': typeof ShopRoute
++  '/signup': typeof SignupRoute
++  '/blocks/': typeof BlocksIndexRoute
+ }
+ export interface FileRouteTypes {
+   fileRoutesByFullPath: FileRoutesByFullPath
+-  fullPaths: '/'
++  fullPaths:
++    | '/'
++    | '/about'
++    | '/contact'
++    | '/explore'
++    | '/forge'
++    | '/guild'
++    | '/jobs'
++    | '/login'
++    | '/policy'
++    | '/realm'
++    | '/shop'
++    | '/signup'
++    | '/blocks/'
+   fileRoutesByTo: FileRoutesByTo
+-  to: '/'
+-  id: '__root__' | '/'
++  to:
++    | '/'
++    | '/about'
++    | '/contact'
++    | '/explore'
++    | '/forge'
++    | '/guild'
++    | '/jobs'
++    | '/login'
++    | '/policy'
++    | '/realm'
++    | '/shop'
++    | '/signup'
++    | '/blocks'
++  id:
++    | '__root__'
++    | '/'
++    | '/about'
++    | '/contact'
++    | '/explore'
++    | '/forge'
++    | '/guild'
++    | '/jobs'
++    | '/login'
++    | '/policy'
++    | '/realm'
++    | '/shop'
++    | '/signup'
++    | '/blocks/'
+   fileRoutesById: FileRoutesById
+ }
+ export interface RootRouteChildren {
+   IndexRoute: typeof IndexRoute
++  AboutRoute: typeof AboutRoute
++  ContactRoute: typeof ContactRoute
++  ExploreRoute: typeof ExploreRoute
++  ForgeRoute: typeof ForgeRoute
++  GuildRoute: typeof GuildRoute
++  JobsRoute: typeof JobsRoute
++  LoginRoute: typeof LoginRoute
++  PolicyRoute: typeof PolicyRoute
++  RealmRoute: typeof RealmRoute
++  ShopRoute: typeof ShopRoute
++  SignupRoute: typeof SignupRoute
++  BlocksIndexRoute: typeof BlocksIndexRoute
+ }
+ 
+ declare module '@tanstack/react-router' {
+@@ -48,11 +208,107 @@ declare module '@tanstack/react-router' {
+       preLoaderRoute: typeof IndexRouteImport
+       parentRoute: typeof rootRouteImport
+     }
++    '/about': {
++      id: '/about'
++      path: '/about'
++      fullPath: '/about'
++      preLoaderRoute: typeof AboutRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/contact': {
++      id: '/contact'
++      path: '/contact'
++      fullPath: '/contact'
++      preLoaderRoute: typeof ContactRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/explore': {
++      id: '/explore'
++      path: '/explore'
++      fullPath: '/explore'
++      preLoaderRoute: typeof ExploreRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/forge': {
++      id: '/forge'
++      path: '/forge'
++      fullPath: '/forge'
++      preLoaderRoute: typeof ForgeRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/guild': {
++      id: '/guild'
++      path: '/guild'
++      fullPath: '/guild'
++      preLoaderRoute: typeof GuildRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/jobs': {
++      id: '/jobs'
++      path: '/jobs'
++      fullPath: '/jobs'
++      preLoaderRoute: typeof JobsRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/login': {
++      id: '/login'
++      path: '/login'
++      fullPath: '/login'
++      preLoaderRoute: typeof LoginRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/policy': {
++      id: '/policy'
++      path: '/policy'
++      fullPath: '/policy'
++      preLoaderRoute: typeof PolicyRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/realm': {
++      id: '/realm'
++      path: '/realm'
++      fullPath: '/realm'
++      preLoaderRoute: typeof RealmRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/shop': {
++      id: '/shop'
++      path: '/shop'
++      fullPath: '/shop'
++      preLoaderRoute: typeof ShopRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/signup': {
++      id: '/signup'
++      path: '/signup'
++      fullPath: '/signup'
++      preLoaderRoute: typeof SignupRouteImport
++      parentRoute: typeof rootRouteImport
++    }
++    '/blocks/': {
++      id: '/blocks/'
++      path: '/blocks'
++      fullPath: '/blocks/'
++      preLoaderRoute: typeof BlocksIndexRouteImport
++      parentRoute: typeof rootRouteImport
++    }
+   }
+ }
+ 
+ const rootRouteChildren: RootRouteChildren = {
+   IndexRoute: IndexRoute,
++  AboutRoute: AboutRoute,
++  ContactRoute: ContactRoute,
++  ExploreRoute: ExploreRoute,
++  ForgeRoute: ForgeRoute,
++  GuildRoute: GuildRoute,
++  JobsRoute: JobsRoute,
++  LoginRoute: LoginRoute,
++  PolicyRoute: PolicyRoute,
++  RealmRoute: RealmRoute,
++  ShopRoute: ShopRoute,
++  SignupRoute: SignupRoute,
++  BlocksIndexRoute: BlocksIndexRoute,
+ }
+ export const routeTree = rootRouteImport
+   ._addFileChildren(rootRouteChildren)
+diff --git a/src/router.tsx b/src/router.tsx
+index d77f3e8..a2a5363 100644
+--- a/src/router.tsx
++++ b/src/router.tsx
+@@ -6,6 +6,30 @@ export function getRouter() {
+   const router = createRouter({
+     routeTree,
+     scrollRestoration: true,
++    defaultPreload: 'intent',
++    defaultPreloadDelay: 100,
++    defaultPreloadStaleTime: 29_000, /*30s -- default*/
++
++    /* 
++     * 
++     * To let an external cache make the freshness decision, 
++     * set routerOptions.defaultPreloadStaleTime 
++     * or routeOptions.preloadStaleTime to 0. 
++     * 
++     * Settled preload data then becomes immediately stale in 
++     * the Router, while retention still follows preloadGcTime. 
++     * 
++     * Overlapping preload or navigation 
++     * consumers can still share in-flight loader work, 
++     * and shouldReload can still suppress a loader call.
++     * 
++     * This would then allow you, for instance, to use 
++     * an option like React Query's staleTime to 
++     * control the freshness of your preloads.
++    */
++
++
++
+   })
+ 
+   return router
+diff --git a/src/routes/__root.tsx b/src/routes/__root.tsx
+index 73a15da..b2db640 100644
+--- a/src/routes/__root.tsx
++++ b/src/routes/__root.tsx
+@@ -5,21 +5,16 @@ import {
+   createRootRoute,
+   HeadContent,
+   Scripts,
++  notFound,
+ } from '@tanstack/react-router'
+ 
+ export const Route = createRootRoute({
+   head: () => ({
+     meta: [
+-      {
+-        charSet: 'utf-8',
+-      },
+-      {
+-        name: 'viewport',
+-        content: 'width=device-width, initial-scale=1',
+-      },
+-      {
+-        title: 'OnlyJah',
+-      },
++      { charSet: 'utf-8' },
++      { name: 'viewport', 
++        content: 'width=device-width, initial-scale=1' },
++      { title: 'OnlyJah' },
+     ],
+   }),
+   component: RootComponent,
+@@ -40,7 +35,29 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
+         <HeadContent />
+       </head>
+       <body>
++        <nav>
++          <a href="/">OnlyJah.com</a>
++          <span />
++           ------------- 
++          <span />
++          <a href="/">Home</a> = 
++          <a href="/forge">Forge</a> = 
++          <a href="/explore">Explore</a>
++          <span />
++           ------------- 
++          <span />
++          <a href="/login">Log In</a>/
++          <a href="/signup">Sign Up</a>
++        </nav>
+         {children}
++        <footer>
++          <a href="/">OnlyJah.com</a>
++          <p>Copyright 2026 OnlyJah</p>
++          <ul>
++            <li><a href="/policy">Policy</a></li>
++            <li><a href="/contact">Contact</a></li>
++          </ul>
++        </footer>
+         <Scripts />
+       </body>
+     </html>
+diff --git a/src/routes/about.tsx b/src/routes/about.tsx
+new file mode 100644
+index 0000000..1e6c706
+--- /dev/null
++++ b/src/routes/about.tsx
+@@ -0,0 +1,9 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/about')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>Hello "/about"!</div>
++}
+diff --git a/src/routes/blocks/index.tsx b/src/routes/blocks/index.tsx
+new file mode 100644
+index 0000000..2bbd4f7
+--- /dev/null
++++ b/src/routes/blocks/index.tsx
+@@ -0,0 +1,31 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/blocks/')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>
++    <h1>Contact Today</h1>
++    <p>Reflections and Inquiries Welcome!</p>
++    <form action="contact" method="post">
++      <input type="email" name="email" id="email" placeholder='Email: ' />
++      <br />
++      <input type="url" name="website" id="website" placeholder='Your Website (optional):' />
++      <br />
++      <input type="text" name="message" id="message" placeholder='Message: ' />
++      <br />
++      Urgent: <input type="checkbox" name="urgent" id="isUrgent" />
++      Commission: <input type="checkbox" name="commission" id="isCommission" />
++      <br />
++      <input type="submit" value="Submit" />
++    </form>
++    <br />
++    <p>Alternitavely, send an email directly to: </p>
++    <a href="mailto:oj@onlyjah.com">oj@onlyjah.com</a>
++    <br />
++    <br />
++    <br />
++    <br />
++  </div>
++}
+diff --git a/src/routes/contact.tsx b/src/routes/contact.tsx
+new file mode 100644
+index 0000000..a55bb86
+--- /dev/null
++++ b/src/routes/contact.tsx
+@@ -0,0 +1,31 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/contact')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>
++    <h1>Contact Today</h1>
++    <p>Reflections and Inquiries Welcome!</p>
++    <form action="contact" method="post">
++      <input type="email" name="email" id="email" placeholder='Email: ' />
++      <br />
++      <input type="url" name="website" id="website" placeholder='Your Website (optional):' />
++      <br />
++      <input type="text" name="message" id="message" placeholder='Message: ' />
++      <br />
++      Urgent: <input type="checkbox" name="urgent" id="isUrgent" />
++      Commission: <input type="checkbox" name="commission" id="isCommission" />
++      <br />
++      <input type="submit" value="Submit" />
++    </form>
++    <br />
++    <p>Alternitavely, send an email directly to: </p>
++    <a href="mailto:oj@onlyjah.com">oj@onlyjah.com</a>
++    <br />
++    <br />
++    <br />
++    <br />
++  </div>
++}
+diff --git a/src/routes/explore.tsx b/src/routes/explore.tsx
+new file mode 100644
+index 0000000..50656e7
+--- /dev/null
++++ b/src/routes/explore.tsx
+@@ -0,0 +1,13 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/explore')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>
++    <h1>Explore!</h1>
++    <br />
++    <p>Imagine all the posts to come...</p>
++  </div>
++}
+diff --git a/src/routes/forge.tsx b/src/routes/forge.tsx
+new file mode 100644
+index 0000000..7bc0926
+--- /dev/null
++++ b/src/routes/forge.tsx
+@@ -0,0 +1,27 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/forge')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>
++    <h1>OnlyJah Forge!</h1>
++    <br />
++    <p>Source Forge, build cool stuff...</p>
++    <br />
++
++
++    {/* SECTION: TABS */}
++    <div> {/* CARD 1 */}
++      <a href="#labs">Labs</a>/
++      <a href="#prod">Prod</a>/
++      <a href="#heap">Heap</a>
++    </div>
++
++    <br />
++    <br />
++    <br />
++
++  </div>
++}
+diff --git a/src/routes/guild.tsx b/src/routes/guild.tsx
+new file mode 100644
+index 0000000..f4336fd
+--- /dev/null
++++ b/src/routes/guild.tsx
+@@ -0,0 +1,29 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/guild')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>
++    <h1>OnlyJah Guild!</h1>
++    <br />
++    <p>A guilded guild of golden goods :D</p>
++    <br />
++    <p>The Guild is all about collaboration, improvement, and access.</p>
++    <p>All members will be able to partake in community.</p>
++    <p>
++      Guild allows individuals to establish organizations or parties,
++      engage in marketplace activities such as production and commerce,
++      submit and/or fulfill official guild requests of varying categories,
++      and gain access to many exclusive perks through formal membership!
++    </p>
++
++    {/* SECTION: TABS */}
++    <div> {/* CARD 1 */}
++      <a href="/jobs">Work</a>/
++      <a href="/shop">Shop</a>/
++      <a href="/join">Join</a>
++    </div>
++  </div>
++}
+diff --git a/src/routes/index.tsx b/src/routes/index.tsx
+index 0473384..3b69fd6 100644
+--- a/src/routes/index.tsx
++++ b/src/routes/index.tsx
+@@ -6,7 +6,18 @@ export const Route = createFileRoute('/')({
+ 
+ function RouteComponent() {
+   return <div>
+-    <h1>Hello Jah!</h1>
+-    <a href="mailto:jahnoah@onlyjah.com">Email JahNoah for inquiries.</a>
++    {/* Page Name: HOME/ROOT/INDEX */}
++    <h1>OnlyJah.com</h1>
++    <p>Cloud Faring Vessel _ Universe in the Sky</p>
++    <img src="hero_home.wjpg" alt="Home Hero Image: Dragonfly" />
++    <br />
++
++    {/* SECTION: CARDS */}
++    <div> {/* CARD 1 */}
++      <a href="/forge">Forge</a>/
++      <a href="/guild">Guild</a>/
++      <a href="/realm">Realm</a>
+     </div>
++
++  </div>
+ }
+diff --git a/src/routes/jobs.tsx b/src/routes/jobs.tsx
+new file mode 100644
+index 0000000..fdd4c77
+--- /dev/null
++++ b/src/routes/jobs.tsx
+@@ -0,0 +1,9 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/jobs')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>Hello "/jobs"!</div>
++}
+diff --git a/src/routes/login.tsx b/src/routes/login.tsx
+new file mode 100644
+index 0000000..c30ce9e
+--- /dev/null
++++ b/src/routes/login.tsx
+@@ -0,0 +1,13 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/login')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>
++    <h1>Login</h1>
++    <br />
++    <p>Source Forge, build cool stuff...</p>
++  </div>
++}
+diff --git a/src/routes/policy.tsx b/src/routes/policy.tsx
+new file mode 100644
+index 0000000..6d334ba
+--- /dev/null
++++ b/src/routes/policy.tsx
+@@ -0,0 +1,18 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/policy')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>
++    <h1>OnlyJah Policy</h1>
++    <ul>
++      <li>No weird evil stuff to try and usurp others' sovereignty</li>
++      <li>Make cool stuff and share them with others to enjoy</li>
++      <li>Commit to quality so that others may rely on the stuff</li>
++      <li>Ensure sustainable flow and support others' goals well</li>
++    </ul>
++
++  </div>
++}
+diff --git a/src/routes/realm.tsx b/src/routes/realm.tsx
+new file mode 100644
+index 0000000..e9c6d91
+--- /dev/null
++++ b/src/routes/realm.tsx
+@@ -0,0 +1,13 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/realm')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>
++    <h1>OnlyJah Realm!</h1>
++    <br />
++    <p>Public and Private Ecosystems For You...</p>
++  </div>
++}
+diff --git a/src/routes/shop.tsx b/src/routes/shop.tsx
+new file mode 100644
+index 0000000..df69294
+--- /dev/null
++++ b/src/routes/shop.tsx
+@@ -0,0 +1,9 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/shop')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>Hello "/shop"!</div>
++}
+diff --git a/src/routes/signup.tsx b/src/routes/signup.tsx
+new file mode 100644
+index 0000000..466f1aa
+--- /dev/null
++++ b/src/routes/signup.tsx
+@@ -0,0 +1,11 @@
++import { createFileRoute } from '@tanstack/react-router'
++
++export const Route = createFileRoute('/signup')({
++  component: RouteComponent,
++})
++
++function RouteComponent() {
++  return <div>
++    <h1>Sign Up</h1>
++  </div>
++}
+diff --git a/src/schemas/members.tsx b/src/schemas/members.tsx
+new file mode 100644
+index 0000000..7746972
+--- /dev/null
++++ b/src/schemas/members.tsx
+@@ -0,0 +1,7 @@
++// organization.members returns an array of members
++
++// member schema
++
++type member {
++    
++}
+\ No newline at end of file
+diff --git a/src/schemas/orgs.tsx b/src/schemas/orgs.tsx
+new file mode 100644
+index 0000000..e69de29
+diff --git a/src/schemas/tennants.tsx b/src/schemas/tennants.tsx
+new file mode 100644
+index 0000000..e69de29
+diff --git a/src/schemas/users.tsx b/src/schemas/users.tsx
+new file mode 100644
+index 0000000..e69de29
+diff --git a/src/styles.css b/src/styles.css
+new file mode 100644
+index 0000000..e69de29
+diff --git a/src/types/request.ts b/src/types/request.ts
+new file mode 100644
+index 0000000..9474ef5
+--- /dev/null
++++ b/src/types/request.ts
+@@ -0,0 +1,18 @@
++// src/types/request.ts
++export interface Request {
++  id: number
++  title: string
++  overview: string
++  hero_path: string | null
++  backdrop_path: string | null
++  todo_date: string
++  bountyUSD: number
++  priority: 1 | 2 | 3 | 4 | 5
++}
++
++export interface TMDBResponse {
++  page: number
++  results: Request[]
++  total_pages: number
++  total_results: number
++}
+\ No newline at end of file
+diff --git a/vite.config.ts b/vite.config.ts
+index f19c0fb..c7a9eec 100644
+--- a/vite.config.ts
++++ b/vite.config.ts
+@@ -1,6 +1,6 @@
+ import type { UserConfig } from 'vite'
+-import { tanstackStart } from '@tanstack/react-start/plugin/vite'
+ import { nitro } from 'nitro/vite'
++import { tanstackStart } from '@tanstack/react-start/plugin/vite'
+ import react, { reactCompilerPreset } from '@vitejs/plugin-react'
+ 
+ import babel from '@rolldown/plugin-babel'
+@@ -12,9 +12,9 @@ export default {
+     tsconfigPaths: true,
+   },
+   plugins: [
++    nitro(),
+     tanstackStart(),
+     react(),
+-    nitro(),
+     babel({ presets: [reactCompilerPreset()] })
+   ],
+   base: '/', // default -> placing for explicity

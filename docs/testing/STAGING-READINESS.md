@@ -1,8 +1,8 @@
 # Testing release readiness
 
-The workstation recovery is complete. Original source hashes are preserved, the lost temporary edits were replayed into persistent storage, and the recovered changes are installed in the actual `onlyjah-rebuild` checkout. The testing release is still awaiting its final Git reconciliation and live deployment verification; do not infer deployment from local checks.
+The workstation recovery is complete. Original source hashes are preserved, the lost temporary edits were replayed into persistent storage, and the recovered changes are installed in the actual `onlyjah-rebuild` checkout. The existing test history has been reconciled without rewriting it. Live deployment verification is pending; do not infer it from local checks.
 
-Local validation passes: build, type checking, formatting, 37 automated tests, 85 prerendered pages, 66 assets, internal destinations, direct URLs, slash variants, 404s and HTTP method handling. The public manifest fallback is verified without the private master. Default publication builds reject pending author approvals. Scoped moderation is implemented in the community UI, with authority enforced by PostgreSQL.
+Local validation passes: build, type checking, formatting, 37 automated tests, 85 prerendered pages, 66 assets, internal destinations, direct URLs, slash variants, 404s and HTTP method handling and eight legacy URL redirects. The public manifest fallback is verified without the private master. Default publication builds reject pending author approvals. Scoped moderation is implemented in the community UI, with authority enforced by PostgreSQL.
 
 Database validation passed migrations 001-006 and ownership/expiry/collaboration/moderation fixtures in an isolated local database. Migration 006 passed preview catalog checks before installation on development. All ten development tables force RLS. Newly added entitlement, stewardship and Forge item tables are empty. No human received a new grant, no real post was published, and production was not migrated.
 

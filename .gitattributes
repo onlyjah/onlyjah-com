@@ -1,0 +1,2 @@
+# Preserve whitespace in archived original scaffold sources.
+docs/history/2026-10-02-test-scaffold/** whitespace=-trailing-space

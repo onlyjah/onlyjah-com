@@ -49,11 +49,11 @@ try {
     readFileSync('content/legacy-redirects.json', 'utf8'),
   )
   for (const [from, to] of Object.entries(redirects)) {
-    const response = await fetch(base + from + '?from=legacy', {
+    const response = await fetch(`${base}${from}?from=legacy`, {
       redirect: 'manual',
     })
     assert.equal(response.status, 308, from)
-    assert.equal(response.headers.get('location'), to + '?from=legacy', from)
+    assert.equal(response.headers.get('location'), `${to}?from=legacy`, from)
     assert.equal((await fetch(base + to)).status, 200, to)
   }
   const head = await fetch(`${base}/docs/vision`, { method: 'HEAD' })
