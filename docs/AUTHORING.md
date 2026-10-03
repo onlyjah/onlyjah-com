@@ -87,7 +87,7 @@ unset OJ_SESSION_JWT
 
 ## Organizations and Ketema
 
-Jah's direction is a $7k qualification for organization status, with business development, webmaster consultation, purpose alignment, system architecture and a private development suite. That qualification is not collected or verified by this prototype. Signup does not create an organization or sell access. OnlyJah publishing requires a separate authorship grant, not an email/name match or client metadata.
+Organization creation is restricted to verified designated stewards in the current testing policy. The older $7k qualification proposal is historical and superseded. Signup creates no organization or publishing privilege. OJ-Ark paid capacity is a separate proposed entitlement; it does not grant organization administration or authorship duties.
 
 Ketema is invitation only. Its membership, private room and perks are distinct from organization payment/status, administrator duties and publishing rights. [Community](/realm/community) offers an authenticated development message board with manual refresh; production moderation, reporting, retention and rate limiting remain trusted Realm-backend work. Do not treat this as a production-ready chat service.
 
@@ -116,3 +116,8 @@ This is a signed session claim, not user-editable metadata, a new JWT template, 
 After saving, use Forge's Copy short-lived API token button, which requests a fresh token rather than a cached one. On an older static build, wait at least a minute and reload first. Rerun the diagnostic: expect `databaseRoleClaim: authenticated`, a matching database subject, and `MEMBER_READ_ACCESS_VERIFIED`. Jah reported this successful result on 2 October 2026. Exit code 1 means verification failed, not that the diagnostic wrote anything. [Clerk token refresh](https://clerk.com/docs/guides/sessions/force-token-refresh).
 
 Sources: [Neon Data API access control and anonymous JWTs](https://neon.com/docs/data-api/access-control), [custom Clerk JWT verification](https://neon.com/docs/data-api/custom-authentication-providers), [Clerk session tokens](https://clerk.com/docs/guides/sessions/session-tokens), [YouTube embeds](https://developers.google.com/youtube/player_parameters), [SoundCloud widgets](https://developers.soundcloud.com/docs/api/html5-widget), [Spotify embeds](https://developer.spotify.com/documentation/embeds/tutorials/creating-an-embed).
+
+
+### Composition backups
+
+Forge can import Markdown or `.txt` blurbs, search the loaded post list by title/text/tags, and display writing statistics. Download full draft backup preserves title, body, collection, publication target, media URLs, gallery URLs and tags as versioned JSON. Restore loads a new unsaved draft; it does not overwrite an existing post or publish it. Save explicitly to persist it. The loaded list remains limited to 100 posts. Binary uploads and paid storage remain unimplemented.

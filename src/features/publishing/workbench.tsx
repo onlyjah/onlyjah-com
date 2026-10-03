@@ -10,7 +10,8 @@ import { Textarea } from '@/components/ui/textarea'
 import { MemberGate } from '@/features/auth/member-gate'
 import { AuthoringAccess } from './authoring-access'
 import { errorMessage } from './data-api'
-import { downloadPost } from './download'
+import { downloadDraftBackup, downloadPost } from './download'
+import { readDraftBackup } from './draft-backup'
 import { galleryUrl, mediaEmbed } from './embed'
 import { MediaAttachments } from './media-attachments'
 import {
@@ -55,6 +56,20 @@ function Editor() {
   const [notice, setNotice] = useState('')
   const [retry, setRetry] = useState(0)
   const [preview, setPreview] = useState(false)
+  const [search, setSearch] = useState('')
+  const visiblePosts = posts.filter((post) =>
+    search
+      .toLowerCase()
+      .trim()
+      .split(/\s+/)
+      .every((term) =>
+        [post.title, post.body, ...post.tags]
+          .join(' ')
+          .toLowerCase()
+          .includes(term),
+      ),
+  )
+  const words = input.body.trim().split(/\s+/).filter(Boolean).length
   // biome-ignore lint/correctness/useExhaustiveDependencies: retry intentionally repeats the access/storage request.
   useEffect(() => {
     if (!client || !userId) return
@@ -219,7 +234,17 @@ function Editor() {
                 No saved posts yet.
               </p>
             )}
-            {posts.map((post) => (
+            <Label htmlFor="draft-search">Search titles, text & tags</Label>
+            <Input
+              id="draft-search"
+              type="search"
+              value={search}
+              onChange={(event) => setSearch(event.target.value)}
+            />
+            <p role="status" className="text-sm text-muted-foreground">
+              {visiblePosts.length} of {posts.length} loaded posts
+            </p>
+            {visiblePosts.map((post) => (
               <Button
                 key={post.id}
                 variant={saved?.id === post.id ? 'secondary' : 'ghost'}
@@ -302,10 +327,10 @@ function Editor() {
                   onBodyChange={(value) => update('body', value)}
                   onImport={async (file) => {
                     if (
-                      !/\.(md|markdown)$/i.test(file.name) ||
+                      !/\.(md|markdown|txt)$/i.test(file.name) ||
                       file.size > 150000
                     ) {
-                      setError('Use a Markdown file under 150 KB.')
+                      setError('Use a Markdown or text file under 150 KB.')
                       return
                     }
                     if (
@@ -325,13 +350,59 @@ function Editor() {
                       if (!input.title)
                         update(
                           'title',
-                          file.name.replace(/\.(md|markdown)$/i, ''),
+                          file.name.replace(/\.(md|markdown|txt)$/i, ''),
                         )
                     } catch {
                       setError('The Markdown file could not be read.')
                     }
                   }}
                 />
+                <p className="text-sm text-muted-foreground">
+                  {words} words · {input.body.length.toLocaleString()}{' '}
+                  characters · about {Math.max(1, Math.ceil(words / 200))} min
+                  read
+                </p>
+                <div className="space-y-2">
+                  <Label htmlFor="draft-backup">
+                    Restore a Forge JSON backup as a new private draft
+                  </Label>
+                  <Input
+                    id="draft-backup"
+                    type="file"
+                    accept=".json,application/json"
+                    onChange={async (event) => {
+                      const file = event.target.files?.[0]
+                      event.target.value = ''
+                      if (!file) return
+                      if (file.size > 1000000) {
+                        setError('Use a Forge backup under 1 MB.')
+                        return
+                      }
+                      if (
+                        dirty &&
+                        !window.confirm(
+                          'Replace unsaved changes with this backup?',
+                        )
+                      )
+                        return
+                      try {
+                        const restored = readDraftBackup(await file.text())
+                        setSaved(undefined)
+                        setInput(restored)
+                        setEmbeds(restored.embed_urls.join('\n'))
+                        setGallery(restored.gallery_urls.join('\n'))
+                        setTags(restored.tags.join(', '))
+                        setDirty(true)
+                        setError('')
+                        setNotice(
+                          'Restored locally. Save to store a new private draft in your account.',
+                        )
+                      } catch (cause) {
+                        setError(errorMessage(cause))
+                      }
+                    }}
+                  />
+                </div>
                 <div className="space-y-2">
                   <Label htmlFor="post-embeds">
                     Music & video links · one per line
@@ -394,6 +465,23 @@ function Editor() {
                     onClick={() => downloadPost(input)}
                   >
                     Download Markdown
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() =>
+                      downloadDraftBackup({
+                        ...input,
+                        embed_urls: lines(embeds),
+                        gallery_urls: lines(gallery),
+                        tags: tags
+                          .split(',')
+                          .map((tag) => tag.trim())
+                          .filter(Boolean),
+                      })
+                    }
+                  >
+                    Download full draft backup
                   </Button>
                   {saved && (
                     <Button

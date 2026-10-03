@@ -48,11 +48,13 @@ export function MarkdownEditor({
       </div>
       {onImport && (
         <div className="space-y-2">
-          <Label htmlFor={`${id}-import`}>Import a Markdown file</Label>
+          <Label htmlFor={`${id}-import`}>
+            Import Markdown or a text blurb
+          </Label>
           <Input
             id={`${id}-import`}
             type="file"
-            accept=".md,.markdown,text/markdown,text/plain"
+            accept=".md,.markdown,.txt,text/markdown,text/plain"
             onChange={async (event) => {
               const file = event.target.files?.[0]
               if (file) await onImport(file)

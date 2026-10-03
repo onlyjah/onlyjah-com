@@ -15,3 +15,5 @@ The full editorial master, synced references and historical handoff material rem
 `manual/` supplies the public wiki's selected source passages. `content-review/` is the editorial workspace. `sources/` preserves originals. `history/`, `handoff/`, `backend/proposals/` and the original handoff pack preserve earlier states and are excluded from public page imports. Applied migrations are an ordered record, not alternatives to choose from. The local original handoff pack is also git-ignored and preserved in place.
 
 The older organization qualification proposal is superseded. Organization creation is reserved for verified adam and Jah Noah identities. No paid plan implies stewardship. Future Matrix, payout, fulfillment and meeting work remains distinct from the present development board and marketplace listings.
+
+- [Forge composition and OJ-Ark development](FORGE-DEVELOPMENT.md)
