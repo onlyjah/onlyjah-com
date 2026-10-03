@@ -1,7 +1,7 @@
 name: Testing checks
 on:
   push:
-    branches: ['test']
+    branches: ['test', 'dev/**', 'rebuild/**']
   pull_request:
   workflow_dispatch:
 permissions:

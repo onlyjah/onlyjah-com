@@ -1,0 +1,42 @@
+name: Publish approved static site
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: public-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile --ignore-scripts
+      - run: pnpm lint && pnpm check:boundaries && pnpm check:quotes
+      - run: pnpm build && pnpm typecheck && pnpm test && pnpm check:static && pnpm check:static:smoke
+        env:
+          VITE_RELEASE_STAGE: publication
+          VITE_CLERK_PUBLISHABLE_KEY: ${{ vars.VITE_CLERK_PUBLISHABLE_KEY }}
+          VITE_NEON_DATA_API_URL: ${{ vars.VITE_NEON_DATA_API_URL }}
+          VITE_NEON_PUBLIC_AUTH_URL: ${{ vars.VITE_NEON_PUBLIC_AUTH_URL }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .output/public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

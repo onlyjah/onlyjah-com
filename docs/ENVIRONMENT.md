@@ -1,15 +1,17 @@
-# Development configuration
+# Frontend configuration
 
-The active frontend settings are the Clerk test publishable key, Neon development Data API URL, Neon guest Auth URL and `VITE_RELEASE_STAGE=testing`. Values stay in ignored local files and Railway development variables. These are public build settings. Provider secret keys and database passwords never belong in `VITE_` variables or static assets.
+Use blank names from .env.example with ignored mode-specific files or build-provider settings. Public VITE variables enter the static client; credentials and database passwords must remain in a separate trusted backend. Vite loads .env.local in both modes.
 
-Railway's environment is literally named `develpment`; the deployed source branch is `test`. The local working branch is `rebuild/oj-web`. Testing and production have separate targets. Railway development builds with `pnpm build:testing` and serves static files with `pnpm start`; public settings are embedded at build time.
+| Public setting | Code purpose |
+| --- | --- |
+| VITE_CLERK_PUBLISHABLE_KEY | Browser identity provider |
+| VITE_CLERK_PRIMARY_URL | Optional satellite primary origin |
+| VITE_CLERK_SATELLITE_DOMAIN | Optional satellite hostname |
+| VITE_CLERK_ALLOWED_REDIRECT_ORIGINS | Exact permitted return origins |
+| VITE_NEON_DATA_API_URL | Public HTTPS endpoint ending in /rest/v1 |
+| VITE_NEON_PUBLIC_AUTH_URL | Anonymous public collection token endpoint |
+| VITE_RELEASE_STAGE | Testing review/noindex marker |
 
-Vite loads `.env.local` in both development and production mode. Use mode-specific ignored files or provider-injected overrides when separating environments. `.env.example` contains blank names only. Production is not authorized by this release.
+Public data transport requires verified member JWTs and database authorization. A URL or key does not prove permissions, persistence or SSO. COPY_STAGE selects copy approval rules at build time. Resend, payment credentials and storage signing are backend configuration.
 
-Neon project `lingering-pond-34649517`, database `neondb`: development is `br-red-smoke-b55ot7pn`; production is `br-crimson-dew-b5z6k4vc`. Migration 006 was validated on a preview child of development before application to development. All ten public tables enforce RLS and FORCE RLS. No real contributor or stewardship grant was assigned. The private development bucket remains separate from a working upload service.
-
-Clerk's matching development instance is verified by both its instance type and matching public/private JWKS keys. Personal sign-in no longer requires an organization. Billing remains unavailable until the matching accountless app is claimed. Restrict user-created organizations in the Dashboard and then enable only confirmed steward identities; suggested organization naming rules are unrelated to that permission. Do not treat a local duty table as enforcement in Clerk's own API.
-
-One real member's token/read access was confirmed before reboot. Save/reload, two-account browser isolation and collaborative editing still need live acceptance checks. See [testing readiness](testing/STAGING-READINESS.md), [authoring setup](AUTHORING.md) and the archived environment report for chronological evidence.
-
-Unused Convex and historical environment aliases remain local references, not active integrations. This agent is not synchronized with VS Code's process; both tools may read the same disk checkout. A configured service or named bucket does not establish a completed feature.
+The optional Node staging host uses runtime-only CF_ACCESS_TEAM_DOMAIN, CF_ACCESS_AUD, STAGING_ALLOWED_EMAILS and STAGING_ACCESS_REQUIRED. They have no VITE prefix. Hosted testing requires Access validation; health uses /healthz. Actual provider identifiers, deployment configuration and acceptance evidence belong in the private handoff, not this public guide. [Hosting contract](hosting/STATIC-HOSTING.md), [shared identity](templates/SHARED-IDENTITY-CATALOG.md).

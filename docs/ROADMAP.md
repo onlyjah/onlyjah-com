@@ -1,23 +1,19 @@
 # Current roadmap
 
-2 October 2026. Current direction supersedes historical alternatives.
+Engineering implementation status, 3 October 2026. Provider-specific acceptance evidence stays in the private handoff.
 
-| Work | Present evidence | Next step |
+| Feature | Code present | Remaining work |
 | --- | --- | --- |
-| Source copy | 167 master records; selected runtime excerpts resolve by ID; 52 vocabulary entries with related terms | Jah reviews wording, blanks, sensitive variants and placement approvals |
-| Public app | Portable static route and component implementation | All checks passed; review the live testing copy and complete signed-in acceptance |
-| Member data | One real Clerk account verified profile/draft reads; local SQL ownership checks pass | Real profile/draft save and reload, then two-account live isolation |
-| Forge items | New private/shared project, document, task, request, offering and swap UI with revision checks | 006 is installed in development; test two live editors |
-| Marketplace | Own drafts and entitlement-gated publication, public artist attribution | Confirm Contributor price and activate trusted billing sync; seller checkout remains separate |
-| Scoped stewardship | Fine-grained entitlement/duty schema and tested comment moderation policy | Confirm adam / Jah Noah subject IDs and provider creation restriction; the community removal control is present but no real moderation duty is granted |
-| Binary files | Private development Neon bucket created | Trusted upload/presign service, quotas, content type checks and read authorization |
-| Community | Existing development message board | Later Matrix rooms, federation rules, outbox notifications and meetings |
-| Payments / fulfillment | Source requirements and access boundary recorded | Confirm seller payment responsibility, countries and platform fee; implement verified payment events and idempotent fulfillment |
-| Partners | Keon site confirms “Keon & Associates” | Confirm kitchen partner name/domain; no invented verified partner relationships |
-| Ten foundational members | Signup and public profile UI exist | Select ten people, confirm contributor terms and duties, then complete two-account acceptance checks before sending invitations |
+| Static frontend | Native prerendering, meaningful route HTML, portable fallback redirects and release hashes | Browser/mobile acceptance and approved publication |
+| Shared UI | shadcn/Base UI, semantic Tailwind, hashed source export | Review each consuming app's design/content and peer versions |
+| Design selection | Four browser-local presets, independent light/dark preference, preserved token sources | Visual and keyboard acceptance |
+| Media | Credited photographs and optional reduced-motion-aware Lucide SVGs | Replace placeholders with reviewed human media |
+| Editorial workflow | Exact sourced excerpts, private master, stable public snapshots | Human wording/placement approval |
+| Forge | Private drafts/backups, source intake, shared documents and revision checks | Real multi-account persistence/conflict acceptance |
+| Catalog | Own drafts, seven product categories and entitlement-gated publication | Provider product/price mapping and seller payment contract |
+| Shared identity | Opt-in Clerk satellite host settings and URL-builder sync flow | Dashboard domains and live sign-in/sign-out acceptance |
+| Restricted staging | Tested origin Access JWT/allowlist guard | Actual provider configuration and allowed/denied origin acceptance |
+| Billing / files / email | Separate trusted backend boundary | Verified webhooks, fulfillment, authorized upload service and notifications |
+| Community | Member board and scoped moderation contracts | Later federation, Matrix rooms, notifications and meetings |
 
-OnlyJah is an incubating project within Ark. Jah identifies jahnoah.lol as a resident that will use Jah Noah's storage. Use Forge project links to describe this relationship; neither a domain label nor a Class E candidate status grants shared bucket credentials.
-
-Known public domain check: keonassociates.com returned the Keon & Associates title. ntrskitchen.com and tanikagreives.com did not resolve. No Claude conversation store was found at the standard local project/config locations; do not claim to have imported Claude history.
-
-Open inputs: Contributor price/interval; verified privileged account IDs; ownership claim of the matching Clerk application; seller refund/dispute responsibility, countries and fee; exact kitchen partner link; personal progression criteria; invitations list; missing concept definitions. Matrix is future work as Jah requested, not a launch prerequisite for the present test frontend.
+No catalog label implements paid billing or grants privileged rights. Signup is distinct from publishing, moderation, organization duties and paid features. Public deployments require approved content and matching provider configuration. A configured resource is not acceptance evidence.

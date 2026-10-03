@@ -1,4 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { ImageCard } from '@/components/blocks/image-card'
+import { photos } from '@/content/photos'
 import { products } from '@/content/products'
 import { EditorialPage } from '@/routes/-templates/editorial-page'
 
@@ -32,6 +34,11 @@ function Page() {
           description: 'Draft for review',
         },
       ]}
-    />
+    >
+      <ImageCard
+        {...photos.earthrise}
+        imageClassName="aspect-[2/1] object-contain bg-black"
+      />
+    </EditorialPage>
   )
 }

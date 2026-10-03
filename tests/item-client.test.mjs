@@ -77,3 +77,34 @@ test('unsafe links and invalid account IDs fail before contacting storage', asyn
     /verified account IDs/,
   )
 })
+
+test('market product categories are editable, while caller billing fields are excluded', async () => {
+  let calls = 0
+  const client = createItemClient(
+    {
+      url,
+      getToken: async () => 'session',
+      fetcher: async (_target, options) => {
+        calls++
+        const body = JSON.parse(options.body)
+        assert.equal(body.product_type, 'subscription')
+        assert.ok(!('stripe_price_id' in body))
+        assert.ok(!('paid' in body))
+        return Response.json([{ ...body, id, revision: 1 }])
+      },
+    },
+    'market',
+  )
+  await client.save({
+    ...input,
+    kind: 'offering',
+    product_type: 'subscription',
+    stripe_price_id: 'forged',
+    paid: true,
+  })
+  await assert.rejects(
+    client.save({ ...input, kind: 'offering', product_type: 'admin' }),
+    /product type/,
+  )
+  assert.equal(calls, 1)
+})

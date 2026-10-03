@@ -1,8 +1,29 @@
-import { SignIn, SignUp } from '@clerk/react'
+import { SignIn, SignUp, useClerk } from '@clerk/react'
 import { ClientOnly } from '@tanstack/react-router'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
+import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
-import { authConfigured } from './provider'
+import { authConfigured, hostSettings } from './provider'
+
+function SatelliteAuth({ mode }: { mode: 'sign-in' | 'sign-up' }) {
+  const clerk = useClerk()
+  if (!clerk.loaded) return <AuthLoading />
+  const options = {
+    signInForceRedirectUrl: `${window.location.origin}/account`,
+    signUpForceRedirectUrl: `${window.location.origin}/account`,
+  }
+  // Clerk's URL builder adds the satellite sync trigger; a plain primary URL does not.
+  const href =
+    mode === 'sign-in'
+      ? clerk.buildSignInUrl(options)
+      : clerk.buildSignUpUrl(options)
+  return (
+    <Button
+      nativeButton={false}
+      render={<a href={href}>{mode === 'sign-in' ? 'Sign in' : 'Join'}</a>}
+    />
+  )
+}
 
 export function AuthLoading() {
   return (
@@ -32,7 +53,9 @@ export function AuthForm({ mode }: { mode: 'sign-in' | 'sign-up' }) {
     )
   return (
     <ClientOnly fallback={<AuthLoading />}>
-      {mode === 'sign-up' ? (
+      {hostSettings.isSatellite ? (
+        <SatelliteAuth mode={mode} />
+      ) : mode === 'sign-up' ? (
         <SignUp
           routing="hash"
           signInUrl="/sign-in"
