@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { products } from '@/content/products'
+import { SourceArchive } from '@/features/archive/source-archive'
 import { Workbench } from '@/features/publishing/workbench'
 import { Workspace } from '@/features/workspace/workspace'
 import { EditorialPage } from '@/routes/-templates/editorial-page'
@@ -30,6 +31,7 @@ function Page() {
       ]}
     >
       <Workbench />
+      <SourceArchive />
       <Workspace scope="forge" />
     </EditorialPage>
   )
