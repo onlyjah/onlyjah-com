@@ -22,3 +22,7 @@ Testing can display pending excerpts for author review. `pnpm build` requires ap
 Jah authorized display cleanup: inline `---` and original em dash characters render as a hyphen; flowthrough is one word. Original source text stays unchanged. The Markdown text-node transform preserves code, link destinations and standalone horizontal rules. Mature excerpts start hidden behind an opt-in toggle, use masked display variants and stay out of default rotation. The toggle is presentation consent and is not a privacy boundary.
 
 Production remains blocked on author copy approval. A vocabulary term label does not prove a complete definition. Biography, project, item, CTA and article source templates are in the content-review placement and collection files.
+
+## Stable public snapshots
+
+Private-only requirement edits do not change the public excerpt manifest. Source spans and hashes are still verified locally on every compilation. The manifest master_sha256 records the master snapshot when its public fields last changed; it is not the current private archive checksum. Public wording, revisions, placements or approval changes produce a fresh snapshot. The current private master checksum stays in the private handoff.

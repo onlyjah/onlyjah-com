@@ -5,6 +5,10 @@ import { createReadStream } from 'node:fs'
 import { stat } from 'node:fs/promises'
 import { createServer } from 'node:http'
 import { extname, resolve, sep } from 'node:path'
+import {
+  createStagingAccess,
+  hostedTestingAccessRequired,
+} from './staging-access.mjs'
 
 const redirects = JSON.parse(
   readFileSync(
@@ -15,6 +19,13 @@ const redirects = JSON.parse(
 
 const root = resolve(process.env.STATIC_ROOT || '.output/public')
 const port = Number(process.env.PORT || 8080)
+const accessRequired = hostedTestingAccessRequired(process.env)
+const authorize = createStagingAccess({
+  required: accessRequired,
+  teamDomain: process.env.CF_ACCESS_TEAM_DOMAIN,
+  audience: process.env.CF_ACCESS_AUD,
+  allowedEmails: process.env.STAGING_ALLOWED_EMAILS,
+})
 const contentTypes = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
@@ -48,6 +59,24 @@ createServer(async (req, res) => {
     res.writeHead(400).end()
     return
   }
+  // Railway can check process health without retrieving any staging bytes.
+  if (pathname === '/healthz') {
+    res.writeHead(204, { 'cache-control': 'no-store' }).end()
+    return
+  }
+  if (accessRequired) {
+    res.setHeader('cache-control', 'private, no-store')
+    res.setHeader('x-robots-tag', 'noindex, nofollow')
+    const status = await authorize(req.headers)
+    if (status !== 200) {
+      res
+        .writeHead(status, { 'content-type': 'text/plain; charset=utf-8' })
+        .end(
+          req.method === 'HEAD' ? undefined : 'Staging access is restricted.',
+        )
+      return
+    }
+  }
   const legacy = redirects[pathname.replace(/\/$/, '')]
   if (legacy) {
     res
@@ -68,8 +97,9 @@ createServer(async (req, res) => {
       const type = contentTypes[extname(filename)] || 'application/octet-stream'
       res.writeHead(200, {
         'content-type': type,
-        'cache-control':
-          extname(filename) === '.html'
+        'cache-control': accessRequired
+          ? 'private, no-store'
+          : extname(filename) === '.html'
             ? 'public, max-age=60'
             : 'public, max-age=3600',
         'x-content-type-options': 'nosniff',

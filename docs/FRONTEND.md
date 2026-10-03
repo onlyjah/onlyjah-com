@@ -1,6 +1,6 @@
 # Frontend structure and theme
 
-Current implementation, 2 October 2026. Earlier UI and scripts are preserved in `handoff/redesign-baseline/2026-10-02-before-shadcn-redesign.tar.gz`.
+Current implementation, 3 October 2026. Earlier UI and scripts are preserved in `handoff/redesign-baseline/2026-10-02-before-shadcn-redesign.tar.gz`.
 
 | Location | Responsibility |
 | --- | --- |
@@ -20,7 +20,7 @@ Eight chapters share `/docs/$slug`. Unknown chapters throw the router’s not-fo
 
 ## tweakcn
 
-`src/theme.css` contains the replaceable `:root` and `.dark` token blocks. Paste the corresponding blocks from a tweakcn shadcn CSS export here. `src/styles.css` owns Tailwind/shadcn/Clerk imports and the `@theme inline` utility mappings; preserve that scaffold when changing the palette.
+`src/theme.css` contains the replaceable `:root` and `.dark` token blocks. Paste the corresponding blocks from a tweakcn shadcn CSS export here. `src/styles.css` owns Tailwind/shadcn imports; Clerk CSS stays in its app provider. It owns the `@theme inline` utility mappings; preserve that scaffold when changing the palette.
 
 Components use semantic utilities (`bg-card`, `text-primary`, `border-border`), not `oj-*` classes or hard-coded brand colors. The current provisional tokens preserve red, gold, green, and black. The app follows the device theme until the visitor chooses light or dark. A paste changes colors, fonts, and radius across the UI; Clerk uses the official shadcn theme and the same radius/font variables. Exported font names still need an appropriate installed/system font or a separately approved font asset.
 
@@ -53,10 +53,18 @@ pnpm check
 pnpm preview
 ```
 
-Use Node 22.12+; this change was checked under Node 24.19.0 and pnpm 12.5.1. No dependency install hook is required for the inspected stack. `pnpm preview` serves only built files at localhost:8080. `pnpm dev` uses the development URL printed by Vite (normally localhost:3000).
+Use Node 24 LTS and pnpm 12.5.1. Earlier verification used Node 24.19.0; the 3 October reconciliation ran on the available Node 26.10.0 runtime. CI targets Node 24. No dependency install hook is required for the inspected stack. `pnpm preview` serves only built files at localhost:8080. `pnpm dev` uses the development URL printed by Vite (normally localhost:3000).
 
 `pnpm check` builds before typechecking so Start regenerates route types when a new route is added. This prevents stale route declarations from rejecting a valid new URL during the first check.
 
-Nitro is retained as the installed Start build/prerender adapter and moved to development dependencies. It is not needed on the static host. `pnpm start` runs the small static file server used by Railway; it does not execute the application SSR server. Keep static checks: they verify actual rendered pages, links/assets, draft metadata, direct requests, and 404s rather than a shared empty shell.
+The Nitro beta dependency is removed. Native Start prerendering creates a temporary server compilation; the build finalizer removes it and writes a SHA-256 static-file manifest. `pnpm start` runs the small static file server used by Railway; it does not execute the application SSR server. Keep static checks: they verify actual rendered pages, links/assets, draft metadata, direct requests, and 404s rather than a shared empty shell.
 
 `pnpm-workspace.yaml` holds single-package install policy, not workspace packages. The unused core-js install hook is explicitly denied. Recent-release exceptions are restricted to the exact verified Clerk versions selected in this change.
+
+## Portable design selection · 3 October 2026
+
+Account exposes four site-wide design choices without requiring login. `components/providers/design-provider.tsx` applies semantic CSS variables, persists a browser preference, synchronizes tabs and restores the default Roots tokens. ThemeProvider continues owning light/dark/system behavior. `features/design/presets.ts` supplies the user-provided branding; generic controls take preset data as props/context. Initialization runs before CSS paint, and unavailable storage does not block selection. Preferences are per browser origin, not server account settings.
+
+The Claude kit is reference data. Its token bytes and hashes are preserved, with explicit engineering adaptations for readable muted text and light/dark counterparts. Mockup copy and placeholder SVG illustrations were not imported. Font families have system fallbacks; custom font files were not downloaded. See [design provenance](design/DESIGN-KIT.md).
+
+`AmbientIcon` wraps existing Lucide Orbit/Sprout/Sun glyphs with optional CSS motion. Reduced-motion preference disables animation. [UI export](templates/UI-PACKAGE.md) explains copying or referencing components, styles and optional branding without copying routes, providers, secrets or editorial archives.

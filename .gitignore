@@ -82,6 +82,7 @@ temp/
 # Vite
 .vite/
 .vit
+.tanstack/
 
 # Rollup
 .rollup.cache/

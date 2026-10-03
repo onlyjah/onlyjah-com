@@ -14,6 +14,7 @@ type Listing = {
   artist_slug: string
   author_name: string
   kind: string
+  product_type: string
 }
 function Loaded() {
   const [rows, setRows] = useState<Listing[]>([])
@@ -25,7 +26,7 @@ function Loaded() {
     }
     const controller = new AbortController()
     createDataApi(browserPublicApi)(
-      'market_listings?status=eq.published&select=id,organization,title,description,price_label,kind,artist_slug,author_name&limit=50',
+      'market_listings?status=eq.published&select=id,organization,title,description,price_label,kind,product_type,artist_slug,author_name&limit=50',
       { signal: controller.signal },
       false,
     )
@@ -47,7 +48,12 @@ function Loaded() {
       {rows.map((row) => (
         <Card key={row.id}>
           <CardHeader>
-            <Badge variant="secondary">{row.kind}</Badge>
+            <div className="flex flex-wrap gap-2">
+              <Badge variant="secondary">{row.kind}</Badge>
+              {row.product_type !== 'other' && (
+                <Badge variant="outline">{row.product_type}</Badge>
+              )}
+            </div>
             {row.artist_slug && (
               <a
                 className="text-sm text-primary underline"

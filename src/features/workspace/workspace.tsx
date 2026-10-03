@@ -15,6 +15,7 @@ import {
   createItemClient,
   itemKinds,
   marketKinds,
+  productTypes,
   type WorkspaceInput,
   type WorkspaceItem,
 } from './item-client'
@@ -28,6 +29,7 @@ function fresh(scope: 'forge' | 'market'): WorkspaceInput {
     links: [],
     editor_ids: [],
     price_label: '',
+    product_type: 'other',
   }
 }
 function Loaded({ scope }: { scope: 'forge' | 'market' }) {
@@ -186,17 +188,36 @@ function Loaded({ scope }: { scope: 'forge' | 'market' }) {
           }}
         >
           {scope === 'market' ? (
-            <Label>
-              Exchange or price description
-              <Input
-                value={input.price_label}
-                maxLength={100}
-                onChange={(event) => {
-                  setInput({ ...input, price_label: event.target.value })
-                  setDirty(true)
-                }}
-              />
-            </Label>
+            <>
+              <Label>
+                Product type
+                <select
+                  className="w-full rounded-md border bg-background p-2"
+                  value={input.product_type ?? 'other'}
+                  onChange={(event) => {
+                    setInput({ ...input, product_type: event.target.value })
+                    setDirty(true)
+                  }}
+                >
+                  {productTypes.map((type) => (
+                    <option key={type} value={type}>
+                      {type}
+                    </option>
+                  ))}
+                </select>
+              </Label>
+              <Label>
+                Exchange or price description
+                <Input
+                  value={input.price_label}
+                  maxLength={100}
+                  onChange={(event) => {
+                    setInput({ ...input, price_label: event.target.value })
+                    setDirty(true)
+                  }}
+                />
+              </Label>
+            </>
           ) : (
             <>
               <Label>

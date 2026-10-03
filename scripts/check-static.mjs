@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict'
+import { createHash } from 'node:crypto'
 import { readFile, stat } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { htmlText } from './html-text.mjs'
@@ -82,6 +83,32 @@ for (const [path, expected] of Object.entries(routes)) {
   }
   console.log('PASS', path)
 }
+const redirects = JSON.parse(
+  await readFile('content/legacy-redirects.json', 'utf8'),
+)
+for (const [from, to] of Object.entries(redirects)) {
+  const html = await readFile(pageFile(from), 'utf8')
+  assert.ok(
+    html.includes(`<link rel="canonical" href="${to}">`),
+    `${from}: static canonical destination`,
+  )
+  assert.ok(
+    html.includes(`content="0;url=${to}"`),
+    `${from}: no-script redirect fallback`,
+  )
+  assert.ok(known.has(to), `${from}: destination exists`)
+}
+const release = JSON.parse(
+  await readFile(resolve(output, 'static-release.json'), 'utf8'),
+)
+for (const [name, digest] of Object.entries(release.files)) {
+  const data = await readFile(resolve(output, name))
+  assert.equal(
+    createHash('sha256').update(data).digest('hex'),
+    digest,
+    `${name}: release integrity`,
+  )
+}
 console.log(
-  `PASS: ${known.size} meaningful pages; ${assetCount} asset references; all internal destinations; draft metadata`,
+  `PASS: ${known.size} meaningful pages; ${assetCount} asset references; ${Object.keys(redirects).length} static redirect fallbacks; release hashes; all internal destinations; draft metadata`,
 )

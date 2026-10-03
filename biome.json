@@ -41,7 +41,8 @@
       "includes": [
         "src/content/quotes.json",
         "src/content/terms.json",
-        "src/content/copy-slots.json"
+        "src/content/copy-slots.json",
+        "src/features/design/tokens/*.json"
       ],
       "formatter": {
         "enabled": false

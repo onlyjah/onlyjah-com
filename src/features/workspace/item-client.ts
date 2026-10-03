@@ -13,6 +13,7 @@ export type WorkspaceInput = {
   links: string[]
   editor_ids: string[]
   price_label: string
+  product_type?: string
 }
 export type WorkspaceItem = WorkspaceInput & {
   id: string
@@ -28,6 +29,15 @@ export const itemKinds = [
   'swap',
 ]
 export const marketKinds = ['offering', 'request', 'swap']
+export const productTypes = [
+  'physical',
+  'digital',
+  'service',
+  'subscription',
+  'donation',
+  'ticket',
+  'other',
+]
 
 export function createItemClient(
   options: DataApiOptions,
@@ -42,6 +52,7 @@ export function createItemClient(
       links: row.links ?? [],
       editor_ids: row.editor_ids ?? [],
       price_label: row.price_label ?? '',
+      product_type: row.product_type ?? 'other',
     } as WorkspaceItem
   }
   return {
@@ -74,6 +85,11 @@ export function createItemClient(
       if (!kinds.includes(input.kind) || !statuses.includes(input.status))
         throw new Error('Choose a valid item type and status.')
       if (
+        scope === 'market' &&
+        !productTypes.includes(input.product_type ?? 'other')
+      )
+        throw new Error('Choose a valid product type.')
+      if (
         input.price_label.length > 100 ||
         input.editor_ids.length > 20 ||
         input.links.length > 12 ||
@@ -104,6 +120,7 @@ export function createItemClient(
               description: input.body,
               status: input.status,
               price_label: input.price_label,
+              product_type: input.product_type ?? 'other',
             }
       let path = table
       if (saved) {

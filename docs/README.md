@@ -1,19 +1,14 @@
-# Current project documentation
+# Project documentation
 
-Start here. This index is the active authority after Jah's 2 October testing direction. Historical proposals and session logs preserve evidence and do not override current direction.
+Engineering guides for the static frontend and its reusable UI. Provider-specific account, deployment and historical verification details stay in the private handoff.
 
-- [Stack and boundaries](STACK.md): each component, its purpose and evidence.
-- [Roadmap](ROADMAP.md): current behavior, upcoming work and open decisions.
-- [Access contract](backend/ARK-ACCESS-DESIGN.md): individual paid features and scoped duties.
-- [Content workflow](CONTENT.md): read-only originals, master quotations, site slots and refresh.
-- [Testing readiness](testing/STAGING-READINESS.md): actual checks and release gaps.
-- [Authoring API](AUTHORING.md): developer setup, session diagnostics and real write checks.
-- [Frontend conventions](FRONTEND.md), [environment names](ENVIRONMENT.md), [asset credits](ASSETS.md).
+- [Development workflow](DEVELOPMENT.md): checkout, branch, package manager and handoff conventions.
+- [Folder guide](FOLDERS.md): reusable source, tooling, generated outputs and recovery records.
+- [Stack](STACK.md), [frontend structure](FRONTEND.md), [roadmap](ROADMAP.md).
+- [Design presets](design/DESIGN-KIT.md), [asset credits](ASSETS.md), [portable UI export](templates/UI-PACKAGE.md).
+- [Shared identity and catalog](templates/SHARED-IDENTITY-CATALOG.md).
+- [Configuration names](ENVIRONMENT.md), [static hosting](hosting/STATIC-HOSTING.md), [code verification](testing/STAGING-READINESS.md).
+- [Content workflow](CONTENT.md), [dependency verification](DEPENDENCIES.md).
+- [Forge composition](FORGE-DEVELOPMENT.md), [authoring API](AUTHORING.md), [runtime boundaries](backend/BOUNDARIES.md).
 
-The full editorial master, synced references and historical handoff material remain private local files, excluded from this public Git repository. Their paths apply when the local review pack is present. The checked public subset is `content/public-copy-manifest.json`.
-
-`manual/` supplies the public wiki's selected source passages. `content-review/` is the editorial workspace. `sources/` preserves originals. `history/`, `handoff/`, `backend/proposals/` and the original handoff pack preserve earlier states and are excluded from public page imports. Applied migrations are an ordered record, not alternatives to choose from. The local original handoff pack is also git-ignored and preserved in place.
-
-The older organization qualification proposal is superseded. Organization creation is reserved for verified adam and Jah Noah identities. No paid plan implies stewardship. Future Matrix, payout, fulfillment and meeting work remains distinct from the present development board and marketplace listings.
-
-- [Forge composition and OJ-Ark development](FORGE-DEVELOPMENT.md)
+The public excerpt manifest is a selected snapshot, separate from the complete private source archive. Preserve provenance and human approval when changing copy. Configuration and code checks do not establish real account privileges or completed hosted acceptance.

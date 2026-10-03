@@ -1,0 +1,20 @@
+{
+  "$description": "Jahnoah.com — consulting, executive retainment, writeups, portfolio. Tone: editorial authority, unhurried. A serif for presence, generous white space, restrained accent. This is the LEAST templated of the three — no mono, no citrus. Deliberately reads as a person, not a product.",
+  "color": {
+    "ink": { "value": "#1B1A17", "type": "color" },
+    "paper": { "value": "#F7F4EE", "type": "color" },
+    "accent": { "value": "#8A3B2B", "type": "color", "$description": "brick/oxide — a printed-page red, not a SaaS accent. Used only for the one link/CTA color and small marks." },
+    "gold": { "value": "#A98A3E", "type": "color", "$description": "reserved for 'paid content' badges only — the one place a second accent is allowed" },
+    "muted": { "value": "#EAE4D6", "type": "color" },
+    "muted-foreground": { "value": "#6E6858", "type": "color" },
+    "border": { "value": "#D8D0BE", "type": "color", "$description": "hairline, not the near-black border OnlyJah uses — softer, editorial" }
+  },
+  "font": {
+    "display": { "value": "'Fraunces', Georgia, serif", "type": "fontFamily", "$description": "the one bold move on this site — a high-contrast serif at large size" },
+    "body": { "value": "'Source Serif 4', Georgia, serif", "type": "fontFamily", "$description": "serif body, slightly larger line-height than sans (per typography guidance)" },
+    "meta": { "value": "'Inter', system-ui, sans-serif", "type": "fontFamily", "$description": "dates, tags, nav only — never headlines" }
+  },
+  "radius": { "value": "2px", "type": "dimension", "$description": "almost square — broadsheet, not app" },
+  "shadow": { "value": "none" },
+  "spacingUnit": { "value": "4px", "type": "dimension" }
+}

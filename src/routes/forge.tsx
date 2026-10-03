@@ -1,4 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { ImageCard } from '@/components/blocks/image-card'
+import { photos } from '@/content/photos'
 import { products } from '@/content/products'
 import { SourceArchive } from '@/features/archive/source-archive'
 import { Workbench } from '@/features/publishing/workbench'
@@ -30,6 +32,7 @@ function Page() {
         },
       ]}
     >
+      <ImageCard {...photos.autumn} imageClassName="aspect-[2/1]" />
       <Workbench />
       <SourceArchive />
       <Workspace scope="forge" />

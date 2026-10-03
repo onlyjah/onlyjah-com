@@ -1,0 +1,20 @@
+{
+  "$description": "Jahnoah.lol — personal, art, creative, sensual, uncorporate. Tone: dim room, warm light, no chrome. Dark by default (no light mode needed — this site doesn't perform daytime professionalism). Type does the emotional work since there's no house accent color; color comes from the uploaded media itself.",
+  "color": {
+    "ink": { "value": "#F2EAE4", "type": "color", "$description": "near-white warm text on the dark surface" },
+    "paper": { "value": "#120E10", "type": "color", "$description": "near-black with a warm (not blue) cast" },
+    "ember": { "value": "#C1553A", "type": "color", "$description": "the one warm accent — used sparingly: active states, one hover glow" },
+    "plum": { "value": "#4A2E3E", "type": "color", "$description": "card/surface tint, not a text color" },
+    "muted": { "value": "#241C1F", "type": "color" },
+    "muted-foreground": { "value": "#A3938E", "type": "color" },
+    "border": { "value": "#3A2E30", "type": "color" }
+  },
+  "font": {
+    "display": { "value": "'Fraunces', Georgia, serif", "type": "fontFamily", "$description": "italic optical size on headlines — a handwritten, intimate register vs. Jahnoah.com's upright serif" },
+    "body": { "value": "'Inter', system-ui, sans-serif", "type": "fontFamily" }
+  },
+  "radius": { "value": "18px", "type": "dimension", "$description": "soft, room-like — the opposite of OnlyJah's tight 10px" },
+  "shadow": { "value": "0 8px 30px rgba(0,0,0,0.45)", "$description": "the one property on this site that DOES use soft shadow — it's meant to feel like gallery lighting, not a SaaS card" },
+  "spacingUnit": { "value": "4px", "type": "dimension" },
+  "$contentNote": "This property is media-led — galleries, long-form posts, audio/video from OJ-Kash. Keep chrome minimal so uploaded work is always the brightest thing on screen. Age/content gating is a product decision to confirm before launch, not a design one."
+}

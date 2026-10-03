@@ -1,0 +1,21 @@
+{
+  "$description": "OnlyJah.com — the platform. Tone: capable, clean, quietly technical. Citrus accent on near-black ink, mono for data/labels, humanist sans for body. This is the file tweakcn/shadcn reads for the base theme; other properties extend it.",
+  "color": {
+    "ink": { "value": "#14120F", "type": "color", "$description": "primary text, dark-mode surface" },
+    "paper": { "value": "#FAF8F3", "type": "color", "$description": "light-mode surface" },
+    "citrus": { "value": "#D6E14A", "type": "color", "$description": "the one accent — CTAs, focus rings, active states. Spend it in one place per screen." },
+    "blue": { "value": "#3B5BFF", "type": "color", "$description": "links, info, secondary interactive" },
+    "green": { "value": "#1F9D63", "type": "color", "$description": "success, paid/active tier" },
+    "red": { "value": "#E5484D", "type": "color", "$description": "destructive, errors" },
+    "muted": { "value": "#E9E5D8", "type": "color" },
+    "muted-foreground": { "value": "#6B6555", "type": "color" },
+    "border": { "value": "#14120F", "type": "color" }
+  },
+  "font": {
+    "display": { "value": "'JetBrains Mono', ui-monospace, monospace", "type": "fontFamily", "$description": "headlines, nav, labels, data — the OJ signature: mono where most SaaS uses grotesk" },
+    "body": { "value": "'Inter', system-ui, sans-serif", "type": "fontFamily" }
+  },
+  "radius": { "value": "10px", "type": "dimension", "$description": "small and consistent — this is an operator's tool, not a toy" },
+  "shadow": { "value": "none", "$description": "flat by design; hierarchy comes from the border + mono type, not elevation" },
+  "spacingUnit": { "value": "4px", "type": "dimension" }
+}

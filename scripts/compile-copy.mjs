@@ -2,6 +2,7 @@
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
 import { readFile, writeFile } from 'node:fs/promises'
+import { publicManifestSnapshot } from './public-manifest-snapshot.mjs'
 import { verifyPublicCopy } from './verify-public-copy.mjs'
 
 const root = 'docs/content-review/'
@@ -137,7 +138,7 @@ if (!master) {
     exampleIds: term.example_quote_ids.filter((id) => included.has(id)),
     related: term.related_term_ids,
   }))
-  const manifest = {
+  const candidate = {
     schema_version: 1,
     edition: master.edition,
     master_sha256: createHash('sha256')
@@ -159,6 +160,15 @@ if (!master) {
       }
     }),
   }
+  let previous
+  try {
+    previous = await read(manifestPath)
+  } catch (cause) {
+    if (cause.code !== 'ENOENT') throw cause
+  }
+  // Source spans above are always reverified. The checksum describes the master
+  // snapshot when public fields last changed, rather than leaking private churn.
+  const manifest = publicManifestSnapshot(candidate, previous)
   verifyPublicCopy(manifest, stage)
   for (const [path, value] of [
     ['src/content/quotes.json', output],

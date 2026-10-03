@@ -1,0 +1,20 @@
+[
+  {
+    "file": "jahnoah-com.tokens.json",
+    "sha256": "863a6758fe0b9d40cf873c98d02c79b6eb0a14db9c1c9eefd04db9c9b0551ca4",
+    "source": "User-supplied Claude design reference, 2026-10-03",
+    "use": "Token values only; descriptions and mockup copy are not attributed site wording"
+  },
+  {
+    "file": "jahnoah-lol.tokens.json",
+    "sha256": "ebc92c54f91c76b96d3de00f4aa448777a915e7035cd158aecff00d23ae436a0",
+    "source": "User-supplied Claude design reference, 2026-10-03",
+    "use": "Token values only; descriptions and mockup copy are not attributed site wording"
+  },
+  {
+    "file": "onlyjah.tokens.json",
+    "sha256": "9ae3b127f0f29bf8b39bc417760188465ddb693f0d97f1fad7812249888ce22b",
+    "source": "User-supplied Claude design reference, 2026-10-03",
+    "use": "Token values only; descriptions and mockup copy are not attributed site wording"
+  }
+]
