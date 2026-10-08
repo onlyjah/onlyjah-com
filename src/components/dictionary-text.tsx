@@ -1,5 +1,6 @@
+import { Link } from '@tanstack/react-router'
 import entries from '../content/dictionary.json'
-import { dictionaryLinks, entryHref } from '../lib/dictionary'
+import { dictionaryLinks } from '../lib/dictionary'
 
 export function DictionaryText({
   text,
@@ -17,7 +18,9 @@ export function DictionaryText({
     return (
       <span key={`${match.start}-${match.id}`}>
         {preceding}
-        <a href={entryHref(match.id)}>{text.slice(match.start, match.end)}</a>
+        <Link to="/docs/words" search={{ word: match.id }}>
+          {text.slice(match.start, match.end)}
+        </Link>
       </span>
     )
   })

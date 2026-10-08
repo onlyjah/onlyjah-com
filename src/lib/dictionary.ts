@@ -42,7 +42,7 @@ export function dictionaryLinks(
   entries: Entry[],
   context: 'onlyjah' | 'general' = 'general',
 ): Match[] {
-  const candidates: Match[] = []
+  const candidates: (Match & { priority: number })[] = []
   const protectedRanges = [
     ...text.matchAll(/https?:\/\/\S+|www\.\S+|\b[^\s@]+@[^\s@]+\b|`[^`]*`/gu),
   ].map((m) => ({ start: m.index, end: m.index + m[0].length }))
@@ -62,11 +62,23 @@ export function dictionaryLinks(
         !['onlyjah', 'flowthrough', 'so-il'].includes(entry.id)
       )
         continue
-      candidates.push({ ...match, id: entry.id })
+      candidates.push({
+        ...match,
+        id: entry.id,
+        priority:
+          entry.label.toLocaleLowerCase('en') ===
+          text.slice(match.start, match.end).toLocaleLowerCase('en')
+            ? 0
+            : 1,
+      })
     }
   }
   candidates.sort(
-    (a, b) => a.start - b.start || b.end - a.end || a.id.localeCompare(b.id),
+    (a, b) =>
+      a.start - b.start ||
+      b.end - a.end ||
+      a.priority - b.priority ||
+      a.id.localeCompare(b.id),
   )
   const result: Match[] = []
   for (const match of candidates)

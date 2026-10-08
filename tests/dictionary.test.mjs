@@ -104,3 +104,18 @@ test('Markdown leaves existing links, code, and HTML untouched', async () => {
   assert.equal(tree.children[2].value, 'OnlyJah')
   assert.equal(tree.children[3].value, '<b>OnlyJah</b>')
 })
+
+test('primary word labels win over a competing grouped alias', () => {
+  const grouped = {
+    ...entry('alignment', 'purpose / support alignment'),
+    aliases: ['purpose / support alignment', 'purpose', 'support alignment'],
+  }
+  assert.equal(
+    dictionaryLinks(
+      'Purpose',
+      [grouped, entry('purpose', 'purpose')],
+      'onlyjah',
+    )[0].id,
+    'purpose',
+  )
+})

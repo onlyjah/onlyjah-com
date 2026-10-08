@@ -1,6 +1,6 @@
+import { Link } from '@tanstack/react-router'
 import { type ReactNode, useState } from 'react'
 import index from '../content/dictionary.json'
-import { entryHref } from '../lib/dictionary'
 import { DictionaryText } from './dictionary-text'
 
 type Quote = (typeof index.quotes)[number]
@@ -61,9 +61,9 @@ export function DictionaryBrowser({
         <summary>{index.entries.length} indexed words and phrases</summary>
         <div className="flex flex-wrap gap-3">
           {words.map((entry) => (
-            <a key={entry.id} href={entryHref(entry.id)}>
+            <Link key={entry.id} to="/docs/words" search={{ word: entry.id }}>
               {entry.label}
-            </a>
+            </Link>
           ))}
         </div>
       </details>
