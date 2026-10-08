@@ -4,7 +4,7 @@
     "route": "/",
     "region": "hero",
     "quote_id": "jah-14",
-    "author_approval": "pending",
+    "author_approval": "approved",
     "stage": "testing_review"
   },
   {
@@ -12,7 +12,7 @@
     "route": "/",
     "region": "intro",
     "quote_id": "snippet-purpose",
-    "author_approval": "pending",
+    "author_approval": "approved",
     "stage": "testing_review"
   },
   {

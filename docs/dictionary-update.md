@@ -1,0 +1,17 @@
+# Dictionary update, 2026-10-08
+
+User requested publication of the updated quote dictionary on onlyjah.com, an indexable Railway dataset, contextual keyword links, Wikipedia and Etymonline lookups, authenticated Forge notes and documents, English first, and later trusted contributor quotes and Wikipedia citations.
+
+The public JSON endpoint is /dictionary/index.json. Word URLs use /docs/words?word=<entry-id>. The dataset is generated from the public copy manifest projection, not the private master or Forge records. English exact-form occurrences and explicitly recorded aliases are indexed exhaustively within this selected corpus. Linking is deterministic: source quotes declare OnlyJah context; generic Markdown links distinctive OnlyJah names only. Existing Markdown links, code, URLs and email addresses stay intact. Translations, stemming and word-sense inference are pending.
+
+Production has 7 reviewed quotes and 219 entries. Testing has 64 selected quotes and 1001 entries; earlier passages still have pending wording approvals. Source originals remain in the cloud review amendment. The canonical private 167-entry master is unavailable here: reconciliation must happen before local copy:refresh, which otherwise can overwrite amendments. Do not claim full-master synchronization or synchronization of other computers.
+
+The speaker registry attaches a stable speaker ID independently of authentication. Unregistered authors fail the index build. Contributor imports still require explicit manifest inclusion and a publication agreement. Source metadata and empty citation arrays are present; external lookup links do not assert verified Wikipedia evidence. Later citation records should carry source URL, article revision, retrieval date, section or locator, and the supported passage.
+
+Migration 009 adds a SECURITY INVOKER lexical phrase-search RPC and GIN indexes to the existing development Forge database. Existing forced RLS continues to restrict source originals to owners, and workspace documents to owners or editor IDs. Anonymous execution is revoked. The public index never includes private titles, excerpts, counts or records. Search is limited to 30 authorized references and runs only after the existing server identity/access check. UI state is keyed to both the word and verified account to avoid showing a previous account's result after account switching.
+
+Applied on Neon development branch br-red-smoke-b55ot7pn only. Database checks: both tables enforce RLS; anonymous function execution denied; authenticated execution allowed; the function is not SECURITY DEFINER; a role with no verified member identity returns zero matches. Browser sign-in and two-account sharing are not verified in this session. No production database or auth configuration changed. Production links to the test dictionary for Forge sign-in because production has no configured identity provider.
+
+Checks: testing lint, types, build, 52 tests, static page and internal-link verification, direct-route static smoke checks. Production lint, types, build, 4 matching/index tests, HTTP dictionary deep-link, CSS and JSON dataset checks. No forced Git updates. Publication status must be verified against the new commit in Railway before declaring deployment complete.
+
+Next step: reconcile the canonical private master and verify reference search in a signed-in browser with an owner and a permitted collaborator.

@@ -66,7 +66,7 @@ export default defineConfig(({ mode }) => {
           failOnError: true,
           crawlLinks: true,
           // Fragment links identify quotes within a page, not separate documents.
-          filter: ({ path }) => !path.includes('#'),
+          filter: ({ path }) => !path.includes('#') && !path.includes('?'),
         },
       }),
       react(),

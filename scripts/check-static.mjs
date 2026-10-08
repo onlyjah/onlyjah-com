@@ -36,6 +36,12 @@ for (const [path, expected] of Object.entries(routes)) {
         `asset ${url}`,
       )
       assetCount++
+    } else if (pathname === '/dictionary/index.json') {
+      const index = JSON.parse(
+        await readFile(resolve(output, 'dictionary/index.json'), 'utf8'),
+      )
+      assert.equal(index.schemaVersion, 1)
+      assert.equal(index.quoteCount, 64)
     } else
       assert.ok(
         known.has(pathname) || pathname === '/favicon.ico',

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite serve",
-    "build": "node scripts/compile-copy.mjs --check && vite build",
+    "build": "node scripts/compile-copy.mjs --check && node --experimental-strip-types scripts/build-dictionary.mjs --check && vite build",
     "lint": "biome check .",
     "preview": "node scripts/preview-static.mjs",
     "typecheck": "tsc -b --pretty false",
@@ -20,7 +20,9 @@
     "copy:refresh": "COPY_STAGE=testing node scripts/compile-copy.mjs",
     "check:copy": "COPY_STAGE=testing node scripts/compile-copy.mjs --check",
     "build:testing": "COPY_STAGE=testing VITE_RELEASE_STAGE=testing pnpm build",
-    "start": "HOST=0.0.0.0 node scripts/preview-static.mjs"
+    "start": "HOST=0.0.0.0 node scripts/preview-static.mjs",
+    "dictionary:refresh": "node --experimental-strip-types scripts/build-dictionary.mjs",
+    "check:dictionary": "node --experimental-strip-types scripts/build-dictionary.mjs --check"
   },
   "dependencies": {
     "@base-ui/react": "1.8.0",

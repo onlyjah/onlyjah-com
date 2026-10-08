@@ -9,13 +9,19 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import index from '@/content/dictionary.json'
 import { remarkDisplayText } from '@/lib/display-text'
+import { remarkDictionaryLinks } from '@/lib/remark-dictionary'
 
 export function Markdown({ children }: { children: string }) {
   return (
     <div className="max-w-prose space-y-6 text-pretty leading-7">
       <ReactMarkdown
-        remarkPlugins={[remarkGfm, remarkDisplayText]}
+        remarkPlugins={[
+          remarkGfm,
+          remarkDisplayText,
+          [remarkDictionaryLinks, { entries: index.entries }],
+        ]}
         skipHtml
         components={{
           h1: ({ children }) => (

@@ -1,0 +1,49 @@
+{
+  "edition": "2026-10-08-cloud-review-sync",
+  "review": {
+    "library_file_id": "libfile_c5be24be2c7c8191a29a3d69bafa157a",
+    "version": 5,
+    "publication_request": "Update onlyjah.com with my updated quotes dictionary"
+  },
+  "revisions": [
+    {
+      "id": "snippet-purpose",
+      "text": "Purpose: to generate collective life fulfillment.",
+      "revision": 2
+    },
+    {
+      "id": "jah-06",
+      "text": "OnlyJah.com is a sort of proof of concept that anyone can collaborate with anyone else so long as they have the skill or ability, and make cool things to better their world, their self and others' life experience.",
+      "revision": 2
+    },
+    {
+      "id": "jah-03",
+      "text": "OnlyJah and Ark are like twin stars, they contribute to one anothers framework, flowthrough, purpose, and grand design...",
+      "revision": 2
+    }
+  ],
+  "additions": [
+    {
+      "id": "cloud-shared-resources-20261002",
+      "text": "this is really like three platforms and four websites, a front end and a back-end framework all in one. And honestly, it doesn't need to be that complicated. It just is right now because things are still being refined. Ultimately, the idea is that there're many people who want similar things on their websites and have a similar strain of interest and expressions, and I would like them to be able to collaborate and use common resources while they build community amongst one another for themselves and for others for the betterment of the all",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "OnlyJah cloud wording review: shared resources",
+      "source": "OnlyJah-Cloud-Wording-Review.md (version 5)",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original"
+    },
+    {
+      "id": "cloud-seed-to-fruition-20261002",
+      "text": "Mm. I think adding I really just want to be able to visualize it all. The project from seed to fruition, every branch, every tendril, every connection point. every collaborator. Uh I want to view every one in one plane. One clean plane that allows for this interaction that I feel a sense, and yet don't seem to experience on the internet in the capacity that I would like to. So, that's the main reason why I'm creating OnlyJah. I know I'm not the only one who wants to experience something like this. So rather than just making a tool for me to view my projects and my collaborations and collaborators, I'm designing it to be available to others, to really anyone. It should be such that anyone can implement their version of the client or a server and connect to the network and communicate with one another, collaborate with one another in a very clean way, in a very sovereign way. That's OnlyJah OnlyJah .com",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "OnlyJah cloud wording review: seed to fruition",
+      "source": "OnlyJah-Cloud-Wording-Review.md (version 5)",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original"
+    }
+  ]
+}

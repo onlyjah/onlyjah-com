@@ -1,5 +1,5 @@
 import { Quote } from 'lucide-react'
-import { useId, useState } from 'react'
+import { type ReactNode, useId, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -12,6 +12,7 @@ import { cn } from '@/lib/utils'
 
 type QuoteCardProps = {
   text: string
+  renderedText?: ReactNode
   author: string
   title?: string
   citation: { href: string; label: string }
@@ -21,6 +22,7 @@ type QuoteCardProps = {
 
 export function QuoteCard({
   text,
+  renderedText,
   author,
   title,
   citation,
@@ -52,7 +54,7 @@ export function QuoteCard({
               canExpand && !expanded && 'line-clamp-4',
             )}
           >
-            <p>{text}</p>
+            <p>{renderedText ?? text}</p>
           </blockquote>
           <figcaption className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
             <span className="font-medium text-foreground">{author}</span>

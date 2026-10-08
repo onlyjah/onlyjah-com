@@ -12,7 +12,7 @@ export const routes = {
   ...Object.fromEntries(
     terms.map((term) => [`/docs/terms/${term.id}`, term.label]),
   ),
-  '/docs/words': 'In Jah’s words',
+  '/docs/words': 'OnlyJah dictionary',
   '/docs/overview': 'OnlyJah',
   '/docs/vision': 'Vision',
   '/docs/ecosystem': 'Forge / Media / Realm',

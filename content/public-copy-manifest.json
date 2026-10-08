@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "edition": "2026-10-02-testing-review-2",
+  "edition": "2026-10-08-cloud-review-sync",
   "master_sha256": "3502a03bb52c8248624eb89e7ea9d135728018cac1be66b92c796ee7db8459f4",
-  "verification": "Selected source hashes and exact Unicode spans verified locally; private evidence is not published.",
+  "verification": "Historical source attestation retained for the original selected subset. Three display revisions and two additional exact author passages checked against cloud wording review version 5; private source master was not available here.",
   "quotes": [
     {
       "id": "jah-14",
@@ -17,14 +17,14 @@
     },
     {
       "id": "snippet-purpose",
-      "text": "to generate collective life fulfillment",
+      "text": "Purpose: to generate collective life fulfillment.",
       "author": "Jah",
       "date": "2026-10-02",
       "conversation": "Explain codebase for development",
       "source": "docs/content-review/evidence/conversation-excerpts.json",
-      "revision": 1,
+      "revision": 2,
       "content_warnings": [],
-      "display_variant": "original"
+      "display_variant": "author-reviewed"
     },
     {
       "id": "testing-incubation",
@@ -116,14 +116,14 @@
     },
     {
       "id": "jah-03",
-      "text": "OnlyJah and Ark are like twin stars, they contribute to one anothers framework, flow through, purpose, grand design...",
+      "text": "OnlyJah and Ark are like twin stars, they contribute to one anothers framework, flowthrough, purpose, and grand design...",
       "author": "Jah",
       "date": "2026-10-01",
       "conversation": "Build OnlyJah Website",
       "source": "docs/content-review/evidence/supplied-sources/OnlyJah-In-Jahs-Words.md",
-      "revision": 1,
+      "revision": 2,
       "content_warnings": [],
-      "display_variant": "original"
+      "display_variant": "author-reviewed"
     },
     {
       "id": "jah-04",
@@ -151,14 +151,14 @@
     },
     {
       "id": "jah-06",
-      "text": "OnlyJah.com is a sort of proof of concept that anyone can collaborate with anyone else so long as they have that skill or ability, and make cool things to better their world, their self and others' life experience.",
+      "text": "OnlyJah.com is a sort of proof of concept that anyone can collaborate with anyone else so long as they have the skill or ability, and make cool things to better their world, their self and others' life experience.",
       "author": "Jah",
       "date": "2026-10-01",
       "conversation": "Build OnlyJah Website",
       "source": "docs/content-review/evidence/supplied-sources/OnlyJah-In-Jahs-Words.md",
-      "revision": 1,
+      "revision": 2,
       "content_warnings": [],
-      "display_variant": "original"
+      "display_variant": "author-reviewed"
     },
     {
       "id": "jah-07",
@@ -686,6 +686,28 @@
       "date": "2026-10-02",
       "conversation": "Testing direction and contributor onboarding",
       "source": "docs/content-review/evidence/2026-10-02-testing-direction.md",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original"
+    },
+    {
+      "id": "cloud-shared-resources-20261002",
+      "text": "this is really like three platforms and four websites, a front end and a back-end framework all in one. And honestly, it doesn't need to be that complicated. It just is right now because things are still being refined. Ultimately, the idea is that there're many people who want similar things on their websites and have a similar strain of interest and expressions, and I would like them to be able to collaborate and use common resources while they build community amongst one another for themselves and for others for the betterment of the all",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "OnlyJah cloud wording review: shared resources",
+      "source": "OnlyJah-Cloud-Wording-Review.md (version 5)",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original"
+    },
+    {
+      "id": "cloud-seed-to-fruition-20261002",
+      "text": "Mm. I think adding I really just want to be able to visualize it all. The project from seed to fruition, every branch, every tendril, every connection point. every collaborator. Uh I want to view every one in one plane. One clean plane that allows for this interaction that I feel a sense, and yet don't seem to experience on the internet in the capacity that I would like to. So, that's the main reason why I'm creating OnlyJah. I know I'm not the only one who wants to experience something like this. So rather than just making a tool for me to view my projects and my collaborations and collaborators, I'm designing it to be available to others, to really anyone. It should be such that anyone can implement their version of the client or a server and connect to the network and communicate with one another, collaborate with one another in a very clean way, in a very sovereign way. That's OnlyJah OnlyJah .com",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "OnlyJah cloud wording review: seed to fruition",
+      "source": "OnlyJah-Cloud-Wording-Review.md (version 5)",
       "revision": 1,
       "content_warnings": [],
       "display_variant": "original"
@@ -1522,7 +1544,7 @@
       "route": "/",
       "region": "hero",
       "quote_id": "jah-14",
-      "author_approval": "pending",
+      "author_approval": "approved",
       "stage": "testing_review"
     },
     {
@@ -1530,7 +1552,7 @@
       "route": "/",
       "region": "intro",
       "quote_id": "snippet-purpose",
-      "author_approval": "pending",
+      "author_approval": "approved",
       "stage": "testing_review"
     },
     {
@@ -1595,15 +1617,15 @@
       "id": "jah-14",
       "revision": 1,
       "role": "public_direction",
-      "state": "pending",
-      "approved_revision": null
+      "state": "approved",
+      "approved_revision": 1
     },
     {
       "id": "snippet-purpose",
-      "revision": 1,
+      "revision": 2,
       "role": "public_direction",
-      "state": "pending",
-      "approved_revision": null
+      "state": "approved",
+      "approved_revision": 2
     },
     {
       "id": "testing-incubation",
@@ -1663,10 +1685,10 @@
     },
     {
       "id": "jah-03",
-      "revision": 1,
+      "revision": 2,
       "role": "public_direction",
-      "state": "pending",
-      "approved_revision": null
+      "state": "approved",
+      "approved_revision": 2
     },
     {
       "id": "jah-04",
@@ -1684,10 +1706,10 @@
     },
     {
       "id": "jah-06",
-      "revision": 1,
+      "revision": 2,
       "role": "public_direction",
-      "state": "pending",
-      "approved_revision": null
+      "state": "approved",
+      "approved_revision": 2
     },
     {
       "id": "jah-07",
@@ -1763,8 +1785,8 @@
       "id": "jah-23",
       "revision": 1,
       "role": "public_direction",
-      "state": "pending",
-      "approved_revision": null
+      "state": "approved",
+      "approved_revision": 1
     },
     {
       "id": "snippet-vessel",
@@ -2024,6 +2046,28 @@
       "role": "term_label_only",
       "state": "pending",
       "approved_revision": null
+    },
+    {
+      "id": "cloud-shared-resources-20261002",
+      "revision": 1,
+      "role": "public_direction",
+      "state": "approved",
+      "approved_revision": 1
+    },
+    {
+      "id": "cloud-seed-to-fruition-20261002",
+      "revision": 1,
+      "role": "public_direction",
+      "state": "approved",
+      "approved_revision": 1
     }
-  ]
+  ],
+  "amendment_source": {
+    "review": "OnlyJah-Cloud-Wording-Review.md",
+    "library_file_id": "libfile_c5be24be2c7c8191a29a3d69bafa157a",
+    "version": 5,
+    "checked_on": "2026-10-08",
+    "original_master_sha256": "3502a03bb52c8248624eb89e7ea9d135728018cac1be66b92c796ee7db8459f4",
+    "canonical_master_sync": "Pending local private-master reconciliation; public display projection updated from saved author review."
+  }
 }

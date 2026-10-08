@@ -36,6 +36,11 @@ function Term() {
           ))}
         </Section>
       )}
+      <Section title="All word uses and references">
+        <a href={`/docs/words?word=${encodeURIComponent(term.id)}`}>
+          Open the indexed dictionary entry
+        </a>
+      </Section>
       <Section title="Related">
         <div className="grid gap-4 sm:grid-cols-2">
           {term.related.map((id) => {

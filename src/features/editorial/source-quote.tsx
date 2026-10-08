@@ -1,4 +1,5 @@
 import { QuoteCard } from '@/components/blocks/quote-card'
+import { DictionaryText } from '@/components/dictionary-text'
 import { useContentPreferences } from '@/components/providers/content-preferences'
 import { Card, CardContent } from '@/components/ui/card'
 import quotes from '@/content/quotes.json'
@@ -30,6 +31,9 @@ export function SourceQuote({
   return (
     <QuoteCard
       text={displayText(quote.text)}
+      renderedText={
+        <DictionaryText text={displayText(quote.text)} context="onlyjah" />
+      }
       author={quote.author}
       title={title}
       collapsible={collapsible}
