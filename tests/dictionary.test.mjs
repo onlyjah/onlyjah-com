@@ -25,3 +25,8 @@ test('published index exhaustively matches the selected corpus and has no invent
   assert.ok(index.quotes.every(quote => quote.source && quote.speakerId && quote.citations.length === 0))
   assert.deepEqual(index.quotes.map(({ speakerId, language, sourceKind, publicationBasis, citations, ...quote }) => quote), quotes)
 })
+
+test('primary word labels win over a competing grouped alias', () => {
+  const grouped = { ...entry('alignment', 'purpose / support alignment'), aliases: ['purpose / support alignment', 'purpose', 'support alignment'] }
+  assert.equal(dictionaryLinks('Purpose', [grouped, entry('purpose', 'purpose')], 'onlyjah')[0].id, 'purpose')
+})

@@ -1,6 +1,6 @@
+import { Link } from '@tanstack/react-router'
 import { useState, type ReactNode } from 'react'
 import index from '../content/dictionary.json'
-import { entryHref } from '../lib/dictionary'
 import { DictionaryText } from './dictionary-text'
 
 type Quote = (typeof index.quotes)[number]
@@ -19,7 +19,7 @@ export function DictionaryBrowser({ selected = '', renderQuote, privateReference
     <label htmlFor="dictionary-search">Search words and quotes</label>
     <input id="dictionary-search" type="search" value={query} onChange={event => setQuery(event.target.value)} className="w-full rounded-md border bg-background p-3" />
     {word && <section aria-labelledby="dictionary-entry"><h2 id="dictionary-entry">{word.label}</h2><p>English · {word.quoteIds.length} matching quotes</p><p><a href={word.wikipedia} target="_blank" rel="noopener noreferrer">Wikipedia lookup</a> · <a href={word.etymonline} target="_blank" rel="noopener noreferrer">Etymonline lookup</a></p><p>Lookup links. Verified Wikipedia citations pending.</p>{privateReferences?.(word.label)}</section>}
-    <details open={Boolean(search)}><summary>{index.entries.length} indexed words and phrases</summary><div className="flex flex-wrap gap-3">{words.map(entry => <a key={entry.id} href={entryHref(entry.id)}>{entry.label}</a>)}</div></details>
+    <details open={Boolean(search)}><summary>{index.entries.length} indexed words and phrases</summary><div className="flex flex-wrap gap-3">{words.map(entry => <Link key={entry.id} to="/docs/words" search={{ word: entry.id }}>{entry.label}</Link>)}</div></details>
     <p role="status">{visible.length} matching quotes · {index.quoteCount} in this public edition</p>
     <p>English first. Other languages pending.</p>
     <div className="space-y-6">{visible.map(quote => <article key={quote.id} id={quote.id} className="scroll-mt-24">{renderQuote ? renderQuote(quote) : <><blockquote><DictionaryText text={quote.text} context="onlyjah" /></blockquote><p>{quote.author} · {quote.date} · {quote.conversation}</p><a href={`/docs/words#${quote.id}`}>{quote.id}</a></>}</article>)}</div>

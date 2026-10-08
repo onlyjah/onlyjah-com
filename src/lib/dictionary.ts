@@ -29,7 +29,7 @@ export function occurrences(text: string, aliases: string[]): Match[] {
 }
 
 export function dictionaryLinks(text: string, entries: Entry[], context: 'onlyjah' | 'general' = 'general'): Match[] {
-  const candidates: Match[] = []
+  const candidates: (Match & { priority: number })[] = []
   const protectedRanges = [...text.matchAll(/https?:\/\/\S+|www\.\S+|\b[^\s@]+@[^\s@]+\b|`[^`]*`/gu)].map(m => ({ start: m.index, end: m.index + m[0].length }))
   for (const entry of entries) {
     if (!entry.curated || entry.language !== 'en') continue
@@ -38,10 +38,10 @@ export function dictionaryLinks(text: string, entries: Entry[], context: 'onlyja
       // A document can explicitly declare its OnlyJah context. Otherwise only
       // distinctive names link; an ordinary "ark" or "purpose" stays ordinary.
       if (context !== 'onlyjah' && !['onlyjah', 'flowthrough', 'so-il'].includes(entry.id)) continue
-      candidates.push({ ...match, id: entry.id })
+      candidates.push({ ...match, id: entry.id, priority: entry.label.toLocaleLowerCase('en') === text.slice(match.start, match.end).toLocaleLowerCase('en') ? 0 : 1 })
     }
   }
-  candidates.sort((a, b) => a.start - b.start || b.end - a.end || a.id.localeCompare(b.id))
+  candidates.sort((a, b) => a.start - b.start || b.end - a.end || a.priority - b.priority || a.id.localeCompare(b.id))
   const result: Match[] = []
   for (const match of candidates) if (!result.length || match.start >= result[result.length - 1].end) result.push(match)
   return result
