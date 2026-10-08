@@ -1,0 +1,791 @@
+{
+  "schema_version": 1,
+  "edition": "2026-10-08-cloud-review-sync",
+  "master_sha256": "3502a03bb52c8248624eb89e7ea9d135728018cac1be66b92c796ee7db8459f4",
+  "verification": "Historical source attestation retained for the original selected subset. Three display revisions and two additional exact author passages checked against cloud wording review version 5; private source master was not available here.",
+  "quotes": [
+    {
+      "id": "jah-14",
+      "text": "A cloud-faring vessel. Universe in the sky. OnlyJah.",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "Homepage interview",
+      "source": "docs/content-review/evidence/supplied-sources/2026-10-02-interview.md",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original"
+    },
+    {
+      "id": "snippet-purpose",
+      "text": "Purpose: to generate collective life fulfillment.",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "Explain codebase for development",
+      "source": "docs/content-review/evidence/conversation-excerpts.json",
+      "revision": 2,
+      "content_warnings": [],
+      "display_variant": "author-reviewed"
+    },
+    {
+      "id": "jah-06",
+      "text": "OnlyJah.com is a sort of proof of concept that anyone can collaborate with anyone else so long as they have the skill or ability, and make cool things to better their world, their self and others' life experience.",
+      "author": "Jah",
+      "date": "2026-10-01",
+      "conversation": "Build OnlyJah Website",
+      "source": "docs/content-review/evidence/supplied-sources/OnlyJah-In-Jahs-Words.md",
+      "revision": 2,
+      "content_warnings": [],
+      "display_variant": "author-reviewed"
+    },
+    {
+      "id": "jah-03",
+      "text": "OnlyJah and Ark are like twin stars, they contribute to one anothers framework, flowthrough, purpose, and grand design...",
+      "author": "Jah",
+      "date": "2026-10-01",
+      "conversation": "Build OnlyJah Website",
+      "source": "docs/content-review/evidence/supplied-sources/OnlyJah-In-Jahs-Words.md",
+      "revision": 2,
+      "content_warnings": [],
+      "display_variant": "author-reviewed"
+    },
+    {
+      "id": "jah-23",
+      "text": "connecting those with the funds and vision with those with the expertise and passion ;))",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "Roots, authorship, organizations and community",
+      "source": "docs/content-review/evidence/supplied-sources/2026-10-02-roots-authorship.md",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original"
+    },
+    {
+      "id": "cloud-shared-resources-20261002",
+      "text": "this is really like three platforms and four websites, a front end and a back-end framework all in one. And honestly, it doesn't need to be that complicated. It just is right now because things are still being refined. Ultimately, the idea is that there're many people who want similar things on their websites and have a similar strain of interest and expressions, and I would like them to be able to collaborate and use common resources while they build community amongst one another for themselves and for others for the betterment of the all",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "OnlyJah cloud wording review: shared resources",
+      "source": "OnlyJah-Cloud-Wording-Review.md (version 5)",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original"
+    },
+    {
+      "id": "cloud-seed-to-fruition-20261002",
+      "text": "Mm. I think adding I really just want to be able to visualize it all. The project from seed to fruition, every branch, every tendril, every connection point. every collaborator. Uh I want to view every one in one plane. One clean plane that allows for this interaction that I feel a sense, and yet don't seem to experience on the internet in the capacity that I would like to. So, that's the main reason why I'm creating OnlyJah. I know I'm not the only one who wants to experience something like this. So rather than just making a tool for me to view my projects and my collaborations and collaborators, I'm designing it to be available to others, to really anyone. It should be such that anyone can implement their version of the client or a server and connect to the network and communicate with one another, collaborate with one another in a very clean way, in a very sovereign way. That's OnlyJah OnlyJah .com",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "OnlyJah cloud wording review: seed to fruition",
+      "source": "OnlyJah-Cloud-Wording-Review.md (version 5)",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original"
+    }
+  ],
+  "terms": [
+    {
+      "id": "onlyjah",
+      "label": "OnlyJah",
+      "quoteIds": [
+        "jah-06",
+        "snippet-purpose"
+      ],
+      "exampleIds": [],
+      "related": [
+        "ark",
+        "purpose",
+        "twin-stars",
+        "forge",
+        "media",
+        "realm"
+      ]
+    },
+    {
+      "id": "ark",
+      "label": "Ark",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "onlyjah",
+        "twin-stars",
+        "my-ark",
+        "so-il",
+        "tenant",
+        "flowthrough"
+      ]
+    },
+    {
+      "id": "digital-sovereignty",
+      "label": "digital sovereignty",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "sovereignty",
+        "my-ark",
+        "self-hosting",
+        "ownership",
+        "permissions"
+      ]
+    },
+    {
+      "id": "sovereignty",
+      "label": "sovereignty",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "digital-sovereignty",
+        "stewardship",
+        "so-il",
+        "ownership"
+      ]
+    },
+    {
+      "id": "mission",
+      "label": "mission",
+      "quoteIds": [],
+      "exampleIds": [
+        "jah-06"
+      ],
+      "related": [
+        "purpose",
+        "vision",
+        "stewardship"
+      ]
+    },
+    {
+      "id": "vision",
+      "label": "vision",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "mission",
+        "purpose",
+        "twin-stars",
+        "tenant"
+      ]
+    },
+    {
+      "id": "purpose",
+      "label": "purpose",
+      "quoteIds": [
+        "snippet-purpose",
+        "jah-06"
+      ],
+      "exampleIds": [],
+      "related": [
+        "mission",
+        "vision",
+        "alignment",
+        "stewardship"
+      ]
+    },
+    {
+      "id": "forge",
+      "label": "Forge",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "fractal",
+        "project",
+        "ownership",
+        "permissions",
+        "media"
+      ]
+    },
+    {
+      "id": "media",
+      "label": "Media",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "authorship",
+        "resident-artist",
+        "publication",
+        "forge"
+      ]
+    },
+    {
+      "id": "realm",
+      "label": "Realm",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "community",
+        "federation",
+        "tenant",
+        "ketema"
+      ]
+    },
+    {
+      "id": "twin-stars",
+      "label": "twin stars",
+      "quoteIds": [
+        "jah-03"
+      ],
+      "exampleIds": [],
+      "related": [
+        "onlyjah",
+        "ark",
+        "flowthrough"
+      ]
+    },
+    {
+      "id": "flowthrough",
+      "label": "flowthrough",
+      "quoteIds": [
+        "jah-03"
+      ],
+      "exampleIds": [],
+      "related": [
+        "twin-stars",
+        "interoperability",
+        "forge",
+        "media",
+        "realm"
+      ]
+    },
+    {
+      "id": "interoperability",
+      "label": "interoperability",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "flowthrough",
+        "schema",
+        "tenant",
+        "capability-discovery",
+        "self-hosting"
+      ]
+    },
+    {
+      "id": "my-ark",
+      "label": "My Ark",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "ark",
+        "digital-sovereignty",
+        "catalog",
+        "identity",
+        "subscriptions"
+      ]
+    },
+    {
+      "id": "so-il",
+      "label": "SO/IL",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "ark",
+        "sovereignty",
+        "observability",
+        "identity",
+        "capability-discovery"
+      ]
+    },
+    {
+      "id": "tenant",
+      "label": "tenant",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "ark",
+        "organization",
+        "schema",
+        "capability-discovery"
+      ]
+    },
+    {
+      "id": "schema",
+      "label": "schema / shared language",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "tenant",
+        "catalog",
+        "capability-discovery",
+        "interoperability"
+      ]
+    },
+    {
+      "id": "catalog",
+      "label": "catalog / index",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "schema",
+        "tenant",
+        "capability-discovery",
+        "my-ark"
+      ]
+    },
+    {
+      "id": "capability-discovery",
+      "label": "capability discovery",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "tenant",
+        "schema",
+        "catalog",
+        "permissions"
+      ]
+    },
+    {
+      "id": "global-distributed-library",
+      "label": "global distributed library",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "tenant",
+        "resource-exchange",
+        "realm",
+        "project"
+      ]
+    },
+    {
+      "id": "resource-exchange",
+      "label": "resource exchange",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "global-distributed-library",
+        "ownership",
+        "sustainability"
+      ]
+    },
+    {
+      "id": "fractal",
+      "label": "Fractal Engine",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "forge",
+        "project",
+        "self-hosting",
+        "interoperability"
+      ]
+    },
+    {
+      "id": "self-hosting",
+      "label": "self-hosting",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "digital-sovereignty",
+        "interoperability",
+        "forge",
+        "fractal"
+      ]
+    },
+    {
+      "id": "stewardship",
+      "label": "stewardship",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "purpose",
+        "sovereignty",
+        "alignment"
+      ]
+    },
+    {
+      "id": "oj-ss",
+      "label": "OJ-SS",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "sovereignty",
+        "solar-systems",
+        "sustainability",
+        "purpose"
+      ]
+    },
+    {
+      "id": "solar-systems",
+      "label": "sovereign, solar systems",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "oj-ss",
+        "sovereignty",
+        "purpose"
+      ]
+    },
+    {
+      "id": "sustainability",
+      "label": "sustainability / gradients",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "oj-ss",
+        "organization",
+        "access",
+        "resource-exchange"
+      ]
+    },
+    {
+      "id": "alignment",
+      "label": "purpose / support alignment",
+      "quoteIds": [
+        "jah-23"
+      ],
+      "exampleIds": [],
+      "related": [
+        "purpose",
+        "access",
+        "stewardship",
+        "organization"
+      ]
+    },
+    {
+      "id": "organization",
+      "label": "organization",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "tenant",
+        "access",
+        "ketema",
+        "authorship"
+      ]
+    },
+    {
+      "id": "ketema",
+      "label": "Ketema",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "community",
+        "access",
+        "organization",
+        "realm"
+      ]
+    },
+    {
+      "id": "project",
+      "label": "project",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "forge",
+        "fractal",
+        "ownership",
+        "publication"
+      ]
+    },
+    {
+      "id": "ownership",
+      "label": "ownership",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "project",
+        "permissions",
+        "authorship",
+        "resource-exchange"
+      ]
+    },
+    {
+      "id": "permissions",
+      "label": "permissions",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "ownership",
+        "identity",
+        "authorship",
+        "access"
+      ]
+    },
+    {
+      "id": "authorship",
+      "label": "authorship",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "publication",
+        "media",
+        "ownership",
+        "resident-artist"
+      ]
+    },
+    {
+      "id": "resident-artist",
+      "label": "resident artist",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "media",
+        "authorship",
+        "community",
+        "publication"
+      ]
+    },
+    {
+      "id": "publication",
+      "label": "publication",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "media",
+        "forge",
+        "authorship"
+      ]
+    },
+    {
+      "id": "identity",
+      "label": "identity / account",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "my-ark",
+        "permissions",
+        "federation",
+        "tenant"
+      ]
+    },
+    {
+      "id": "federation",
+      "label": "federation",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "realm",
+        "identity",
+        "interoperability",
+        "tenant"
+      ]
+    },
+    {
+      "id": "community",
+      "label": "community",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "realm",
+        "ketema",
+        "purpose",
+        "resource-exchange"
+      ]
+    },
+    {
+      "id": "access",
+      "label": "access / participation",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "permissions",
+        "organization",
+        "ketema",
+        "community"
+      ]
+    },
+    {
+      "id": "subscriptions",
+      "label": "subscriptions",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "my-ark",
+        "catalog",
+        "identity"
+      ]
+    },
+    {
+      "id": "observability",
+      "label": "observability / fleet",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "so-il",
+        "my-ark",
+        "capability-discovery",
+        "purpose"
+      ]
+    },
+    {
+      "id": "ark-notes",
+      "label": "Ark Notes / captain logs",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "ark",
+        "waypoint-dynamics",
+        "project"
+      ]
+    },
+    {
+      "id": "waypoint-dynamics",
+      "label": "Waypoint Dynamics Philosophy",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "ark-notes",
+        "project",
+        "stewardship"
+      ]
+    },
+    {
+      "id": "lab-of-life",
+      "label": "Lab of Life",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "ark",
+        "project",
+        "purpose"
+      ]
+    },
+    {
+      "id": "transformation",
+      "label": "spiritual death and rebirth",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "purpose",
+        "stewardship"
+      ]
+    },
+    {
+      "id": "relating",
+      "label": "sexual relating from a unified perspective",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "community",
+        "purpose"
+      ]
+    },
+    {
+      "id": "contributor",
+      "label": "contributor",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "forge",
+        "media",
+        "realm"
+      ]
+    },
+    {
+      "id": "partner",
+      "label": "partner",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "sacred-exchange",
+        "forge",
+        "realm"
+      ]
+    },
+    {
+      "id": "sacred-exchange",
+      "label": "sacred exchange agreement",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "partner",
+        "forge",
+        "realm"
+      ]
+    },
+    {
+      "id": "matrix",
+      "label": "matrix",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "realm",
+        "interoperability"
+      ]
+    },
+    {
+      "id": "realm-walker",
+      "label": "class E realm walker candidate",
+      "quoteIds": [],
+      "exampleIds": [],
+      "related": [
+        "realm",
+        "sovereignty"
+      ]
+    }
+  ],
+  "placements": [
+    {
+      "id": "home.hero",
+      "route": "/",
+      "region": "hero",
+      "quote_id": "jah-14",
+      "author_approval": "approved",
+      "stage": "testing_review"
+    },
+    {
+      "id": "home.purpose",
+      "route": "/",
+      "region": "intro",
+      "quote_id": "snippet-purpose",
+      "author_approval": "approved",
+      "stage": "testing_review"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "jah-14",
+      "revision": 1,
+      "role": "public_direction",
+      "state": "approved",
+      "approved_revision": 1
+    },
+    {
+      "id": "snippet-purpose",
+      "revision": 2,
+      "role": "public_direction",
+      "state": "approved",
+      "approved_revision": 2
+    },
+    {
+      "id": "jah-03",
+      "revision": 2,
+      "role": "public_direction",
+      "state": "approved",
+      "approved_revision": 2
+    },
+    {
+      "id": "jah-06",
+      "revision": 2,
+      "role": "public_direction",
+      "state": "approved",
+      "approved_revision": 2
+    },
+    {
+      "id": "jah-23",
+      "revision": 1,
+      "role": "public_direction",
+      "state": "approved",
+      "approved_revision": 1
+    },
+    {
+      "id": "cloud-shared-resources-20261002",
+      "revision": 1,
+      "role": "public_direction",
+      "state": "approved",
+      "approved_revision": 1
+    },
+    {
+      "id": "cloud-seed-to-fruition-20261002",
+      "revision": 1,
+      "role": "public_direction",
+      "state": "approved",
+      "approved_revision": 1
+    }
+  ],
+  "amendment_source": {
+    "review": "OnlyJah-Cloud-Wording-Review.md",
+    "library_file_id": "libfile_c5be24be2c7c8191a29a3d69bafa157a",
+    "version": 5,
+    "checked_on": "2026-10-08",
+    "original_master_sha256": "3502a03bb52c8248624eb89e7ea9d135728018cac1be66b92c796ee7db8459f4",
+    "canonical_master_sync": "Pending local private-master reconciliation; public display projection updated from saved author review."
+  }
+}

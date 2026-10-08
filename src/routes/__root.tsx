@@ -1,5 +1,6 @@
 // src/routes/__root.tsx
 import type { ReactNode } from 'react'
+import '../styles.css'
 import {
   Outlet,
   createRootRoute,

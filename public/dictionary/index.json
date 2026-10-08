@@ -1,0 +1,3674 @@
+{
+  "schemaVersion": 1,
+  "speakers": [
+    {
+      "id": "jahnoah",
+      "name": "JahNoah",
+      "authorLabels": [
+        "Jah",
+        "JahNoah"
+      ],
+      "status": "author-supplied",
+      "publicationPolicy": "Explicit inclusion in the public copy manifest; contributor accounts alone do not grant publication."
+    }
+  ],
+  "edition": "2026-10-08",
+  "languages": [
+    "en"
+  ],
+  "otherLanguages": "pending",
+  "coverage": "Selected public corpus only; private master reconciliation pending.",
+  "quoteCount": 7,
+  "corpusSha256": "7c0446628e789c7f2721aa3c9b2aa519df7ca413d6123ef8807367284bb113d2",
+  "citationSupport": {
+    "wikipedia": "lookup-links-only",
+    "verifiedCitations": "pending"
+  },
+  "entries": [
+    {
+      "id": "en-a",
+      "label": "a",
+      "language": "en",
+      "aliases": [
+        "a"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-14",
+        "jah-06",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=a",
+      "etymonline": "https://www.etymonline.com/search?q=a"
+    },
+    {
+      "id": "en-ability",
+      "label": "ability",
+      "language": "en",
+      "aliases": [
+        "ability"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=ability",
+      "etymonline": "https://www.etymonline.com/search?q=ability"
+    },
+    {
+      "id": "en-able",
+      "label": "able",
+      "language": "en",
+      "aliases": [
+        "able"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=able",
+      "etymonline": "https://www.etymonline.com/search?q=able"
+    },
+    {
+      "id": "access",
+      "label": "access / participation",
+      "language": "en",
+      "aliases": [
+        "access / participation",
+        "access",
+        "participation"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "permissions",
+        "organization",
+        "ketema",
+        "community"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=access%20%2F%20participation",
+      "etymonline": "https://www.etymonline.com/search?q=access%20%2F%20participation"
+    },
+    {
+      "id": "en-adding",
+      "label": "adding",
+      "language": "en",
+      "aliases": [
+        "adding"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=adding",
+      "etymonline": "https://www.etymonline.com/search?q=adding"
+    },
+    {
+      "id": "en-all",
+      "label": "all",
+      "language": "en",
+      "aliases": [
+        "all"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=all",
+      "etymonline": "https://www.etymonline.com/search?q=all"
+    },
+    {
+      "id": "en-allows",
+      "label": "allows",
+      "language": "en",
+      "aliases": [
+        "allows"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=allows",
+      "etymonline": "https://www.etymonline.com/search?q=allows"
+    },
+    {
+      "id": "en-amongst",
+      "label": "amongst",
+      "language": "en",
+      "aliases": [
+        "amongst"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=amongst",
+      "etymonline": "https://www.etymonline.com/search?q=amongst"
+    },
+    {
+      "id": "en-and",
+      "label": "and",
+      "language": "en",
+      "aliases": [
+        "and"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "jah-03",
+        "jah-23",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=and",
+      "etymonline": "https://www.etymonline.com/search?q=and"
+    },
+    {
+      "id": "en-another",
+      "label": "another",
+      "language": "en",
+      "aliases": [
+        "another"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=another",
+      "etymonline": "https://www.etymonline.com/search?q=another"
+    },
+    {
+      "id": "en-anothers",
+      "label": "anothers",
+      "language": "en",
+      "aliases": [
+        "anothers"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-03"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=anothers",
+      "etymonline": "https://www.etymonline.com/search?q=anothers"
+    },
+    {
+      "id": "en-anyone",
+      "label": "anyone",
+      "language": "en",
+      "aliases": [
+        "anyone"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=anyone",
+      "etymonline": "https://www.etymonline.com/search?q=anyone"
+    },
+    {
+      "id": "en-are",
+      "label": "are",
+      "language": "en",
+      "aliases": [
+        "are"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-03",
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=are",
+      "etymonline": "https://www.etymonline.com/search?q=are"
+    },
+    {
+      "id": "ark",
+      "label": "Ark",
+      "language": "en",
+      "aliases": [
+        "Ark"
+      ],
+      "curated": true,
+      "quoteIds": [
+        "jah-03"
+      ],
+      "related": [
+        "onlyjah",
+        "twin-stars",
+        "my-ark",
+        "so-il",
+        "tenant",
+        "flowthrough"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=Ark",
+      "etymonline": "https://www.etymonline.com/search?q=Ark"
+    },
+    {
+      "id": "ark-notes",
+      "label": "Ark Notes / captain logs",
+      "language": "en",
+      "aliases": [
+        "Ark Notes / captain logs",
+        "Ark Notes",
+        "captain logs"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "ark",
+        "waypoint-dynamics",
+        "project"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=Ark%20Notes%20%2F%20captain%20logs",
+      "etymonline": "https://www.etymonline.com/search?q=Ark%20Notes%20%2F%20captain%20logs"
+    },
+    {
+      "id": "en-as",
+      "label": "as",
+      "language": "en",
+      "aliases": [
+        "as"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=as",
+      "etymonline": "https://www.etymonline.com/search?q=as"
+    },
+    {
+      "id": "authorship",
+      "label": "authorship",
+      "language": "en",
+      "aliases": [
+        "authorship"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "publication",
+        "media",
+        "ownership",
+        "resident-artist"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=authorship",
+      "etymonline": "https://www.etymonline.com/search?q=authorship"
+    },
+    {
+      "id": "en-available",
+      "label": "available",
+      "language": "en",
+      "aliases": [
+        "available"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=available",
+      "etymonline": "https://www.etymonline.com/search?q=available"
+    },
+    {
+      "id": "en-back",
+      "label": "back",
+      "language": "en",
+      "aliases": [
+        "back"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=back",
+      "etymonline": "https://www.etymonline.com/search?q=back"
+    },
+    {
+      "id": "en-be",
+      "label": "be",
+      "language": "en",
+      "aliases": [
+        "be"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=be",
+      "etymonline": "https://www.etymonline.com/search?q=be"
+    },
+    {
+      "id": "en-because",
+      "label": "because",
+      "language": "en",
+      "aliases": [
+        "because"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=because",
+      "etymonline": "https://www.etymonline.com/search?q=because"
+    },
+    {
+      "id": "en-being",
+      "label": "being",
+      "language": "en",
+      "aliases": [
+        "being"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=being",
+      "etymonline": "https://www.etymonline.com/search?q=being"
+    },
+    {
+      "id": "en-better",
+      "label": "better",
+      "language": "en",
+      "aliases": [
+        "better"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=better",
+      "etymonline": "https://www.etymonline.com/search?q=better"
+    },
+    {
+      "id": "en-betterment",
+      "label": "betterment",
+      "language": "en",
+      "aliases": [
+        "betterment"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=betterment",
+      "etymonline": "https://www.etymonline.com/search?q=betterment"
+    },
+    {
+      "id": "en-branch",
+      "label": "branch",
+      "language": "en",
+      "aliases": [
+        "branch"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=branch",
+      "etymonline": "https://www.etymonline.com/search?q=branch"
+    },
+    {
+      "id": "en-build",
+      "label": "build",
+      "language": "en",
+      "aliases": [
+        "build"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=build",
+      "etymonline": "https://www.etymonline.com/search?q=build"
+    },
+    {
+      "id": "en-can",
+      "label": "can",
+      "language": "en",
+      "aliases": [
+        "can"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=can",
+      "etymonline": "https://www.etymonline.com/search?q=can"
+    },
+    {
+      "id": "capability-discovery",
+      "label": "capability discovery",
+      "language": "en",
+      "aliases": [
+        "capability discovery"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "tenant",
+        "schema",
+        "catalog",
+        "permissions"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=capability%20discovery",
+      "etymonline": "https://www.etymonline.com/search?q=capability%20discovery"
+    },
+    {
+      "id": "en-capacity",
+      "label": "capacity",
+      "language": "en",
+      "aliases": [
+        "capacity"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=capacity",
+      "etymonline": "https://www.etymonline.com/search?q=capacity"
+    },
+    {
+      "id": "catalog",
+      "label": "catalog / index",
+      "language": "en",
+      "aliases": [
+        "catalog / index",
+        "catalog",
+        "index"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "schema",
+        "tenant",
+        "capability-discovery",
+        "my-ark"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=catalog%20%2F%20index",
+      "etymonline": "https://www.etymonline.com/search?q=catalog%20%2F%20index"
+    },
+    {
+      "id": "realm-walker",
+      "label": "class E realm walker candidate",
+      "language": "en",
+      "aliases": [
+        "class E realm walker candidate"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "realm",
+        "sovereignty"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=class%20E%20realm%20walker%20candidate",
+      "etymonline": "https://www.etymonline.com/search?q=class%20E%20realm%20walker%20candidate"
+    },
+    {
+      "id": "en-clean",
+      "label": "clean",
+      "language": "en",
+      "aliases": [
+        "clean"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=clean",
+      "etymonline": "https://www.etymonline.com/search?q=clean"
+    },
+    {
+      "id": "en-client",
+      "label": "client",
+      "language": "en",
+      "aliases": [
+        "client"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=client",
+      "etymonline": "https://www.etymonline.com/search?q=client"
+    },
+    {
+      "id": "en-cloud",
+      "label": "cloud",
+      "language": "en",
+      "aliases": [
+        "cloud"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-14"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=cloud",
+      "etymonline": "https://www.etymonline.com/search?q=cloud"
+    },
+    {
+      "id": "en-collaborate",
+      "label": "collaborate",
+      "language": "en",
+      "aliases": [
+        "collaborate"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=collaborate",
+      "etymonline": "https://www.etymonline.com/search?q=collaborate"
+    },
+    {
+      "id": "en-collaborations",
+      "label": "collaborations",
+      "language": "en",
+      "aliases": [
+        "collaborations"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=collaborations",
+      "etymonline": "https://www.etymonline.com/search?q=collaborations"
+    },
+    {
+      "id": "en-collaborator",
+      "label": "collaborator",
+      "language": "en",
+      "aliases": [
+        "collaborator"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=collaborator",
+      "etymonline": "https://www.etymonline.com/search?q=collaborator"
+    },
+    {
+      "id": "en-collaborators",
+      "label": "collaborators",
+      "language": "en",
+      "aliases": [
+        "collaborators"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=collaborators",
+      "etymonline": "https://www.etymonline.com/search?q=collaborators"
+    },
+    {
+      "id": "en-collective",
+      "label": "collective",
+      "language": "en",
+      "aliases": [
+        "collective"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "snippet-purpose"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=collective",
+      "etymonline": "https://www.etymonline.com/search?q=collective"
+    },
+    {
+      "id": "en-com",
+      "label": "com",
+      "language": "en",
+      "aliases": [
+        "com"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=com",
+      "etymonline": "https://www.etymonline.com/search?q=com"
+    },
+    {
+      "id": "en-common",
+      "label": "common",
+      "language": "en",
+      "aliases": [
+        "common"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=common",
+      "etymonline": "https://www.etymonline.com/search?q=common"
+    },
+    {
+      "id": "en-communicate",
+      "label": "communicate",
+      "language": "en",
+      "aliases": [
+        "communicate"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=communicate",
+      "etymonline": "https://www.etymonline.com/search?q=communicate"
+    },
+    {
+      "id": "community",
+      "label": "community",
+      "language": "en",
+      "aliases": [
+        "community"
+      ],
+      "curated": true,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [
+        "realm",
+        "ketema",
+        "purpose",
+        "resource-exchange"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=community",
+      "etymonline": "https://www.etymonline.com/search?q=community"
+    },
+    {
+      "id": "en-complicated",
+      "label": "complicated",
+      "language": "en",
+      "aliases": [
+        "complicated"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=complicated",
+      "etymonline": "https://www.etymonline.com/search?q=complicated"
+    },
+    {
+      "id": "en-concept",
+      "label": "concept",
+      "language": "en",
+      "aliases": [
+        "concept"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=concept",
+      "etymonline": "https://www.etymonline.com/search?q=concept"
+    },
+    {
+      "id": "en-connect",
+      "label": "connect",
+      "language": "en",
+      "aliases": [
+        "connect"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=connect",
+      "etymonline": "https://www.etymonline.com/search?q=connect"
+    },
+    {
+      "id": "en-connecting",
+      "label": "connecting",
+      "language": "en",
+      "aliases": [
+        "connecting"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-23"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=connecting",
+      "etymonline": "https://www.etymonline.com/search?q=connecting"
+    },
+    {
+      "id": "en-connection",
+      "label": "connection",
+      "language": "en",
+      "aliases": [
+        "connection"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=connection",
+      "etymonline": "https://www.etymonline.com/search?q=connection"
+    },
+    {
+      "id": "en-contribute",
+      "label": "contribute",
+      "language": "en",
+      "aliases": [
+        "contribute"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-03"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=contribute",
+      "etymonline": "https://www.etymonline.com/search?q=contribute"
+    },
+    {
+      "id": "contributor",
+      "label": "contributor",
+      "language": "en",
+      "aliases": [
+        "contributor"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "forge",
+        "media",
+        "realm"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=contributor",
+      "etymonline": "https://www.etymonline.com/search?q=contributor"
+    },
+    {
+      "id": "en-cool",
+      "label": "cool",
+      "language": "en",
+      "aliases": [
+        "cool"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=cool",
+      "etymonline": "https://www.etymonline.com/search?q=cool"
+    },
+    {
+      "id": "en-creating",
+      "label": "creating",
+      "language": "en",
+      "aliases": [
+        "creating"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=creating",
+      "etymonline": "https://www.etymonline.com/search?q=creating"
+    },
+    {
+      "id": "en-design",
+      "label": "design",
+      "language": "en",
+      "aliases": [
+        "design"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-03"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=design",
+      "etymonline": "https://www.etymonline.com/search?q=design"
+    },
+    {
+      "id": "en-designing",
+      "label": "designing",
+      "language": "en",
+      "aliases": [
+        "designing"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=designing",
+      "etymonline": "https://www.etymonline.com/search?q=designing"
+    },
+    {
+      "id": "digital-sovereignty",
+      "label": "digital sovereignty",
+      "language": "en",
+      "aliases": [
+        "digital sovereignty"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "sovereignty",
+        "my-ark",
+        "self-hosting",
+        "ownership",
+        "permissions"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=digital%20sovereignty",
+      "etymonline": "https://www.etymonline.com/search?q=digital%20sovereignty"
+    },
+    {
+      "id": "en-doesn't",
+      "label": "doesn't",
+      "language": "en",
+      "aliases": [
+        "doesn't"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=doesn't",
+      "etymonline": "https://www.etymonline.com/search?q=doesn't"
+    },
+    {
+      "id": "en-don't",
+      "label": "don't",
+      "language": "en",
+      "aliases": [
+        "don't"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=don't",
+      "etymonline": "https://www.etymonline.com/search?q=don't"
+    },
+    {
+      "id": "en-else",
+      "label": "else",
+      "language": "en",
+      "aliases": [
+        "else"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=else",
+      "etymonline": "https://www.etymonline.com/search?q=else"
+    },
+    {
+      "id": "en-end",
+      "label": "end",
+      "language": "en",
+      "aliases": [
+        "end"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=end",
+      "etymonline": "https://www.etymonline.com/search?q=end"
+    },
+    {
+      "id": "en-every",
+      "label": "every",
+      "language": "en",
+      "aliases": [
+        "every"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=every",
+      "etymonline": "https://www.etymonline.com/search?q=every"
+    },
+    {
+      "id": "en-experience",
+      "label": "experience",
+      "language": "en",
+      "aliases": [
+        "experience"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=experience",
+      "etymonline": "https://www.etymonline.com/search?q=experience"
+    },
+    {
+      "id": "en-expertise",
+      "label": "expertise",
+      "language": "en",
+      "aliases": [
+        "expertise"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-23"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=expertise",
+      "etymonline": "https://www.etymonline.com/search?q=expertise"
+    },
+    {
+      "id": "en-expressions",
+      "label": "expressions",
+      "language": "en",
+      "aliases": [
+        "expressions"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=expressions",
+      "etymonline": "https://www.etymonline.com/search?q=expressions"
+    },
+    {
+      "id": "en-faring",
+      "label": "faring",
+      "language": "en",
+      "aliases": [
+        "faring"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-14"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=faring",
+      "etymonline": "https://www.etymonline.com/search?q=faring"
+    },
+    {
+      "id": "federation",
+      "label": "federation",
+      "language": "en",
+      "aliases": [
+        "federation"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "realm",
+        "identity",
+        "interoperability",
+        "tenant"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=federation",
+      "etymonline": "https://www.etymonline.com/search?q=federation"
+    },
+    {
+      "id": "en-feel",
+      "label": "feel",
+      "language": "en",
+      "aliases": [
+        "feel"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=feel",
+      "etymonline": "https://www.etymonline.com/search?q=feel"
+    },
+    {
+      "id": "flowthrough",
+      "label": "flowthrough",
+      "language": "en",
+      "aliases": [
+        "flowthrough",
+        "flow through"
+      ],
+      "curated": true,
+      "quoteIds": [
+        "jah-03"
+      ],
+      "related": [
+        "twin-stars",
+        "interoperability",
+        "forge",
+        "media",
+        "realm"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=flowthrough",
+      "etymonline": "https://www.etymonline.com/search?q=flowthrough"
+    },
+    {
+      "id": "en-for",
+      "label": "for",
+      "language": "en",
+      "aliases": [
+        "for"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=for",
+      "etymonline": "https://www.etymonline.com/search?q=for"
+    },
+    {
+      "id": "forge",
+      "label": "Forge",
+      "language": "en",
+      "aliases": [
+        "Forge"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "fractal",
+        "project",
+        "ownership",
+        "permissions",
+        "media"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=Forge",
+      "etymonline": "https://www.etymonline.com/search?q=Forge"
+    },
+    {
+      "id": "en-four",
+      "label": "four",
+      "language": "en",
+      "aliases": [
+        "four"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=four",
+      "etymonline": "https://www.etymonline.com/search?q=four"
+    },
+    {
+      "id": "fractal",
+      "label": "Fractal Engine",
+      "language": "en",
+      "aliases": [
+        "Fractal Engine"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "forge",
+        "project",
+        "self-hosting",
+        "interoperability"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=Fractal%20Engine",
+      "etymonline": "https://www.etymonline.com/search?q=Fractal%20Engine"
+    },
+    {
+      "id": "en-framework",
+      "label": "framework",
+      "language": "en",
+      "aliases": [
+        "framework"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-03",
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=framework",
+      "etymonline": "https://www.etymonline.com/search?q=framework"
+    },
+    {
+      "id": "en-from",
+      "label": "from",
+      "language": "en",
+      "aliases": [
+        "from"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=from",
+      "etymonline": "https://www.etymonline.com/search?q=from"
+    },
+    {
+      "id": "en-front",
+      "label": "front",
+      "language": "en",
+      "aliases": [
+        "front"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=front",
+      "etymonline": "https://www.etymonline.com/search?q=front"
+    },
+    {
+      "id": "en-fruition",
+      "label": "fruition",
+      "language": "en",
+      "aliases": [
+        "fruition"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=fruition",
+      "etymonline": "https://www.etymonline.com/search?q=fruition"
+    },
+    {
+      "id": "en-fulfillment",
+      "label": "fulfillment",
+      "language": "en",
+      "aliases": [
+        "fulfillment"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "snippet-purpose"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=fulfillment",
+      "etymonline": "https://www.etymonline.com/search?q=fulfillment"
+    },
+    {
+      "id": "en-funds",
+      "label": "funds",
+      "language": "en",
+      "aliases": [
+        "funds"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-23"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=funds",
+      "etymonline": "https://www.etymonline.com/search?q=funds"
+    },
+    {
+      "id": "en-generate",
+      "label": "generate",
+      "language": "en",
+      "aliases": [
+        "generate"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "snippet-purpose"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=generate",
+      "etymonline": "https://www.etymonline.com/search?q=generate"
+    },
+    {
+      "id": "global-distributed-library",
+      "label": "global distributed library",
+      "language": "en",
+      "aliases": [
+        "global distributed library"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "tenant",
+        "resource-exchange",
+        "realm",
+        "project"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=global%20distributed%20library",
+      "etymonline": "https://www.etymonline.com/search?q=global%20distributed%20library"
+    },
+    {
+      "id": "en-grand",
+      "label": "grand",
+      "language": "en",
+      "aliases": [
+        "grand"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-03"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=grand",
+      "etymonline": "https://www.etymonline.com/search?q=grand"
+    },
+    {
+      "id": "en-have",
+      "label": "have",
+      "language": "en",
+      "aliases": [
+        "have"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=have",
+      "etymonline": "https://www.etymonline.com/search?q=have"
+    },
+    {
+      "id": "en-honestly",
+      "label": "honestly",
+      "language": "en",
+      "aliases": [
+        "honestly"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=honestly",
+      "etymonline": "https://www.etymonline.com/search?q=honestly"
+    },
+    {
+      "id": "en-i",
+      "label": "i",
+      "language": "en",
+      "aliases": [
+        "i"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=i",
+      "etymonline": "https://www.etymonline.com/search?q=i"
+    },
+    {
+      "id": "en-i'm",
+      "label": "i'm",
+      "language": "en",
+      "aliases": [
+        "i'm"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=i'm",
+      "etymonline": "https://www.etymonline.com/search?q=i'm"
+    },
+    {
+      "id": "en-idea",
+      "label": "idea",
+      "language": "en",
+      "aliases": [
+        "idea"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=idea",
+      "etymonline": "https://www.etymonline.com/search?q=idea"
+    },
+    {
+      "id": "identity",
+      "label": "identity / account",
+      "language": "en",
+      "aliases": [
+        "identity / account",
+        "identity",
+        "account"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "my-ark",
+        "permissions",
+        "federation",
+        "tenant"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=identity%20%2F%20account",
+      "etymonline": "https://www.etymonline.com/search?q=identity%20%2F%20account"
+    },
+    {
+      "id": "en-implement",
+      "label": "implement",
+      "language": "en",
+      "aliases": [
+        "implement"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=implement",
+      "etymonline": "https://www.etymonline.com/search?q=implement"
+    },
+    {
+      "id": "en-in",
+      "label": "in",
+      "language": "en",
+      "aliases": [
+        "in"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-14",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=in",
+      "etymonline": "https://www.etymonline.com/search?q=in"
+    },
+    {
+      "id": "en-interaction",
+      "label": "interaction",
+      "language": "en",
+      "aliases": [
+        "interaction"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=interaction",
+      "etymonline": "https://www.etymonline.com/search?q=interaction"
+    },
+    {
+      "id": "en-interest",
+      "label": "interest",
+      "language": "en",
+      "aliases": [
+        "interest"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=interest",
+      "etymonline": "https://www.etymonline.com/search?q=interest"
+    },
+    {
+      "id": "en-internet",
+      "label": "internet",
+      "language": "en",
+      "aliases": [
+        "internet"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=internet",
+      "etymonline": "https://www.etymonline.com/search?q=internet"
+    },
+    {
+      "id": "interoperability",
+      "label": "interoperability",
+      "language": "en",
+      "aliases": [
+        "interoperability"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "flowthrough",
+        "schema",
+        "tenant",
+        "capability-discovery",
+        "self-hosting"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=interoperability",
+      "etymonline": "https://www.etymonline.com/search?q=interoperability"
+    },
+    {
+      "id": "en-is",
+      "label": "is",
+      "language": "en",
+      "aliases": [
+        "is"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=is",
+      "etymonline": "https://www.etymonline.com/search?q=is"
+    },
+    {
+      "id": "en-it",
+      "label": "it",
+      "language": "en",
+      "aliases": [
+        "it"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=it",
+      "etymonline": "https://www.etymonline.com/search?q=it"
+    },
+    {
+      "id": "en-just",
+      "label": "just",
+      "language": "en",
+      "aliases": [
+        "just"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=just",
+      "etymonline": "https://www.etymonline.com/search?q=just"
+    },
+    {
+      "id": "ketema",
+      "label": "Ketema",
+      "language": "en",
+      "aliases": [
+        "Ketema"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "community",
+        "access",
+        "organization",
+        "realm"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=Ketema",
+      "etymonline": "https://www.etymonline.com/search?q=Ketema"
+    },
+    {
+      "id": "en-know",
+      "label": "know",
+      "language": "en",
+      "aliases": [
+        "know"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=know",
+      "etymonline": "https://www.etymonline.com/search?q=know"
+    },
+    {
+      "id": "lab-of-life",
+      "label": "Lab of Life",
+      "language": "en",
+      "aliases": [
+        "Lab of Life"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "ark",
+        "project",
+        "purpose"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=Lab%20of%20Life",
+      "etymonline": "https://www.etymonline.com/search?q=Lab%20of%20Life"
+    },
+    {
+      "id": "en-life",
+      "label": "life",
+      "language": "en",
+      "aliases": [
+        "life"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "snippet-purpose",
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=life",
+      "etymonline": "https://www.etymonline.com/search?q=life"
+    },
+    {
+      "id": "en-like",
+      "label": "like",
+      "language": "en",
+      "aliases": [
+        "like"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-03",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=like",
+      "etymonline": "https://www.etymonline.com/search?q=like"
+    },
+    {
+      "id": "en-long",
+      "label": "long",
+      "language": "en",
+      "aliases": [
+        "long"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=long",
+      "etymonline": "https://www.etymonline.com/search?q=long"
+    },
+    {
+      "id": "en-main",
+      "label": "main",
+      "language": "en",
+      "aliases": [
+        "main"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=main",
+      "etymonline": "https://www.etymonline.com/search?q=main"
+    },
+    {
+      "id": "en-make",
+      "label": "make",
+      "language": "en",
+      "aliases": [
+        "make"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=make",
+      "etymonline": "https://www.etymonline.com/search?q=make"
+    },
+    {
+      "id": "en-making",
+      "label": "making",
+      "language": "en",
+      "aliases": [
+        "making"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=making",
+      "etymonline": "https://www.etymonline.com/search?q=making"
+    },
+    {
+      "id": "en-many",
+      "label": "many",
+      "language": "en",
+      "aliases": [
+        "many"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=many",
+      "etymonline": "https://www.etymonline.com/search?q=many"
+    },
+    {
+      "id": "matrix",
+      "label": "matrix",
+      "language": "en",
+      "aliases": [
+        "matrix"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "realm",
+        "interoperability"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=matrix",
+      "etymonline": "https://www.etymonline.com/search?q=matrix"
+    },
+    {
+      "id": "en-me",
+      "label": "me",
+      "language": "en",
+      "aliases": [
+        "me"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=me",
+      "etymonline": "https://www.etymonline.com/search?q=me"
+    },
+    {
+      "id": "media",
+      "label": "Media",
+      "language": "en",
+      "aliases": [
+        "Media"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "authorship",
+        "resident-artist",
+        "publication",
+        "forge"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=Media",
+      "etymonline": "https://www.etymonline.com/search?q=Media"
+    },
+    {
+      "id": "mission",
+      "label": "mission",
+      "language": "en",
+      "aliases": [
+        "mission"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "purpose",
+        "vision",
+        "stewardship"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=mission",
+      "etymonline": "https://www.etymonline.com/search?q=mission"
+    },
+    {
+      "id": "en-mm",
+      "label": "mm",
+      "language": "en",
+      "aliases": [
+        "mm"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=mm",
+      "etymonline": "https://www.etymonline.com/search?q=mm"
+    },
+    {
+      "id": "en-my",
+      "label": "my",
+      "language": "en",
+      "aliases": [
+        "my"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=my",
+      "etymonline": "https://www.etymonline.com/search?q=my"
+    },
+    {
+      "id": "my-ark",
+      "label": "My Ark",
+      "language": "en",
+      "aliases": [
+        "My Ark"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "ark",
+        "digital-sovereignty",
+        "catalog",
+        "identity",
+        "subscriptions"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=My%20Ark",
+      "etymonline": "https://www.etymonline.com/search?q=My%20Ark"
+    },
+    {
+      "id": "en-need",
+      "label": "need",
+      "language": "en",
+      "aliases": [
+        "need"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=need",
+      "etymonline": "https://www.etymonline.com/search?q=need"
+    },
+    {
+      "id": "en-network",
+      "label": "network",
+      "language": "en",
+      "aliases": [
+        "network"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=network",
+      "etymonline": "https://www.etymonline.com/search?q=network"
+    },
+    {
+      "id": "en-not",
+      "label": "not",
+      "language": "en",
+      "aliases": [
+        "not"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=not",
+      "etymonline": "https://www.etymonline.com/search?q=not"
+    },
+    {
+      "id": "en-now",
+      "label": "now",
+      "language": "en",
+      "aliases": [
+        "now"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=now",
+      "etymonline": "https://www.etymonline.com/search?q=now"
+    },
+    {
+      "id": "observability",
+      "label": "observability / fleet",
+      "language": "en",
+      "aliases": [
+        "observability / fleet",
+        "observability",
+        "fleet"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "so-il",
+        "my-ark",
+        "capability-discovery",
+        "purpose"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=observability%20%2F%20fleet",
+      "etymonline": "https://www.etymonline.com/search?q=observability%20%2F%20fleet"
+    },
+    {
+      "id": "en-of",
+      "label": "of",
+      "language": "en",
+      "aliases": [
+        "of"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=of",
+      "etymonline": "https://www.etymonline.com/search?q=of"
+    },
+    {
+      "id": "oj-ss",
+      "label": "OJ-SS",
+      "language": "en",
+      "aliases": [
+        "OJ-SS"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "sovereignty",
+        "solar-systems",
+        "sustainability",
+        "purpose"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=OJ-SS",
+      "etymonline": "https://www.etymonline.com/search?q=OJ-SS"
+    },
+    {
+      "id": "en-on",
+      "label": "on",
+      "language": "en",
+      "aliases": [
+        "on"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=on",
+      "etymonline": "https://www.etymonline.com/search?q=on"
+    },
+    {
+      "id": "en-one",
+      "label": "one",
+      "language": "en",
+      "aliases": [
+        "one"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-03",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=one",
+      "etymonline": "https://www.etymonline.com/search?q=one"
+    },
+    {
+      "id": "en-only",
+      "label": "only",
+      "language": "en",
+      "aliases": [
+        "only"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=only",
+      "etymonline": "https://www.etymonline.com/search?q=only"
+    },
+    {
+      "id": "onlyjah",
+      "label": "OnlyJah",
+      "language": "en",
+      "aliases": [
+        "OnlyJah"
+      ],
+      "curated": true,
+      "quoteIds": [
+        "jah-14",
+        "jah-06",
+        "jah-03",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [
+        "ark",
+        "purpose",
+        "twin-stars",
+        "forge",
+        "media",
+        "realm"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=OnlyJah",
+      "etymonline": "https://www.etymonline.com/search?q=OnlyJah"
+    },
+    {
+      "id": "en-or",
+      "label": "or",
+      "language": "en",
+      "aliases": [
+        "or"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=or",
+      "etymonline": "https://www.etymonline.com/search?q=or"
+    },
+    {
+      "id": "organization",
+      "label": "organization",
+      "language": "en",
+      "aliases": [
+        "organization"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "tenant",
+        "access",
+        "ketema",
+        "authorship"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=organization",
+      "etymonline": "https://www.etymonline.com/search?q=organization"
+    },
+    {
+      "id": "en-others",
+      "label": "others",
+      "language": "en",
+      "aliases": [
+        "others"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=others",
+      "etymonline": "https://www.etymonline.com/search?q=others"
+    },
+    {
+      "id": "ownership",
+      "label": "ownership",
+      "language": "en",
+      "aliases": [
+        "ownership"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "project",
+        "permissions",
+        "authorship",
+        "resource-exchange"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=ownership",
+      "etymonline": "https://www.etymonline.com/search?q=ownership"
+    },
+    {
+      "id": "partner",
+      "label": "partner",
+      "language": "en",
+      "aliases": [
+        "partner"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "sacred-exchange",
+        "forge",
+        "realm"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=partner",
+      "etymonline": "https://www.etymonline.com/search?q=partner"
+    },
+    {
+      "id": "en-passion",
+      "label": "passion",
+      "language": "en",
+      "aliases": [
+        "passion"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-23"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=passion",
+      "etymonline": "https://www.etymonline.com/search?q=passion"
+    },
+    {
+      "id": "en-people",
+      "label": "people",
+      "language": "en",
+      "aliases": [
+        "people"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=people",
+      "etymonline": "https://www.etymonline.com/search?q=people"
+    },
+    {
+      "id": "permissions",
+      "label": "permissions",
+      "language": "en",
+      "aliases": [
+        "permissions"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "ownership",
+        "identity",
+        "authorship",
+        "access"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=permissions",
+      "etymonline": "https://www.etymonline.com/search?q=permissions"
+    },
+    {
+      "id": "en-plane",
+      "label": "plane",
+      "language": "en",
+      "aliases": [
+        "plane"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=plane",
+      "etymonline": "https://www.etymonline.com/search?q=plane"
+    },
+    {
+      "id": "en-platforms",
+      "label": "platforms",
+      "language": "en",
+      "aliases": [
+        "platforms"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=platforms",
+      "etymonline": "https://www.etymonline.com/search?q=platforms"
+    },
+    {
+      "id": "en-point",
+      "label": "point",
+      "language": "en",
+      "aliases": [
+        "point"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=point",
+      "etymonline": "https://www.etymonline.com/search?q=point"
+    },
+    {
+      "id": "project",
+      "label": "project",
+      "language": "en",
+      "aliases": [
+        "project"
+      ],
+      "curated": true,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [
+        "forge",
+        "fractal",
+        "ownership",
+        "publication"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=project",
+      "etymonline": "https://www.etymonline.com/search?q=project"
+    },
+    {
+      "id": "en-projects",
+      "label": "projects",
+      "language": "en",
+      "aliases": [
+        "projects"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=projects",
+      "etymonline": "https://www.etymonline.com/search?q=projects"
+    },
+    {
+      "id": "en-proof",
+      "label": "proof",
+      "language": "en",
+      "aliases": [
+        "proof"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=proof",
+      "etymonline": "https://www.etymonline.com/search?q=proof"
+    },
+    {
+      "id": "publication",
+      "label": "publication",
+      "language": "en",
+      "aliases": [
+        "publication"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "media",
+        "forge",
+        "authorship"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=publication",
+      "etymonline": "https://www.etymonline.com/search?q=publication"
+    },
+    {
+      "id": "purpose",
+      "label": "purpose",
+      "language": "en",
+      "aliases": [
+        "purpose"
+      ],
+      "curated": true,
+      "quoteIds": [
+        "snippet-purpose",
+        "jah-03"
+      ],
+      "related": [
+        "mission",
+        "vision",
+        "alignment",
+        "stewardship"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=purpose",
+      "etymonline": "https://www.etymonline.com/search?q=purpose"
+    },
+    {
+      "id": "alignment",
+      "label": "purpose / support alignment",
+      "language": "en",
+      "aliases": [
+        "purpose / support alignment",
+        "purpose",
+        "support alignment"
+      ],
+      "curated": true,
+      "quoteIds": [
+        "snippet-purpose",
+        "jah-03"
+      ],
+      "related": [
+        "purpose",
+        "access",
+        "stewardship",
+        "organization"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=purpose%20%2F%20support%20alignment",
+      "etymonline": "https://www.etymonline.com/search?q=purpose%20%2F%20support%20alignment"
+    },
+    {
+      "id": "en-rather",
+      "label": "rather",
+      "language": "en",
+      "aliases": [
+        "rather"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=rather",
+      "etymonline": "https://www.etymonline.com/search?q=rather"
+    },
+    {
+      "id": "en-really",
+      "label": "really",
+      "language": "en",
+      "aliases": [
+        "really"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=really",
+      "etymonline": "https://www.etymonline.com/search?q=really"
+    },
+    {
+      "id": "realm",
+      "label": "Realm",
+      "language": "en",
+      "aliases": [
+        "Realm"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "community",
+        "federation",
+        "tenant",
+        "ketema"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=Realm",
+      "etymonline": "https://www.etymonline.com/search?q=Realm"
+    },
+    {
+      "id": "en-reason",
+      "label": "reason",
+      "language": "en",
+      "aliases": [
+        "reason"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=reason",
+      "etymonline": "https://www.etymonline.com/search?q=reason"
+    },
+    {
+      "id": "en-refined",
+      "label": "refined",
+      "language": "en",
+      "aliases": [
+        "refined"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=refined",
+      "etymonline": "https://www.etymonline.com/search?q=refined"
+    },
+    {
+      "id": "resident-artist",
+      "label": "resident artist",
+      "language": "en",
+      "aliases": [
+        "resident artist"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "media",
+        "authorship",
+        "community",
+        "publication"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=resident%20artist",
+      "etymonline": "https://www.etymonline.com/search?q=resident%20artist"
+    },
+    {
+      "id": "resource-exchange",
+      "label": "resource exchange",
+      "language": "en",
+      "aliases": [
+        "resource exchange"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "global-distributed-library",
+        "ownership",
+        "sustainability"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=resource%20exchange",
+      "etymonline": "https://www.etymonline.com/search?q=resource%20exchange"
+    },
+    {
+      "id": "en-resources",
+      "label": "resources",
+      "language": "en",
+      "aliases": [
+        "resources"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=resources",
+      "etymonline": "https://www.etymonline.com/search?q=resources"
+    },
+    {
+      "id": "en-right",
+      "label": "right",
+      "language": "en",
+      "aliases": [
+        "right"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=right",
+      "etymonline": "https://www.etymonline.com/search?q=right"
+    },
+    {
+      "id": "sacred-exchange",
+      "label": "sacred exchange agreement",
+      "language": "en",
+      "aliases": [
+        "sacred exchange agreement"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "partner",
+        "forge",
+        "realm"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=sacred%20exchange%20agreement",
+      "etymonline": "https://www.etymonline.com/search?q=sacred%20exchange%20agreement"
+    },
+    {
+      "id": "schema",
+      "label": "schema / shared language",
+      "language": "en",
+      "aliases": [
+        "schema / shared language",
+        "schema",
+        "shared language"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "tenant",
+        "catalog",
+        "capability-discovery",
+        "interoperability"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=schema%20%2F%20shared%20language",
+      "etymonline": "https://www.etymonline.com/search?q=schema%20%2F%20shared%20language"
+    },
+    {
+      "id": "en-seed",
+      "label": "seed",
+      "language": "en",
+      "aliases": [
+        "seed"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=seed",
+      "etymonline": "https://www.etymonline.com/search?q=seed"
+    },
+    {
+      "id": "en-seem",
+      "label": "seem",
+      "language": "en",
+      "aliases": [
+        "seem"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=seem",
+      "etymonline": "https://www.etymonline.com/search?q=seem"
+    },
+    {
+      "id": "en-self",
+      "label": "self",
+      "language": "en",
+      "aliases": [
+        "self"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=self",
+      "etymonline": "https://www.etymonline.com/search?q=self"
+    },
+    {
+      "id": "self-hosting",
+      "label": "self-hosting",
+      "language": "en",
+      "aliases": [
+        "self-hosting"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "digital-sovereignty",
+        "interoperability",
+        "forge",
+        "fractal"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=self-hosting",
+      "etymonline": "https://www.etymonline.com/search?q=self-hosting"
+    },
+    {
+      "id": "en-sense",
+      "label": "sense",
+      "language": "en",
+      "aliases": [
+        "sense"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=sense",
+      "etymonline": "https://www.etymonline.com/search?q=sense"
+    },
+    {
+      "id": "en-server",
+      "label": "server",
+      "language": "en",
+      "aliases": [
+        "server"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=server",
+      "etymonline": "https://www.etymonline.com/search?q=server"
+    },
+    {
+      "id": "relating",
+      "label": "sexual relating from a unified perspective",
+      "language": "en",
+      "aliases": [
+        "sexual relating from a unified perspective"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "community",
+        "purpose"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=sexual%20relating%20from%20a%20unified%20perspective",
+      "etymonline": "https://www.etymonline.com/search?q=sexual%20relating%20from%20a%20unified%20perspective"
+    },
+    {
+      "id": "en-should",
+      "label": "should",
+      "language": "en",
+      "aliases": [
+        "should"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=should",
+      "etymonline": "https://www.etymonline.com/search?q=should"
+    },
+    {
+      "id": "en-similar",
+      "label": "similar",
+      "language": "en",
+      "aliases": [
+        "similar"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=similar",
+      "etymonline": "https://www.etymonline.com/search?q=similar"
+    },
+    {
+      "id": "en-skill",
+      "label": "skill",
+      "language": "en",
+      "aliases": [
+        "skill"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=skill",
+      "etymonline": "https://www.etymonline.com/search?q=skill"
+    },
+    {
+      "id": "en-sky",
+      "label": "sky",
+      "language": "en",
+      "aliases": [
+        "sky"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-14"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=sky",
+      "etymonline": "https://www.etymonline.com/search?q=sky"
+    },
+    {
+      "id": "en-so",
+      "label": "so",
+      "language": "en",
+      "aliases": [
+        "so"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=so",
+      "etymonline": "https://www.etymonline.com/search?q=so"
+    },
+    {
+      "id": "so-il",
+      "label": "SO/IL",
+      "language": "en",
+      "aliases": [
+        "SO/IL"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "ark",
+        "sovereignty",
+        "observability",
+        "identity",
+        "capability-discovery"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=SO%2FIL",
+      "etymonline": "https://www.etymonline.com/search?q=SO%2FIL"
+    },
+    {
+      "id": "en-something",
+      "label": "something",
+      "language": "en",
+      "aliases": [
+        "something"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=something",
+      "etymonline": "https://www.etymonline.com/search?q=something"
+    },
+    {
+      "id": "en-sort",
+      "label": "sort",
+      "language": "en",
+      "aliases": [
+        "sort"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=sort",
+      "etymonline": "https://www.etymonline.com/search?q=sort"
+    },
+    {
+      "id": "en-sovereign",
+      "label": "sovereign",
+      "language": "en",
+      "aliases": [
+        "sovereign"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=sovereign",
+      "etymonline": "https://www.etymonline.com/search?q=sovereign"
+    },
+    {
+      "id": "solar-systems",
+      "label": "sovereign, solar systems",
+      "language": "en",
+      "aliases": [
+        "sovereign, solar systems"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "oj-ss",
+        "sovereignty",
+        "purpose"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=sovereign%2C%20solar%20systems",
+      "etymonline": "https://www.etymonline.com/search?q=sovereign%2C%20solar%20systems"
+    },
+    {
+      "id": "sovereignty",
+      "label": "sovereignty",
+      "language": "en",
+      "aliases": [
+        "sovereignty"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "digital-sovereignty",
+        "stewardship",
+        "so-il",
+        "ownership"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=sovereignty",
+      "etymonline": "https://www.etymonline.com/search?q=sovereignty"
+    },
+    {
+      "id": "transformation",
+      "label": "spiritual death and rebirth",
+      "language": "en",
+      "aliases": [
+        "spiritual death and rebirth"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "purpose",
+        "stewardship"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=spiritual%20death%20and%20rebirth",
+      "etymonline": "https://www.etymonline.com/search?q=spiritual%20death%20and%20rebirth"
+    },
+    {
+      "id": "en-stars",
+      "label": "stars",
+      "language": "en",
+      "aliases": [
+        "stars"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-03"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=stars",
+      "etymonline": "https://www.etymonline.com/search?q=stars"
+    },
+    {
+      "id": "stewardship",
+      "label": "stewardship",
+      "language": "en",
+      "aliases": [
+        "stewardship"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "purpose",
+        "sovereignty",
+        "alignment"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=stewardship",
+      "etymonline": "https://www.etymonline.com/search?q=stewardship"
+    },
+    {
+      "id": "en-still",
+      "label": "still",
+      "language": "en",
+      "aliases": [
+        "still"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=still",
+      "etymonline": "https://www.etymonline.com/search?q=still"
+    },
+    {
+      "id": "en-strain",
+      "label": "strain",
+      "language": "en",
+      "aliases": [
+        "strain"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=strain",
+      "etymonline": "https://www.etymonline.com/search?q=strain"
+    },
+    {
+      "id": "subscriptions",
+      "label": "subscriptions",
+      "language": "en",
+      "aliases": [
+        "subscriptions"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "my-ark",
+        "catalog",
+        "identity"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=subscriptions",
+      "etymonline": "https://www.etymonline.com/search?q=subscriptions"
+    },
+    {
+      "id": "en-such",
+      "label": "such",
+      "language": "en",
+      "aliases": [
+        "such"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=such",
+      "etymonline": "https://www.etymonline.com/search?q=such"
+    },
+    {
+      "id": "sustainability",
+      "label": "sustainability / gradients",
+      "language": "en",
+      "aliases": [
+        "sustainability / gradients",
+        "sustainability",
+        "gradients"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "oj-ss",
+        "organization",
+        "access",
+        "resource-exchange"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=sustainability%20%2F%20gradients",
+      "etymonline": "https://www.etymonline.com/search?q=sustainability%20%2F%20gradients"
+    },
+    {
+      "id": "tenant",
+      "label": "tenant",
+      "language": "en",
+      "aliases": [
+        "tenant"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "ark",
+        "organization",
+        "schema",
+        "capability-discovery"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=tenant",
+      "etymonline": "https://www.etymonline.com/search?q=tenant"
+    },
+    {
+      "id": "en-tendril",
+      "label": "tendril",
+      "language": "en",
+      "aliases": [
+        "tendril"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=tendril",
+      "etymonline": "https://www.etymonline.com/search?q=tendril"
+    },
+    {
+      "id": "en-than",
+      "label": "than",
+      "language": "en",
+      "aliases": [
+        "than"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=than",
+      "etymonline": "https://www.etymonline.com/search?q=than"
+    },
+    {
+      "id": "en-that",
+      "label": "that",
+      "language": "en",
+      "aliases": [
+        "that"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=that",
+      "etymonline": "https://www.etymonline.com/search?q=that"
+    },
+    {
+      "id": "en-that's",
+      "label": "that's",
+      "language": "en",
+      "aliases": [
+        "that's"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=that's",
+      "etymonline": "https://www.etymonline.com/search?q=that's"
+    },
+    {
+      "id": "en-the",
+      "label": "the",
+      "language": "en",
+      "aliases": [
+        "the"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-14",
+        "jah-06",
+        "jah-23",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=the",
+      "etymonline": "https://www.etymonline.com/search?q=the"
+    },
+    {
+      "id": "en-their",
+      "label": "their",
+      "language": "en",
+      "aliases": [
+        "their"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=their",
+      "etymonline": "https://www.etymonline.com/search?q=their"
+    },
+    {
+      "id": "en-them",
+      "label": "them",
+      "language": "en",
+      "aliases": [
+        "them"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=them",
+      "etymonline": "https://www.etymonline.com/search?q=them"
+    },
+    {
+      "id": "en-themselves",
+      "label": "themselves",
+      "language": "en",
+      "aliases": [
+        "themselves"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=themselves",
+      "etymonline": "https://www.etymonline.com/search?q=themselves"
+    },
+    {
+      "id": "en-there're",
+      "label": "there're",
+      "language": "en",
+      "aliases": [
+        "there're"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=there're",
+      "etymonline": "https://www.etymonline.com/search?q=there're"
+    },
+    {
+      "id": "en-they",
+      "label": "they",
+      "language": "en",
+      "aliases": [
+        "they"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "jah-03",
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=they",
+      "etymonline": "https://www.etymonline.com/search?q=they"
+    },
+    {
+      "id": "en-things",
+      "label": "things",
+      "language": "en",
+      "aliases": [
+        "things"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=things",
+      "etymonline": "https://www.etymonline.com/search?q=things"
+    },
+    {
+      "id": "en-think",
+      "label": "think",
+      "language": "en",
+      "aliases": [
+        "think"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=think",
+      "etymonline": "https://www.etymonline.com/search?q=think"
+    },
+    {
+      "id": "en-this",
+      "label": "this",
+      "language": "en",
+      "aliases": [
+        "this"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=this",
+      "etymonline": "https://www.etymonline.com/search?q=this"
+    },
+    {
+      "id": "en-those",
+      "label": "those",
+      "language": "en",
+      "aliases": [
+        "those"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-23"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=those",
+      "etymonline": "https://www.etymonline.com/search?q=those"
+    },
+    {
+      "id": "en-three",
+      "label": "three",
+      "language": "en",
+      "aliases": [
+        "three"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=three",
+      "etymonline": "https://www.etymonline.com/search?q=three"
+    },
+    {
+      "id": "en-to",
+      "label": "to",
+      "language": "en",
+      "aliases": [
+        "to"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "snippet-purpose",
+        "jah-06",
+        "jah-03",
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=to",
+      "etymonline": "https://www.etymonline.com/search?q=to"
+    },
+    {
+      "id": "en-tool",
+      "label": "tool",
+      "language": "en",
+      "aliases": [
+        "tool"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=tool",
+      "etymonline": "https://www.etymonline.com/search?q=tool"
+    },
+    {
+      "id": "en-twin",
+      "label": "twin",
+      "language": "en",
+      "aliases": [
+        "twin"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-03"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=twin",
+      "etymonline": "https://www.etymonline.com/search?q=twin"
+    },
+    {
+      "id": "twin-stars",
+      "label": "twin stars",
+      "language": "en",
+      "aliases": [
+        "twin stars"
+      ],
+      "curated": true,
+      "quoteIds": [
+        "jah-03"
+      ],
+      "related": [
+        "onlyjah",
+        "ark",
+        "flowthrough"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=twin%20stars",
+      "etymonline": "https://www.etymonline.com/search?q=twin%20stars"
+    },
+    {
+      "id": "en-uh",
+      "label": "uh",
+      "language": "en",
+      "aliases": [
+        "uh"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=uh",
+      "etymonline": "https://www.etymonline.com/search?q=uh"
+    },
+    {
+      "id": "en-ultimately",
+      "label": "ultimately",
+      "language": "en",
+      "aliases": [
+        "ultimately"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=ultimately",
+      "etymonline": "https://www.etymonline.com/search?q=ultimately"
+    },
+    {
+      "id": "en-universe",
+      "label": "universe",
+      "language": "en",
+      "aliases": [
+        "universe"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-14"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=universe",
+      "etymonline": "https://www.etymonline.com/search?q=universe"
+    },
+    {
+      "id": "en-use",
+      "label": "use",
+      "language": "en",
+      "aliases": [
+        "use"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=use",
+      "etymonline": "https://www.etymonline.com/search?q=use"
+    },
+    {
+      "id": "en-version",
+      "label": "version",
+      "language": "en",
+      "aliases": [
+        "version"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=version",
+      "etymonline": "https://www.etymonline.com/search?q=version"
+    },
+    {
+      "id": "en-very",
+      "label": "very",
+      "language": "en",
+      "aliases": [
+        "very"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=very",
+      "etymonline": "https://www.etymonline.com/search?q=very"
+    },
+    {
+      "id": "en-vessel",
+      "label": "vessel",
+      "language": "en",
+      "aliases": [
+        "vessel"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-14"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=vessel",
+      "etymonline": "https://www.etymonline.com/search?q=vessel"
+    },
+    {
+      "id": "en-view",
+      "label": "view",
+      "language": "en",
+      "aliases": [
+        "view"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=view",
+      "etymonline": "https://www.etymonline.com/search?q=view"
+    },
+    {
+      "id": "vision",
+      "label": "vision",
+      "language": "en",
+      "aliases": [
+        "vision"
+      ],
+      "curated": true,
+      "quoteIds": [
+        "jah-23"
+      ],
+      "related": [
+        "mission",
+        "purpose",
+        "twin-stars",
+        "tenant"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=vision",
+      "etymonline": "https://www.etymonline.com/search?q=vision"
+    },
+    {
+      "id": "en-visualize",
+      "label": "visualize",
+      "language": "en",
+      "aliases": [
+        "visualize"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=visualize",
+      "etymonline": "https://www.etymonline.com/search?q=visualize"
+    },
+    {
+      "id": "en-want",
+      "label": "want",
+      "language": "en",
+      "aliases": [
+        "want"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=want",
+      "etymonline": "https://www.etymonline.com/search?q=want"
+    },
+    {
+      "id": "en-wants",
+      "label": "wants",
+      "language": "en",
+      "aliases": [
+        "wants"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=wants",
+      "etymonline": "https://www.etymonline.com/search?q=wants"
+    },
+    {
+      "id": "en-way",
+      "label": "way",
+      "language": "en",
+      "aliases": [
+        "way"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=way",
+      "etymonline": "https://www.etymonline.com/search?q=way"
+    },
+    {
+      "id": "waypoint-dynamics",
+      "label": "Waypoint Dynamics Philosophy",
+      "language": "en",
+      "aliases": [
+        "Waypoint Dynamics Philosophy"
+      ],
+      "curated": true,
+      "quoteIds": [],
+      "related": [
+        "ark-notes",
+        "project",
+        "stewardship"
+      ],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=Waypoint%20Dynamics%20Philosophy",
+      "etymonline": "https://www.etymonline.com/search?q=Waypoint%20Dynamics%20Philosophy"
+    },
+    {
+      "id": "en-websites",
+      "label": "websites",
+      "language": "en",
+      "aliases": [
+        "websites"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=websites",
+      "etymonline": "https://www.etymonline.com/search?q=websites"
+    },
+    {
+      "id": "en-while",
+      "label": "while",
+      "language": "en",
+      "aliases": [
+        "while"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=while",
+      "etymonline": "https://www.etymonline.com/search?q=while"
+    },
+    {
+      "id": "en-who",
+      "label": "who",
+      "language": "en",
+      "aliases": [
+        "who"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=who",
+      "etymonline": "https://www.etymonline.com/search?q=who"
+    },
+    {
+      "id": "en-why",
+      "label": "why",
+      "language": "en",
+      "aliases": [
+        "why"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=why",
+      "etymonline": "https://www.etymonline.com/search?q=why"
+    },
+    {
+      "id": "en-with",
+      "label": "with",
+      "language": "en",
+      "aliases": [
+        "with"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06",
+        "jah-23",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=with",
+      "etymonline": "https://www.etymonline.com/search?q=with"
+    },
+    {
+      "id": "en-world",
+      "label": "world",
+      "language": "en",
+      "aliases": [
+        "world"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "jah-06"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=world",
+      "etymonline": "https://www.etymonline.com/search?q=world"
+    },
+    {
+      "id": "en-would",
+      "label": "would",
+      "language": "en",
+      "aliases": [
+        "would"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-shared-resources-20261002",
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=would",
+      "etymonline": "https://www.etymonline.com/search?q=would"
+    },
+    {
+      "id": "en-yet",
+      "label": "yet",
+      "language": "en",
+      "aliases": [
+        "yet"
+      ],
+      "curated": false,
+      "quoteIds": [
+        "cloud-seed-to-fruition-20261002"
+      ],
+      "related": [],
+      "wikipedia": "https://en.wikipedia.org/w/index.php?search=yet",
+      "etymonline": "https://www.etymonline.com/search?q=yet"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "jah-14",
+      "text": "A cloud-faring vessel. Universe in the sky. OnlyJah.",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "Homepage interview",
+      "source": "docs/content-review/evidence/supplied-sources/2026-10-02-interview.md",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original",
+      "speakerId": "jahnoah",
+      "language": "en",
+      "sourceKind": "author-supplied",
+      "publicationBasis": "public-copy-manifest",
+      "citations": []
+    },
+    {
+      "id": "snippet-purpose",
+      "text": "Purpose: to generate collective life fulfillment.",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "Explain codebase for development",
+      "source": "docs/content-review/evidence/conversation-excerpts.json",
+      "revision": 2,
+      "content_warnings": [],
+      "display_variant": "author-reviewed",
+      "speakerId": "jahnoah",
+      "language": "en",
+      "sourceKind": "author-supplied",
+      "publicationBasis": "public-copy-manifest",
+      "citations": []
+    },
+    {
+      "id": "jah-06",
+      "text": "OnlyJah.com is a sort of proof of concept that anyone can collaborate with anyone else so long as they have the skill or ability, and make cool things to better their world, their self and others' life experience.",
+      "author": "Jah",
+      "date": "2026-10-01",
+      "conversation": "Build OnlyJah Website",
+      "source": "docs/content-review/evidence/supplied-sources/OnlyJah-In-Jahs-Words.md",
+      "revision": 2,
+      "content_warnings": [],
+      "display_variant": "author-reviewed",
+      "speakerId": "jahnoah",
+      "language": "en",
+      "sourceKind": "author-supplied",
+      "publicationBasis": "public-copy-manifest",
+      "citations": []
+    },
+    {
+      "id": "jah-03",
+      "text": "OnlyJah and Ark are like twin stars, they contribute to one anothers framework, flowthrough, purpose, and grand design...",
+      "author": "Jah",
+      "date": "2026-10-01",
+      "conversation": "Build OnlyJah Website",
+      "source": "docs/content-review/evidence/supplied-sources/OnlyJah-In-Jahs-Words.md",
+      "revision": 2,
+      "content_warnings": [],
+      "display_variant": "author-reviewed",
+      "speakerId": "jahnoah",
+      "language": "en",
+      "sourceKind": "author-supplied",
+      "publicationBasis": "public-copy-manifest",
+      "citations": []
+    },
+    {
+      "id": "jah-23",
+      "text": "connecting those with the funds and vision with those with the expertise and passion ;))",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "Roots, authorship, organizations and community",
+      "source": "docs/content-review/evidence/supplied-sources/2026-10-02-roots-authorship.md",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original",
+      "speakerId": "jahnoah",
+      "language": "en",
+      "sourceKind": "author-supplied",
+      "publicationBasis": "public-copy-manifest",
+      "citations": []
+    },
+    {
+      "id": "cloud-shared-resources-20261002",
+      "text": "this is really like three platforms and four websites, a front end and a back-end framework all in one. And honestly, it doesn't need to be that complicated. It just is right now because things are still being refined. Ultimately, the idea is that there're many people who want similar things on their websites and have a similar strain of interest and expressions, and I would like them to be able to collaborate and use common resources while they build community amongst one another for themselves and for others for the betterment of the all",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "OnlyJah cloud wording review: shared resources",
+      "source": "OnlyJah-Cloud-Wording-Review.md (version 5)",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original",
+      "speakerId": "jahnoah",
+      "language": "en",
+      "sourceKind": "author-supplied",
+      "publicationBasis": "public-copy-manifest",
+      "citations": []
+    },
+    {
+      "id": "cloud-seed-to-fruition-20261002",
+      "text": "Mm. I think adding I really just want to be able to visualize it all. The project from seed to fruition, every branch, every tendril, every connection point. every collaborator. Uh I want to view every one in one plane. One clean plane that allows for this interaction that I feel a sense, and yet don't seem to experience on the internet in the capacity that I would like to. So, that's the main reason why I'm creating OnlyJah. I know I'm not the only one who wants to experience something like this. So rather than just making a tool for me to view my projects and my collaborations and collaborators, I'm designing it to be available to others, to really anyone. It should be such that anyone can implement their version of the client or a server and connect to the network and communicate with one another, collaborate with one another in a very clean way, in a very sovereign way. That's OnlyJah OnlyJah .com",
+      "author": "Jah",
+      "date": "2026-10-02",
+      "conversation": "OnlyJah cloud wording review: seed to fruition",
+      "source": "OnlyJah-Cloud-Wording-Review.md (version 5)",
+      "revision": 1,
+      "content_warnings": [],
+      "display_variant": "original",
+      "speakerId": "jahnoah",
+      "language": "en",
+      "sourceKind": "author-supplied",
+      "publicationBasis": "public-copy-manifest",
+      "citations": []
+    }
+  ]
+}

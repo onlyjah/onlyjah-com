@@ -5,12 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite serve",
-    "build": "vite build",
+    "build": "node scripts/compile-copy.mjs --manifest --check && node --experimental-strip-types scripts/build-dictionary.mjs --check && vite build",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "check:copy": "node scripts/compile-copy.mjs --manifest --check",
+    "typecheck": "tsc -b --pretty false",
+    "dictionary:refresh": "node --experimental-strip-types scripts/build-dictionary.mjs",
+    "check:dictionary": "node --experimental-strip-types scripts/build-dictionary.mjs --check",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.170.39",
@@ -37,5 +42,9 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.57.0",
     "vite": "^8.0.1"
+  },
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

@@ -1,0 +1,629 @@
+[
+  {
+    "id": "onlyjah",
+    "label": "OnlyJah",
+    "quoteIds": [
+      "jah-06",
+      "snippet-purpose"
+    ],
+    "exampleIds": [],
+    "related": [
+      "ark",
+      "purpose",
+      "twin-stars",
+      "forge",
+      "media",
+      "realm"
+    ]
+  },
+  {
+    "id": "ark",
+    "label": "Ark",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "onlyjah",
+      "twin-stars",
+      "my-ark",
+      "so-il",
+      "tenant",
+      "flowthrough"
+    ]
+  },
+  {
+    "id": "digital-sovereignty",
+    "label": "digital sovereignty",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "sovereignty",
+      "my-ark",
+      "self-hosting",
+      "ownership",
+      "permissions"
+    ]
+  },
+  {
+    "id": "sovereignty",
+    "label": "sovereignty",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "digital-sovereignty",
+      "stewardship",
+      "so-il",
+      "ownership"
+    ]
+  },
+  {
+    "id": "mission",
+    "label": "mission",
+    "quoteIds": [],
+    "exampleIds": [
+      "jah-06"
+    ],
+    "related": [
+      "purpose",
+      "vision",
+      "stewardship"
+    ]
+  },
+  {
+    "id": "vision",
+    "label": "vision",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "mission",
+      "purpose",
+      "twin-stars",
+      "tenant"
+    ]
+  },
+  {
+    "id": "purpose",
+    "label": "purpose",
+    "quoteIds": [
+      "snippet-purpose",
+      "jah-06"
+    ],
+    "exampleIds": [],
+    "related": [
+      "mission",
+      "vision",
+      "alignment",
+      "stewardship"
+    ]
+  },
+  {
+    "id": "forge",
+    "label": "Forge",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "fractal",
+      "project",
+      "ownership",
+      "permissions",
+      "media"
+    ]
+  },
+  {
+    "id": "media",
+    "label": "Media",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "authorship",
+      "resident-artist",
+      "publication",
+      "forge"
+    ]
+  },
+  {
+    "id": "realm",
+    "label": "Realm",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "community",
+      "federation",
+      "tenant",
+      "ketema"
+    ]
+  },
+  {
+    "id": "twin-stars",
+    "label": "twin stars",
+    "quoteIds": [
+      "jah-03"
+    ],
+    "exampleIds": [],
+    "related": [
+      "onlyjah",
+      "ark",
+      "flowthrough"
+    ]
+  },
+  {
+    "id": "flowthrough",
+    "label": "flowthrough",
+    "quoteIds": [
+      "jah-03"
+    ],
+    "exampleIds": [],
+    "related": [
+      "twin-stars",
+      "interoperability",
+      "forge",
+      "media",
+      "realm"
+    ]
+  },
+  {
+    "id": "interoperability",
+    "label": "interoperability",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "flowthrough",
+      "schema",
+      "tenant",
+      "capability-discovery",
+      "self-hosting"
+    ]
+  },
+  {
+    "id": "my-ark",
+    "label": "My Ark",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "ark",
+      "digital-sovereignty",
+      "catalog",
+      "identity",
+      "subscriptions"
+    ]
+  },
+  {
+    "id": "so-il",
+    "label": "SO/IL",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "ark",
+      "sovereignty",
+      "observability",
+      "identity",
+      "capability-discovery"
+    ]
+  },
+  {
+    "id": "tenant",
+    "label": "tenant",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "ark",
+      "organization",
+      "schema",
+      "capability-discovery"
+    ]
+  },
+  {
+    "id": "schema",
+    "label": "schema / shared language",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "tenant",
+      "catalog",
+      "capability-discovery",
+      "interoperability"
+    ]
+  },
+  {
+    "id": "catalog",
+    "label": "catalog / index",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "schema",
+      "tenant",
+      "capability-discovery",
+      "my-ark"
+    ]
+  },
+  {
+    "id": "capability-discovery",
+    "label": "capability discovery",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "tenant",
+      "schema",
+      "catalog",
+      "permissions"
+    ]
+  },
+  {
+    "id": "global-distributed-library",
+    "label": "global distributed library",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "tenant",
+      "resource-exchange",
+      "realm",
+      "project"
+    ]
+  },
+  {
+    "id": "resource-exchange",
+    "label": "resource exchange",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "global-distributed-library",
+      "ownership",
+      "sustainability"
+    ]
+  },
+  {
+    "id": "fractal",
+    "label": "Fractal Engine",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "forge",
+      "project",
+      "self-hosting",
+      "interoperability"
+    ]
+  },
+  {
+    "id": "self-hosting",
+    "label": "self-hosting",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "digital-sovereignty",
+      "interoperability",
+      "forge",
+      "fractal"
+    ]
+  },
+  {
+    "id": "stewardship",
+    "label": "stewardship",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "purpose",
+      "sovereignty",
+      "alignment"
+    ]
+  },
+  {
+    "id": "oj-ss",
+    "label": "OJ-SS",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "sovereignty",
+      "solar-systems",
+      "sustainability",
+      "purpose"
+    ]
+  },
+  {
+    "id": "solar-systems",
+    "label": "sovereign, solar systems",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "oj-ss",
+      "sovereignty",
+      "purpose"
+    ]
+  },
+  {
+    "id": "sustainability",
+    "label": "sustainability / gradients",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "oj-ss",
+      "organization",
+      "access",
+      "resource-exchange"
+    ]
+  },
+  {
+    "id": "alignment",
+    "label": "purpose / support alignment",
+    "quoteIds": [
+      "jah-23"
+    ],
+    "exampleIds": [],
+    "related": [
+      "purpose",
+      "access",
+      "stewardship",
+      "organization"
+    ]
+  },
+  {
+    "id": "organization",
+    "label": "organization",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "tenant",
+      "access",
+      "ketema",
+      "authorship"
+    ]
+  },
+  {
+    "id": "ketema",
+    "label": "Ketema",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "community",
+      "access",
+      "organization",
+      "realm"
+    ]
+  },
+  {
+    "id": "project",
+    "label": "project",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "forge",
+      "fractal",
+      "ownership",
+      "publication"
+    ]
+  },
+  {
+    "id": "ownership",
+    "label": "ownership",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "project",
+      "permissions",
+      "authorship",
+      "resource-exchange"
+    ]
+  },
+  {
+    "id": "permissions",
+    "label": "permissions",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "ownership",
+      "identity",
+      "authorship",
+      "access"
+    ]
+  },
+  {
+    "id": "authorship",
+    "label": "authorship",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "publication",
+      "media",
+      "ownership",
+      "resident-artist"
+    ]
+  },
+  {
+    "id": "resident-artist",
+    "label": "resident artist",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "media",
+      "authorship",
+      "community",
+      "publication"
+    ]
+  },
+  {
+    "id": "publication",
+    "label": "publication",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "media",
+      "forge",
+      "authorship"
+    ]
+  },
+  {
+    "id": "identity",
+    "label": "identity / account",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "my-ark",
+      "permissions",
+      "federation",
+      "tenant"
+    ]
+  },
+  {
+    "id": "federation",
+    "label": "federation",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "realm",
+      "identity",
+      "interoperability",
+      "tenant"
+    ]
+  },
+  {
+    "id": "community",
+    "label": "community",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "realm",
+      "ketema",
+      "purpose",
+      "resource-exchange"
+    ]
+  },
+  {
+    "id": "access",
+    "label": "access / participation",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "permissions",
+      "organization",
+      "ketema",
+      "community"
+    ]
+  },
+  {
+    "id": "subscriptions",
+    "label": "subscriptions",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "my-ark",
+      "catalog",
+      "identity"
+    ]
+  },
+  {
+    "id": "observability",
+    "label": "observability / fleet",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "so-il",
+      "my-ark",
+      "capability-discovery",
+      "purpose"
+    ]
+  },
+  {
+    "id": "ark-notes",
+    "label": "Ark Notes / captain logs",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "ark",
+      "waypoint-dynamics",
+      "project"
+    ]
+  },
+  {
+    "id": "waypoint-dynamics",
+    "label": "Waypoint Dynamics Philosophy",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "ark-notes",
+      "project",
+      "stewardship"
+    ]
+  },
+  {
+    "id": "lab-of-life",
+    "label": "Lab of Life",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "ark",
+      "project",
+      "purpose"
+    ]
+  },
+  {
+    "id": "transformation",
+    "label": "spiritual death and rebirth",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "purpose",
+      "stewardship"
+    ]
+  },
+  {
+    "id": "relating",
+    "label": "sexual relating from a unified perspective",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "community",
+      "purpose"
+    ]
+  },
+  {
+    "id": "contributor",
+    "label": "contributor",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "forge",
+      "media",
+      "realm"
+    ]
+  },
+  {
+    "id": "partner",
+    "label": "partner",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "sacred-exchange",
+      "forge",
+      "realm"
+    ]
+  },
+  {
+    "id": "sacred-exchange",
+    "label": "sacred exchange agreement",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "partner",
+      "forge",
+      "realm"
+    ]
+  },
+  {
+    "id": "matrix",
+    "label": "matrix",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "realm",
+      "interoperability"
+    ]
+  },
+  {
+    "id": "realm-walker",
+    "label": "class E realm walker candidate",
+    "quoteIds": [],
+    "exampleIds": [],
+    "related": [
+      "realm",
+      "sovereignty"
+    ]
+  }
+]

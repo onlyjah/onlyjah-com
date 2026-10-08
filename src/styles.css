@@ -1,0 +1,16 @@
+:root { color-scheme: dark; background: #112019; color: #f4eddd; font-family: system-ui, sans-serif; line-height: 1.65; }
+body { margin: 0; }
+a { color: #edc86d; text-underline-offset: .2em; }
+a:hover { color: #fff4cc; }
+.quote-page { max-width: 52rem; margin: auto; padding: 2rem 1.25rem 5rem; }
+h1 { color: #edc86d; line-height: 1.2; font-size: clamp(1.8rem, 5vw, 3rem); }
+article { margin: 1.5rem 0; padding: 1.5rem; border: 1px solid #4b604c; border-radius: .75rem; background: #182c22; scroll-margin-top: 2rem; }
+article:target { border-color: #edc86d; }
+blockquote { margin: 0; font-size: 1.1rem; white-space: pre-wrap; }
+.quote-meta { font-size: .8rem; color: #c7d0bb; overflow-wrap: anywhere; }
+input { display: block; width: 100%; box-sizing: border-box; padding: .8rem; margin-top: .4rem; border: 1px solid #819580; border-radius: .4rem; background: #182c22; color: inherit; font: inherit; }
+:focus-visible { outline: 3px solid #edc86d; outline-offset: 3px; }
+
+.dictionary-browser a {text-decoration: underline; text-underline-offset: .2em;}
+.dictionary-browser details a {display:inline-block;margin:.3em .6em .3em 0;}
+.dictionary-browser section {padding:1rem;border:1px solid #47544b;}

@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['output']),
+  globalIgnores(['output', '.output', 'src/routeTree.gen.ts']),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
@@ -15,6 +15,7 @@ export default defineConfig([
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
     ],
+    rules: { 'no-unused-vars': 'off', '@typescript-eslint/no-unused-vars': 'error' },
     languageOptions: {
       parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
@@ -24,4 +25,5 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  { files: ['src/routes/**/*.tsx'], rules: { 'react-refresh/only-export-components': 'off' } },
 ])
