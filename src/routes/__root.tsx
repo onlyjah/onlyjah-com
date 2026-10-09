@@ -102,7 +102,7 @@ function RootDocument() {
                   { label: 'Media', href: '/media' },
                   { label: 'Realm', href: '/realm' },
                   { label: 'Market', href: '/market' },
-                  { label: 'Ark', href: '/p/ark' },
+                  { label: 'Ark', href: '/ark' },
                   { label: 'Docs', href: '/docs' },
                 ]}
               />
@@ -120,7 +120,7 @@ function RootDocument() {
                 note="OnlyJah / Ark · Pre-alpha"
                 links={[
                   { label: 'Living manual', href: '/docs' },
-                  { label: 'Ark', href: '/p/ark' },
+                  { label: 'Ark', href: '/ark' },
                   { label: 'Pre-alpha', href: '/pre-alpha' },
                   { label: 'Contact', href: 'mailto:onlyjah@pm.me' },
                 ]}

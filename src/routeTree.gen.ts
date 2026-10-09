@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AccountRouteImport } from './routes/account'
+import { Route as ArkRouteImport } from './routes/ark'
 import { Route as ArtistRouteImport } from './routes/artist'
 import { Route as DesignPreviewRouteImport } from './routes/design-preview'
 import { Route as ForgeRouteImport } from './routes/forge'
@@ -50,6 +51,11 @@ const AboutRoute = AboutRouteImport.update({
 const AccountRoute = AccountRouteImport.update({
   id: '/account',
   path: '/account',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArkRoute = ArkRouteImport.update({
+  id: '/ark',
+  path: '/ark',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArtistRoute = ArtistRouteImport.update({
@@ -177,6 +183,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/account': typeof AccountRoute
+  '/ark': typeof ArkRoute
   '/artist': typeof ArtistRoute
   '/design-preview': typeof DesignPreviewRoute
   '/forge': typeof ForgeRoute
@@ -206,6 +213,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/account': typeof AccountRoute
+  '/ark': typeof ArkRoute
   '/artist': typeof ArtistRoute
   '/design-preview': typeof DesignPreviewRoute
   '/forge': typeof ForgeRoute
@@ -236,6 +244,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/account': typeof AccountRoute
+  '/ark': typeof ArkRoute
   '/artist': typeof ArtistRoute
   '/design-preview': typeof DesignPreviewRoute
   '/forge': typeof ForgeRoute
@@ -267,6 +276,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/account'
+    | '/ark'
     | '/artist'
     | '/design-preview'
     | '/forge'
@@ -296,6 +306,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/account'
+    | '/ark'
     | '/artist'
     | '/design-preview'
     | '/forge'
@@ -325,6 +336,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/account'
+    | '/ark'
     | '/artist'
     | '/design-preview'
     | '/forge'
@@ -355,6 +367,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AccountRoute: typeof AccountRoute
+  ArkRoute: typeof ArkRoute
   ArtistRoute: typeof ArtistRoute
   DesignPreviewRoute: typeof DesignPreviewRoute
   ForgeRoute: typeof ForgeRoute
@@ -402,6 +415,13 @@ declare module '@tanstack/react-router' {
       path: '/account'
       fullPath: '/account'
       preLoaderRoute: typeof AccountRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ark': {
+      id: '/ark'
+      path: '/ark'
+      fullPath: '/ark'
+      preLoaderRoute: typeof ArkRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/artist': {
@@ -579,6 +599,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AccountRoute: AccountRoute,
+  ArkRoute: ArkRoute,
   ArtistRoute: ArtistRoute,
   DesignPreviewRoute: DesignPreviewRoute,
   ForgeRoute: ForgeRoute,
