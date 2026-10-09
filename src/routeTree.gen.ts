@@ -33,9 +33,11 @@ import { Route as MediaPostRouteImport } from './routes/media/post'
 import { Route as MediaVideosRouteImport } from './routes/media/videos'
 import { Route as PArkRouteImport } from './routes/p/ark'
 import { Route as RealmCommunityRouteImport } from './routes/realm_.community'
+import { Route as RealmConstellationRouteImport } from './routes/realm_.constellation'
 import { Route as DocsTermsIndexRouteImport } from './routes/docs/terms/index'
 import { Route as DocsTermsTermRouteImport } from './routes/docs/terms/$term'
 import { Route as MediaNewsArkNotes001RouteImport } from './routes/media.news_.ark-notes-001'
+import { Route as RealmConstellationProjectIdRouteImport } from './routes/realm_.constellation_.$projectId'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -157,6 +159,11 @@ const RealmCommunityRoute = RealmCommunityRouteImport.update({
   path: '/realm/community',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RealmConstellationRoute = RealmConstellationRouteImport.update({
+  id: '/realm_/constellation',
+  path: '/realm/constellation',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DocsTermsIndexRoute = DocsTermsIndexRouteImport.update({
   id: '/docs/terms/',
   path: '/docs/terms/',
@@ -172,6 +179,12 @@ const MediaNewsArkNotes001Route = MediaNewsArkNotes001RouteImport.update({
   path: '/media/news/ark-notes-001',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RealmConstellationProjectIdRoute =
+  RealmConstellationProjectIdRouteImport.update({
+    id: '/realm_/constellation_/$projectId',
+    path: '/realm/constellation/$projectId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -196,10 +209,12 @@ export interface FileRoutesByFullPath {
   '/media/videos': typeof MediaVideosRoute
   '/p/ark': typeof PArkRoute
   '/realm/community': typeof RealmCommunityRoute
+  '/realm/constellation': typeof RealmConstellationRoute
   '/docs/': typeof DocsIndexRoute
   '/media/': typeof MediaIndexRoute
   '/docs/terms/$term': typeof DocsTermsTermRoute
   '/media/news/ark-notes-001': typeof MediaNewsArkNotes001Route
+  '/realm/constellation/$projectId': typeof RealmConstellationProjectIdRoute
   '/docs/terms/': typeof DocsTermsIndexRoute
 }
 export interface FileRoutesByTo {
@@ -225,10 +240,12 @@ export interface FileRoutesByTo {
   '/media/videos': typeof MediaVideosRoute
   '/p/ark': typeof PArkRoute
   '/realm/community': typeof RealmCommunityRoute
+  '/realm/constellation': typeof RealmConstellationRoute
   '/docs': typeof DocsIndexRoute
   '/media': typeof MediaIndexRoute
   '/docs/terms/$term': typeof DocsTermsTermRoute
   '/media/news/ark-notes-001': typeof MediaNewsArkNotes001Route
+  '/realm/constellation/$projectId': typeof RealmConstellationProjectIdRoute
   '/docs/terms': typeof DocsTermsIndexRoute
 }
 export interface FileRoutesById {
@@ -255,10 +272,12 @@ export interface FileRoutesById {
   '/media/videos': typeof MediaVideosRoute
   '/p/ark': typeof PArkRoute
   '/realm_/community': typeof RealmCommunityRoute
+  '/realm_/constellation': typeof RealmConstellationRoute
   '/docs/': typeof DocsIndexRoute
   '/media/': typeof MediaIndexRoute
   '/docs/terms/$term': typeof DocsTermsTermRoute
   '/media/news_/ark-notes-001': typeof MediaNewsArkNotes001Route
+  '/realm_/constellation_/$projectId': typeof RealmConstellationProjectIdRoute
   '/docs/terms/': typeof DocsTermsIndexRoute
 }
 export interface FileRouteTypes {
@@ -286,10 +305,12 @@ export interface FileRouteTypes {
     | '/media/videos'
     | '/p/ark'
     | '/realm/community'
+    | '/realm/constellation'
     | '/docs/'
     | '/media/'
     | '/docs/terms/$term'
     | '/media/news/ark-notes-001'
+    | '/realm/constellation/$projectId'
     | '/docs/terms/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -315,10 +336,12 @@ export interface FileRouteTypes {
     | '/media/videos'
     | '/p/ark'
     | '/realm/community'
+    | '/realm/constellation'
     | '/docs'
     | '/media'
     | '/docs/terms/$term'
     | '/media/news/ark-notes-001'
+    | '/realm/constellation/$projectId'
     | '/docs/terms'
   id:
     | '__root__'
@@ -344,10 +367,12 @@ export interface FileRouteTypes {
     | '/media/videos'
     | '/p/ark'
     | '/realm_/community'
+    | '/realm_/constellation'
     | '/docs/'
     | '/media/'
     | '/docs/terms/$term'
     | '/media/news_/ark-notes-001'
+    | '/realm_/constellation_/$projectId'
     | '/docs/terms/'
   fileRoutesById: FileRoutesById
 }
@@ -374,10 +399,12 @@ export interface RootRouteChildren {
   MediaVideosRoute: typeof MediaVideosRoute
   PArkRoute: typeof PArkRoute
   RealmCommunityRoute: typeof RealmCommunityRoute
+  RealmConstellationRoute: typeof RealmConstellationRoute
   DocsIndexRoute: typeof DocsIndexRoute
   MediaIndexRoute: typeof MediaIndexRoute
   DocsTermsTermRoute: typeof DocsTermsTermRoute
   MediaNewsArkNotes001Route: typeof MediaNewsArkNotes001Route
+  RealmConstellationProjectIdRoute: typeof RealmConstellationProjectIdRoute
   DocsTermsIndexRoute: typeof DocsTermsIndexRoute
 }
 
@@ -551,6 +578,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RealmCommunityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/realm_/constellation': {
+      id: '/realm_/constellation'
+      path: '/realm/constellation'
+      fullPath: '/realm/constellation'
+      preLoaderRoute: typeof RealmConstellationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/docs/terms/': {
       id: '/docs/terms/'
       path: '/docs/terms'
@@ -570,6 +604,13 @@ declare module '@tanstack/react-router' {
       path: '/media/news/ark-notes-001'
       fullPath: '/media/news/ark-notes-001'
       preLoaderRoute: typeof MediaNewsArkNotes001RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/realm_/constellation_/$projectId': {
+      id: '/realm_/constellation_/$projectId'
+      path: '/realm/constellation/$projectId'
+      fullPath: '/realm/constellation/$projectId'
+      preLoaderRoute: typeof RealmConstellationProjectIdRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -598,10 +639,12 @@ const rootRouteChildren: RootRouteChildren = {
   MediaVideosRoute: MediaVideosRoute,
   PArkRoute: PArkRoute,
   RealmCommunityRoute: RealmCommunityRoute,
+  RealmConstellationRoute: RealmConstellationRoute,
   DocsIndexRoute: DocsIndexRoute,
   MediaIndexRoute: MediaIndexRoute,
   DocsTermsTermRoute: DocsTermsTermRoute,
   MediaNewsArkNotes001Route: MediaNewsArkNotes001Route,
+  RealmConstellationProjectIdRoute: RealmConstellationProjectIdRoute,
   DocsTermsIndexRoute: DocsTermsIndexRoute,
 }
 export const routeTree = rootRouteImport

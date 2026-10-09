@@ -22,6 +22,7 @@ function Page() {
         { id: 'jah-06', title: 'Anyone can collaborate' },
       ]}
       related={[
+        { title: 'Constellation', href: '/realm/constellation' },
         {
           title: 'Community',
           href: '/realm/community',

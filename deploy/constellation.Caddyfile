@@ -1,0 +1,25 @@
+{
+  auto_https off
+  admin off
+}
+:{$PORT:8080} {
+  root * /srv
+  encode zstd gzip
+  header X-Content-Type-Options nosniff
+  header Referrer-Policy strict-origin-when-cross-origin
+  @assets path /assets/*
+  header @assets Cache-Control "public, max-age=31536000, immutable"
+  @pages not path /assets/*
+  header @pages Cache-Control "public, max-age=60"
+  # Preserve the eight existing legacy aliases and their query strings.
+  redir /login /sign-in?{query} 308
+  redir /signup /sign-up?{query} 308
+  redir /shop /market?{query} 308
+  redir /jobs /market?{query} 308
+  redir /guild /realm?{query} 308
+  redir /explore /media?{query} 308
+  redir /blocks /design-preview?{query} 308
+  redir /contact /pre-alpha?{query} 308
+  try_files {path} {path}/index.html
+  file_server
+}

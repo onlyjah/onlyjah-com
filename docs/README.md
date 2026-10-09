@@ -17,3 +17,5 @@ The full editorial master, synced references and historical handoff material rem
 The older organization qualification proposal is superseded. Organization creation is reserved for verified adam and Jah Noah identities. No paid plan implies stewardship. Future Matrix, payout, fulfillment and meeting work remains distinct from the present development board and marketplace listings.
 
 - [Forge composition and OJ-Ark development](FORGE-DEVELOPMENT.md)
+
+- [Constellation testing deployment](CONSTELLATION-DEPLOYMENT.md): public index, API boundary, cache and verification.

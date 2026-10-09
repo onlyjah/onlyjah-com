@@ -34,7 +34,7 @@ export function SiteHeader({
   return (
     <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur">
       {accent}
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:px-8">
+      <div className="mx-auto flex min-h-16 max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3 md:px-8 lg:h-16 lg:flex-nowrap lg:py-0">
         {brand}
         <nav
           aria-label="Primary navigation"
@@ -57,7 +57,7 @@ export function SiteHeader({
             />
           ))}
         </nav>
-        <div className="flex items-center gap-2">
+        <div className="flex max-w-full flex-wrap items-center gap-2">
           {actions}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger

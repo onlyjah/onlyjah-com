@@ -4,7 +4,24 @@ const terms = JSON.parse(
   readFileSync(new URL('../src/content/terms.json', import.meta.url), 'utf8'),
 )
 
+const constellation = JSON.parse(
+  readFileSync(
+    new URL(
+      '../src/features/constellation/public-snapshot.json',
+      import.meta.url,
+    ),
+    'utf8',
+  ),
+)
+
 export const routes = {
+  '/realm/constellation': 'Constellation',
+  ...Object.fromEntries(
+    constellation.projects.map((project) => [
+      `/realm/constellation/${project.id}`,
+      project.name,
+    ]),
+  ),
   '/': 'A cloud-faring vessel. Universe in the sky. OnlyJah.',
   '/about': 'OnlyJah',
   '/docs': 'The living manual',
