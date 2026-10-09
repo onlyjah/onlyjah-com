@@ -43,3 +43,21 @@ Phone review found the existing shared header wider than a 390px screen. Its con
 
 ## Build recovery
 The initial Railway client image failed at dependency installation; its connector logs exposed the failed step without package-manager stderr. A clean pnpm 12.5.1 install passed locally. The Docker build now copies the package-manager policy, explicitly installs the repository's pinned pnpm version, uses the Debian Node build profile, and matches CI's `--frozen-lockfile --ignore-scripts` install. Dependencies and the authoritative lockfile are unchanged. This records the mitigation without claiming an unobserved root cause. GitHub testing checks also run on this deployment branch.
+
+## Organizational hosting command
+Build outside Railway with `docker build --build-arg VITE_ARK_PUBLIC_API_URL=https://YOUR-PUBLIC-API-ORIGIN -t onlyjah-constellation-client .`, then run `docker run --rm -p 8080:8080 -e PORT=8080 onlyjah-constellation-client` behind the organization's TLS proxy. The public build argument contains no credential. The known project routes are real prerendered HTML files; missing routes remain 404. The eight existing aliases retain their query strings.
+
+## Live verification, 9 October 2026
+Preview: https://constellation-client-testing.up.railway.app/realm/constellation
+
+API and contract: https://constellation-api-testing.up.railway.app/openapi.json
+
+Client source commit `2ac718f629ac67f59991da4c17946139e3162317` reached terminal Railway SUCCESS and GitHub Testing checks SUCCESS. Backend commit `6e89ffc2087e8bb18e3d1aa783242bac3c90e0f6` also reached SUCCESS after a documentation push, demonstrating that its service follows Git rather than remaining pinned.
+
+Direct HTTPS checks passed for the index and seven project pages, each with and without trailing slash: 16 route responses. All 19 referenced assets returned 200 with immutable caching. Eight legacy aliases returned 308 and retained the query string. Missing/private-source paths returned 404, HEAD returned 200, unsupported POST returned 405. The actual API returned seven public concepts, 204 for CORS preflight, 304 for a matching ETag, and 401 for a forged private command. Its event stream returned the real public revision.
+
+Phone browser checks against the deployed HTML and actual API responses passed at 390x844 through the documented session HTTPS bridge: heading, seven cards, search, lazy graph links, scoped graph scrolling, Nebula origin, IndexedDB persistence, recovery during API outage, and zero page errors. This does not claim a native external browser network check or cold offline application launch.
+
+The one-hour Railway metric queries under light verification traffic reported current memory of 0.021815296 GB for the API and 0.019881984 GB for the static client. These samples are not capacity tests. Each pilot service is limited to 0.25 GB and 0.25 vCPU. The prototype has seven reviewed public concepts, not a complete cross-account deployment inventory.
+
+Both services follow their Git deployment branches. Production promotion, verified private grants, financial commands, durable private sync, Nebula networking, database migrations and measured horizontal capacity remain pending. Existing production services and DNS were not changed by this preview.
