@@ -1,7 +1,7 @@
 name: Testing checks
 on:
   push:
-    branches: ['test']
+    branches: ['test', 'deploy/constellation-0.1']
   pull_request:
   workflow_dispatch:
 permissions:
