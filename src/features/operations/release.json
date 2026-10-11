@@ -1,0 +1,105 @@
+{
+  "version": "Ark 0.2",
+  "observedAt": "2026-10-11T18:00:19.644Z",
+  "source": "Railway connector: deployment list and staged changes",
+  "environment": "testing",
+  "patch": {
+    "status": "STAGED",
+    "changes": 34,
+    "destructive": false
+  },
+  "deployments": [
+    {
+      "status": "INITIALIZING",
+      "createdAt": "2026-10-10T22:36:08.075Z",
+      "label": "Recent attempt 1"
+    },
+    {
+      "status": "INITIALIZING",
+      "createdAt": "2026-10-10T22:34:27.774Z",
+      "label": "Recent attempt 2"
+    },
+    {
+      "status": "INITIALIZING",
+      "createdAt": "2026-10-10T22:32:47.461Z",
+      "label": "Recent attempt 3"
+    }
+  ],
+  "services": [
+    {
+      "name": "Portalizer",
+      "folder": "services/portalizer",
+      "purpose": "Routes requests through fixed portal entries and scoped so/il grants."
+    },
+    {
+      "name": "Client",
+      "folder": "services/client",
+      "purpose": "Serves the responsive PWA and public reader."
+    },
+    {
+      "name": "Workspace",
+      "folder": "services/workspace",
+      "purpose": "Stores revisions and authorizes private object access."
+    },
+    {
+      "name": "Accounts",
+      "folder": "services/accounts",
+      "purpose": "Verifies Neon identity and reads account entitlements."
+    },
+    {
+      "name": "Billing",
+      "folder": "services/billing",
+      "purpose": "Handles Stripe checkout and subscription events when configured."
+    }
+  ],
+  "work": [
+    {
+      "id": "forge-panel",
+      "title": "Build the Forge operations dashboard",
+      "state": "verified",
+      "evidence": "Implemented locally and integrated with current testing-branch dictionary work. Full frontend checks passed: 56 tests, lint, types, build and 85 direct-route checks. Publishing remains blocked."
+    },
+    {
+      "id": "refactor",
+      "title": "Split Ark into five service modules",
+      "state": "prepared",
+      "evidence": "Ark 0.2 source and container build definitions prepared. Default compact profile runs the modules in one container."
+    },
+    {
+      "id": "checks",
+      "title": "Local refactor checks",
+      "state": "verified",
+      "evidence": "Recorded release checks: Node 22 passed, 1 Bun-only skip; selected Bun integration checks 8 passed. Docker image and real payment flow were not tested."
+    },
+    {
+      "id": "patch",
+      "title": "Stage the release",
+      "state": "staged",
+      "evidence": "The testing release is staged at Railway. Provider staging is separate from deployment and application verification."
+    },
+    {
+      "id": "approval",
+      "title": "Apply the staged release",
+      "state": "blocked",
+      "evidence": "The deployment action was declined by its approval check. No successful application of the staged release is recorded."
+    },
+    {
+      "id": "live",
+      "title": "Verify the new release online",
+      "state": "unverified",
+      "evidence": "The latest three deployment attempts remain Initializing. No live Ark 0.2 application verification is recorded."
+    },
+    {
+      "id": "monitoring",
+      "title": "Connect live Forge monitoring",
+      "state": "unverified",
+      "evidence": "This panel contains a reviewed release snapshot. A trusted backend with captain/delegated-admin authorization is required for private logs, metrics and deployment actions."
+    },
+    {
+      "id": "initialization-logs",
+      "title": "Inspect the stuck deployment logs",
+      "state": "unverified",
+      "evidence": "A subsequent read of the latest initializing deployment returned zero build logs and zero runtime logs. The initialization cause remains unconfirmed."
+    }
+  ]
+}
