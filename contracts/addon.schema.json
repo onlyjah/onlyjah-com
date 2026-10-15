@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://onlyjah.com/contracts/addon-v1.schema.json",
+  "title": "OJ service addon descriptor",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "version",
+    "transport",
+    "openapi",
+    "healthPath",
+    "requiredScopes",
+    "configuration"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "transport": {
+      "const": "https"
+    },
+    "openapi": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "healthPath": {
+      "type": "string",
+      "pattern": "^/"
+    },
+    "requiredScopes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "configuration": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z][A-Z0-9_]+$"
+      }
+    },
+    "events": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "asyncapi": {
+          "type": "string",
+          "format": "uri-reference"
+        }
+      }
+    }
+  }
+}
