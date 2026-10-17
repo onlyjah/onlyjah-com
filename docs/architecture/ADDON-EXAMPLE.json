@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "example-addon",
+  "version": "0.1.0",
+  "transport": "https",
+  "openapi": "/openapi.json",
+  "healthPath": "/healthz",
+  "requiredScopes": [
+    "example:read"
+  ],
+  "configuration": [
+    "SERVICE_ORIGIN"
+  ]
+}

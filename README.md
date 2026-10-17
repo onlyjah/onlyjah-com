@@ -17,3 +17,9 @@ Use Node 22.12+ and pinned pnpm 12.5.1. `.output/public` is the deployable stati
 The canonical quote master is `docs/content-review/content/master-quotes.json`. `src/content/quotes.json`, `terms.json` and `copy-slots.json` are generated projections. `docs/sources` preserves original references. Historical plans and snapshots remain indexed outside active public imports.
 
 `pnpm build:testing` permits excerpts awaiting Jah's review and visibly labels the testing site. A normal `pnpm build` requires current wording and placement approvals. Clerk billing, uploads, privileged organization actions and seller payouts have separate activation requirements; signup grants none of them.
+
+## October 2026 client pivot
+
+Current reusable layouts, blocks and primitives are consumed from `@onlyjah/ui`, sourced from the private `onlyjah/oj-ui` repository. See [portable module architecture](docs/architecture/PORTABLE-MODULES.md) for package ownership, standalone client hosting, server/addon contracts, source snapshots and rollback.
+
+`pnpm install --frozen-lockfile --ignore-scripts`, then `pnpm check`. The Vite+ local CLI drives development/builds; existing Biome and Node test suites remain in place. Review branches do not imply production promotion.

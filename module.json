@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "onlyjah-com",
+  "kind": "static-client",
+  "framework": "tanstack-start",
+  "toolchain": "vite-plus@1.2.0",
+  "ui": {
+    "package": "@onlyjah/ui",
+    "source": "onlyjah/oj-ui",
+    "snapshot": "vendor/oj-ui.lock.json"
+  },
+  "output": ".output/public",
+  "healthPath": "/healthz",
+  "serverRequiredForPublicPages": false,
+  "optionalServices": []
+}

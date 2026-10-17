@@ -2,7 +2,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import react from '@vitejs/plugin-react'
 import { nitro } from 'nitro/vite'
-import { defineConfig, loadEnv } from 'vite'
+import { defineConfig, lazyPlugins, loadEnv } from 'vite-plus'
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), 'VITE_')
@@ -51,8 +51,25 @@ export default defineConfig(({ mode }) => {
       )
   }
   return {
+    fmt: {
+      singleQuote: true,
+      semi: false,
+      ignorePatterns: [
+        'docs/**',
+        'vendor/**',
+        'src/routeTree.gen.ts',
+        'pnpm-lock.yaml',
+        'content/**',
+        'public/**',
+      ],
+    },
+    lint: {
+      jsPlugins: [{ name: 'vite-plus', specifier: 'vite-plus/oxlint-plugin' }],
+      rules: { 'vite-plus/prefer-vite-plus-imports': 'error' },
+      options: { typeAware: true, typeCheck: true },
+    },
     resolve: { tsconfigPaths: true },
-    plugins: [
+    plugins: lazyPlugins(() => [
       tailwindcss(),
       tanstackStart({
         pages: [
@@ -71,7 +88,7 @@ export default defineConfig(({ mode }) => {
       }),
       react(),
       nitro(),
-    ],
+    ]),
     base: '/',
   }
 })
