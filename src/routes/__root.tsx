@@ -1,3 +1,4 @@
+import { SiteLayout } from '@onlyjah/ui/layouts/site-layout'
 import {
   createRootRoute,
   HeadContent,
@@ -7,8 +8,6 @@ import {
   useRouterState,
 } from '@tanstack/react-router'
 import { Orbit } from 'lucide-react'
-import { SiteFooter } from '@/components/blocks/site-footer'
-import { SiteHeader } from '@/components/blocks/site-header'
 import { ThemeToggle } from '@/components/blocks/theme-toggle'
 import { PageLayout } from '@/components/layouts/page-layout'
 import {
@@ -125,6 +124,55 @@ function RootDocument() {
                   { label: 'Contact', href: 'mailto:onlyjah@pm.me' },
                 ]}
               />
+              <SiteLayout
+                header={{
+                  accent: (
+                    <div aria-hidden="true" className="grid h-1 grid-cols-3">
+                      <span className="bg-chart-3" />
+                      <span className="bg-chart-1" />
+                      <span className="bg-chart-2" />
+                    </div>
+                  ),
+                  brand: <Brand />,
+                  activePath: path,
+                  actions: (
+                    <>
+                      <ThemeToggle />
+                      <MatureToggle />
+                      <AuthControls />
+                    </>
+                  ),
+                  links: [
+                    { label: 'Forge', href: '/forge' },
+                    { label: 'About', href: '/about' },
+                    { label: 'Media', href: '/media' },
+                    { label: 'Realm', href: '/realm' },
+                    { label: 'Market', href: '/market' },
+                    { label: 'Ark', href: '/p/ark' },
+                    { label: 'Docs', href: '/docs' },
+                  ],
+                }}
+                footer={{
+                  brand: <Brand />,
+                  note: 'OnlyJah / Ark · Pre-alpha',
+                  links: [
+                    { label: 'Living manual', href: '/docs' },
+                    { label: 'Ark', href: '/p/ark' },
+                    { label: 'Pre-alpha', href: '/pre-alpha' },
+                    { label: 'Contact', href: 'mailto:onlyjah@pm.me' },
+                  ],
+                }}
+              >
+                {import.meta.env.VITE_RELEASE_STAGE === 'testing' && (
+                  <p
+                    role="status"
+                    className="bg-accent px-4 py-2 text-center text-sm"
+                  >
+                    Testing · wording for Jah’s review
+                  </p>
+                )}
+                <Outlet />
+              </SiteLayout>
             </ContentPreferences>
           </AuthProvider>
         </ThemeProvider>

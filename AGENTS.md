@@ -41,3 +41,7 @@ Local changes and the testing branch/development deployment are explicitly autho
 Run relevant lint, type, build, static-content and direct-link checks. Update the repo-local handoff with actual results, changed files, open questions, and one next step. Do not claim browser interactions or deployment were verified unless they were.
 
 Current active documentation starts at docs/README.md. Preserve originals, quote provenance and historical snapshots; do not restore superseded organization qualification or broad admin rights. Use typed --- in newly authored prose only when helpful; the display layer renders it as a hyphen. Preserve source punctuation. Recovery work must be kept in persistent storage rather than /tmp.
+
+## Approved pivot, 2026-10-15
+
+Both OnlyJah.com and JahNoah.com use TanStack Start + Vite+. Reusable layouts belong to OJ UI, composed from blocks over shadcn/Base UI in TypeScript. `vendor/oj-ui` is a generated, hash-verified consumer snapshot; edit canonical `onlyjah/oj-ui` source instead. Site-aware dictionary rendering, content, routes, themes and provider hooks stay in this client. See docs/architecture/PORTABLE-MODULES.md. Client and backend repositories stay independent; Railway is a hosting adapter, not a domain dependency.
