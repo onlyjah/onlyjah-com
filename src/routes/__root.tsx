@@ -78,6 +78,52 @@ function RootDocument() {
         <ThemeProvider storageKey={themeStorageKey}>
           <AuthProvider>
             <ContentPreferences>
+              <SiteHeader
+                accent={
+                  <div aria-hidden="true" className="grid h-1 grid-cols-3">
+                    <span className="bg-chart-3" />
+                    <span className="bg-chart-1" />
+                    <span className="bg-chart-2" />
+                  </div>
+                }
+                brand={<Brand />}
+                activePath={path}
+                actions={
+                  <>
+                    <ThemeToggle />
+                    <MatureToggle />
+                    <AuthControls />
+                  </>
+                }
+                links={[
+                  { label: 'Forge', href: '/forge' },
+                  { label: 'About', href: '/about' },
+                  { label: 'Media', href: '/media' },
+                  { label: 'Realm', href: '/realm' },
+                  { label: 'Market', href: '/market' },
+                  { label: 'Ark', href: '/ark' },
+                  { label: 'Docs', href: '/docs' },
+                ]}
+              />
+              {import.meta.env.VITE_RELEASE_STAGE === 'testing' && (
+                <p
+                  role="status"
+                  className="bg-accent px-4 py-2 text-center text-sm"
+                >
+                  Testing · wording for Jah’s review
+                </p>
+              )}
+              <Outlet />
+              <SiteFooter
+                brand={<Brand />}
+                note="OnlyJah / Ark · Pre-alpha"
+                links={[
+                  { label: 'Living manual', href: '/docs' },
+                  { label: 'Ark', href: '/ark' },
+                  { label: 'Pre-alpha', href: '/pre-alpha' },
+                  { label: 'Contact', href: 'mailto:onlyjah@pm.me' },
+                ]}
+              />
               <SiteLayout
                 header={{
                   accent: (

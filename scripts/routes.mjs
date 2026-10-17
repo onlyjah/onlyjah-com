@@ -34,6 +34,7 @@ export const routes = {
   '/media/videos': 'Videos',
   '/media/news': 'News',
   '/realm': 'Realm',
+  '/ark': 'Ark',
   '/p/ark': 'Ark',
   '/pre-alpha': 'Pre-alpha',
   '/sign-up': 'Join OnlyJah',

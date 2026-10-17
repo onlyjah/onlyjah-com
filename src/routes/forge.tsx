@@ -23,7 +23,7 @@ function Page() {
         { id: 'jah-02', title: 'Create and publish' },
       ]}
       related={[
-        { title: 'Ark', href: '/p/ark', description: 'Project' },
+        { title: 'Ark', href: '/ark', description: 'Project' },
         {
           title: 'The ecosystem',
           href: '/docs/ecosystem',
